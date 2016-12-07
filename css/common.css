@@ -22,7 +22,6 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 
 /**** 슬라이드컨트롤러 ****/
 .pagecontrol{position: absolute; bottom: 5px; left: 50%; margin-left: -23px; text-indent: -9999px;}
-.pgc_pageList ul {overflow: hidden;}
 .pgc_pageList li{width: 14px; height: 14px; margin-right: 3px; background: url(../images/common/slidecontrol.png) -1px -2px no-repeat; float:left;}
 .pgc_pageList li.on{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -18px -2px no-repeat;}
 .pgc_pageList li a{display: block; width: 10px; height: 10px; }
@@ -33,7 +32,7 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 
 
 /**** 헤더영역 ****/
-.wrap{font-size:1em;max-width:1600px; min-width: 320px; margin:0 auto;position:relative;}
+.wrap{font-size:1em;max-width:1600px;margin:0 auto;position:relative;}
 #header{width:213px;border:1px solid #ddd;position:absolute;top:0;left:0;}
 
 h1{height:207px;padding:10px 0 0 8px;}
@@ -50,9 +49,11 @@ h1{height:207px;padding:10px 0 0 8px;}
 .bd_l{border-left:1px solid #d0cecd;}
 .quickLink li a{font-size:1em;height:90px;display:block;text-align:center;padding:7px 20px 5px;}
 
-.lnb {display:none;}
-#gnb li:hover .lnb{display:block;}
-.quickLink .search{background:url(../images/common/search_gnb.png) 10px 6px   no-repeat;width:100%;height:53px;padding:20px 18px;text-align:center;}
+.lnb {/* display:none; */background-color:#f5f5f5;}
+#gnb li:hover .lnb{/* display:block; */}
+#gnb .lnb li a{font-size:0.6em;border:none;padding:1px 34px;}
+
+.quickLink .search{background:url(../images/common/search_gnb.png) 10px 6px   no-repeat;width:100%;height:53px;padding:10px 18px;text-align:center;}
 .quickLink .search label{width:2px; height:0;font-size:0;border:none;}
 .quickLink .search input[type=text]{width:125px;height:30px;border:0 none;background:none;}
 .quickLink .search input[type=submit]{width:30px;height:30px;background:none;text-indent:-9999px;}
@@ -78,6 +79,7 @@ h1{height:207px;padding:10px 0 0 8px;}
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
 #header{height:100%;}
+#footer{position: static;}
 
 		.col-pc-1{width:8.333%;}
 		.col-pc-2{width:16.666%;}
@@ -97,9 +99,9 @@ h1{height:207px;padding:10px 0 0 8px;}
 #header{position:static;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
 #container{margin-left:0;}
 .visual{height:300px;}
+#footer{margin-left:0;}
 
-
-.col-tablet-1{width:8.333%#footer;}
+.col-tablet-1{width:8.333%;}
 .col-tablet-2{width:16.666%;}
 .col-tablet-3{width:25%;}
 .col-tablet-4{width:33.333%;}
@@ -115,8 +117,7 @@ h1{height:207px;padding:10px 0 0 8px;}
 @media (max-width:568px){
 #contents{width:100%}
 .detail{width: 90%;}
-#footer{width: 90%; font-size: 1em;}
-
+#footer{width:100%;}
 
 
 .col-mobile-1{width:8.333%;}
