@@ -3,11 +3,11 @@
 .visual{height:922px;width: 1050px;position: relative;}
 .slogan_img{width: 1050px; height:920px;}
 .m_v_slide{width: 283px;height: 346px;background-color: #fff;margin: 60px 0 0 50px;display: inline-block;
-	position: absolute;top: 0;left: 0; opacity: 0.5; -ms-filter:alpha(opacity=50); filter: alpha(opacity=50);}
+	opacity: 0.5; -ms-filter:alpha(opacity=50); filter: alpha(opacity=50);}
 .m_v_slide p{font-size: 28px;color: #0e213b; margin: 170px 0 0 10px;}
-.m_v_slide .pagecontrol{position: absolute; bottom: 10px; left: 50%; margin-left: -32.5px; text-indent: -9999px;}
-.m_v_slide .pgc_pageList li{width: 14px; height: 14px; margin-right: 3px;}
-.slide_select{position: absolute;bottom: -30px;right: 0;}
+.m_v_s_c .pagecontrol{position: absolute; bottom: 10px; left: 58%; margin-left: -32.5px; text-indent: -9999px;}
+.m_v_s_c .pgc_pageList li{width: 14px; height: 14px; margin-right: 3px;}
+.m_v_s_c{position: absolute;top: 0;}
 
 
 /* detail */
