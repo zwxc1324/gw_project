@@ -51,7 +51,7 @@ h1{height:207px;padding:10px 0 0 8px;}
 
 .lnb {display:none;}
 #gnb li:hover .lnb{display:block;}
-.quickLink .search{background:url(../images/common/search_gnb.png) 10px 6px   no-repeat;width:100%;height:53px;padding:20px 18px;text-align:center;}
+.quickLink .search{background:url(../images/common/search_gnb.png) 10px 6px   no-repeat;width:100%;height:53px;padding:10px 18px;text-align:center;}
 .quickLink .search label{width:2px; height:0;font-size:0;border:none;}
 .quickLink .search input[type=text]{width:125px;height:30px;border:0 none;background:none;}
 .quickLink .search input[type=submit]{width:30px;height:30px;background:none;text-indent:-9999px;}
