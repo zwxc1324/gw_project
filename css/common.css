@@ -74,10 +74,8 @@ h1{height:207px;padding:10px 0 0 8px;}
 .sns ul{width:100%;}
 .sns li{float:left;padding:0px 10px;width:25%;text-align:center;}
 
-/**** 컨테이너영역 ****/
+/**** main 컨테이너영역 ****/
 #container{margin-left:213px;}
-
-
 #footer{ border-top:2px solid #ddd; width: 580px ;margin: 25px auto 0px;padding-top:10px;
 	/* position: absolute;bottom: 2px;left: 0; */ font-size: 1.05em; /* width: 757px; */}
 #footer .footer_ul{padding-bottom:5px;}
@@ -86,9 +84,13 @@ h1{height:207px;padding:10px 0 0 8px;}
 .footer_ul li a{font-size: 1em;}
 
 /* 서브영역 */
-.ico_font_home:before{content:"\e801";font-size:1.3em;}
-.con_title{padding-left:70px;}
-.con_title p{}
+.con_wrap{padding-left:50px;} 
+.con_title{/* background:url() 0 0 no-repeat; ***--다른 사이트 보니까 백그라운드라서 이미지 안넣고 비워둠--** */height:205px;border-bottom:1px solid  #d0cecd;margin:0 auto;padding:85px 0 0 80px;}
+.con_title p{font-size:1.2em;padding:0 0 10px 5px;}
+.ico_font_home{}
+.ico_font_home:before{content:"\e801";padding-right:10px;}
+.ico_font_angle_r:before{content:"\f105";padding:0 5px;font-size:1.1em;}
+.con_title strong{font-weight:bold;}
 .con_title h3{font-size:4em;color:#004884;}
 
 
