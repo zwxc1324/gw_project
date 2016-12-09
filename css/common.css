@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 
 
 /**** 헤더영역 ****/
-.wrap{font-size:1em;max-width:1400px;width:100%;margin:0 auto;position:relative;}
+.wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;}
 #header{height:100%;width:213px;border:1px solid #ddd;float:left;/* position:absolute;top:0;left:0; */}
 
 h1{height:207px;padding:10px 0 0 8px;}
@@ -89,17 +89,18 @@ h1{height:207px;padding:10px 0 0 8px;}
 /* 서브영역 */
 #sub_container{width:75%;margin-left:3.5%;float:left;font-size:16px;}/* 서브 기본 폰트 16px */
 .con_title{/* background:url() 0 0 no-repeat; ***--다른 사이트 보니까 백그라운드라서 이미지 안넣고 비워둠--** */height:205px;border-bottom:1px solid #d0cecd;margin:0 auto;padding:85px 0 0 50px;width:100%;}
-.con_title p{padding:0 0 10px 5px;}
+.con_title p{font-size:0.9em;padding:0 0 10px 5px;}
 .ico_font_home{}
 .ico_font_home:before{content:"\e801";padding-right:10px;}
 .ico_font_angle_r:before{content:"\f105";padding:0 5px;font-size:1.1em;}
 .con_title strong{font-weight:bold;}
-.con_title h3{font-size:2.8em;color:#004884;letter-spacing:0.1em;}
-.souvenir_con{height:600px;weight:300px;border:1px solid red;}
+.con_title h3{font-size:2.6em;color:#004884;letter-spacing:0.1em;}
+.div{height:600px;weight:300px;border:1px solid red;}
 
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
 #header{height:100%;}
+#container{float:left; border:1px solid red;width:73%;}
 #sub_container{width:68%;}
 #footer{position: static;}
 
@@ -118,11 +119,11 @@ h1{height:207px;padding:10px 0 0 8px;}
 
 }
 @media (max-width:800px){
-#header{position:static;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
-#container{margin-left:0;}
+#header{float:none;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
+#container{float:none;margin-left:0;width:100%;}
 
 #sub_container{float:none;width:90%;margin:0 auto;margin-left:none;}
-#footer{margin-left:0;}
+#footer{margin:0 auto;}
 
 .col-tablet-1{width:8.333%;}
 .col-tablet-2{width:16.666%;}
