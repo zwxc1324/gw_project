@@ -95,7 +95,7 @@ h1{height:207px;padding:10px 0 0 8px;}
 .ico_font_angle_r:before{content:"\f105";padding:0 5px;font-size:1.1em;}
 .con_title strong{font-weight:bold;}
 .con_title h3{font-size:2.8em;color:#004884;letter-spacing:0.1em;}
-.div{height:600px;weight:300px;border:1px solid red;}
+.souvenir_con{height:600px;weight:300px;border:1px solid red;}
 
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
