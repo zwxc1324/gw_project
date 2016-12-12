@@ -87,8 +87,6 @@
 }
 
 @media (max-width:568px){
-.m_v_slide{width: 230px;;height: 200px;;margin: 150px 0 0 10px;}
-.m_v_slide p{margin: 30px 0 0 10px;}
 #contents{width:100% }
 .detail{width: 90%;}
 .theme_tour ul li{width: 25%;}
