@@ -40,7 +40,10 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .pagecontrol a.on{display: inline-block;}
 .pagecontrol_play{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -51px -2px no-repeat;}
 .pagecontrol_pause{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -35px -2px no-repeat;}
+/*  color
+핑크:bf1867
 
+*/
 
 /**** 헤더영역 ****/
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;}
@@ -55,16 +58,16 @@ h1{height:207px;padding:10px 0 0 8px;}
 .login{position:absolute;top:0;left:80px;padding-left:20px;background:url(../images/common/sprite.png) -1px 2px no-repeat; background-size:500px 500px;}
 #gnb{padding-top:40px;}
 #gnb > ul > li a{font-size:1.9em;padding:11px 34px;display:block;border-top:1px solid #d0cecd; }
-#gnb > ul > li > a.on, #gnb > ul > li > a:hover, #gnb > ul > li > a:focus{background-color:#004884;color:#fff;}
+#gnb > ul > li > a.on, #gnb > ul > li > a:hover, #gnb > ul > li > a:focus{background-color:#dc3d6c;color:#fff;}
 .quickLink li{float:left;width:50%;border-top:1px solid #d0cecd;}
 .bd_l{border-left:1px solid #d0cecd;}
 .quickLink li a{font-size:1.12em;height:90px;display:block;text-align:center;padding:7px 20px 5px;}
-.quickLink li a:hover,.quickLink li a:focus	{color:#004884;font-weight:bold;}
+.quickLink li a:hover,.quickLink li a:focus	{color:#dc3d6c;font-weight:bold;}
 
 #gnb .lnb {display:none;background-color:#f5f5f5;padding:10px 0;}
 #gnb li:hover .lnb{display:block;}
 #gnb .lnb li a{font-size:1.2em;border:none;padding:5px 34px;}
-#gnb .lnb li a.on,#gnb .lnb li a:hover, #gnb .lnb li a:focus{color:#004884;font-weight:bold;}
+#gnb .lnb li a.on,#gnb .lnb li a:hover, #gnb .lnb li a:focus{color:#dc3d6c;font-weight:bold;}
 .quickLink .search{background:url(../images/common/search_gnb.png) 10px 6px   no-repeat;width:100%;height:53px;padding:10px 18px;text-align:center;}
 .quickLink .search label{width:2px; height:0;font-size:0;border:none;}
 .quickLink .search input[type=text]{width:125px;height:30px;border:0 none;background:none;}
@@ -94,13 +97,13 @@ h1{height:207px;padding:10px 0 0 8px;}
 .ico_font_home:before{content:"\e801";padding-right:10px;}
 .ico_font_angle_r:before{content:"\f105";padding:0 5px;font-size:1.1em;}
 .con_title strong{font-weight:bold;}
-.con_title h3{font-size:2.6em;color:#004884;letter-spacing:0.1em;}
+.con_title h3{font-size:2.6em;color:#333;}
 .div{height:600px;weight:300px;border:1px solid red;}
 
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
 #header{height:100%;}
-#container{float:left; border:1px solid red;width:73%;}
+#container{float:left; width:73%;}
 #sub_container{width:68%;}
 #footer{position: static;}
 
