@@ -39,10 +39,6 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .pagecontrol a.on{display: inline-block;}
 .pagecontrol_play{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -51px -2px no-repeat;}
 .pagecontrol_pause{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -35px -2px no-repeat;}
-/*  color
-핑크:bf1867
-
-*/
 
 /**** 헤더영역 ****/
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;}
