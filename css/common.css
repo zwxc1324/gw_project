@@ -88,7 +88,7 @@ h1{height:207px;padding:10px 0 0 8px;}
 
 
 
-/* 서브영역 */
+/**** 서브영역 ****/
 #sub_container{width:75%;margin-left:3.5%;float:left;font-size:16px;}/* 서브 기본 폰트 16px */
 .con_title{/* background:url() 0 0 no-repeat; ***--다른 사이트 보니까 백그라운드라서 이미지 안넣고 비워둠--** */height:205px;border-bottom:1px solid #d0cecd;margin:0 auto;padding:85px 0 0 50px;width:100%;}
 .con_title p{font-size:0.9em;padding:0 0 10px 5px;}
