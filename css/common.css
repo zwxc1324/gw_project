@@ -91,7 +91,7 @@ address, #footer p{font-size:0.9em}
 @media (max-width:1025px){
 #header{height:100%;}
 #container{float:left; width:73%;}
-#sub_container{width:68%;}
+
 #footer{position: static;}
 
 		.col-pc-1{width:8.333%;}
@@ -112,7 +112,7 @@ address, #footer p{font-size:0.9em}
 #header{float:none;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
 #container{float:none;margin-left:0;width:100%;}
 
-#sub_container{float:none;width:90%;margin:0 auto;margin-left:none;}
+
 #footer{margin:0 auto;}
 
 .col-tablet-1{width:8.333%;}

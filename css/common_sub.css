@@ -37,3 +37,17 @@ table{border-bottom:1px solid #525252;margin-bottom:30px;}
 /**/
 #footer{width:100%;padding:20px 0;}
 .footer_wrap{width:100%;padding:10px 0;}
+
+
+
+
+@media (max-width:1025px){
+#sub_container{width:73%;}
+
+
+}
+@media (max-width:800px){
+#sub_container{float:none;width:90%;margin:0 auto;margin-left:none;border:none;}
+
+
+}
