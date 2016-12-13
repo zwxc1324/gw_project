@@ -9,8 +9,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all">
 	<title>GANGWON</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/souvenir.css">
 	<script type="text/javascript">
 	
 	</script>
@@ -110,7 +111,7 @@
 					<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">관광기념품</strong></p>
 					<h3>관광기념품</h3>
 				</div>
-				<div class="con_wrap">
+				<div class="sou_con_wrap">
 					<select name="souvenir_s" id="souvenir_s">
 						<option value="#">2016년</option>
 						<option value="#">2015년</option>
@@ -118,7 +119,7 @@
 						<option value="#">2013년</option>
 					</select>
 					<button>확인</button>
-					<div class="con_header">
+					<div class="con_header clearFix">
 						<div class="image_1">
 							<img src="images/souvenir/souvenir.jpg" alt="대상 사진">
 						</div>
@@ -248,21 +249,44 @@
 						</ul>
 					</div>
 					<div class="con_footer">
-						<div class="souvenir_search_wrap">
+						<div class="sub_search">
 							<form action="#" method="get">
-							<fieldset>
-								<legend>상품 검색</legend>
-									<select name="souvenir_search" id="souvenir_search">
-										<option value="title">제목</option>
-										<option value="name">작성자</option>
-										<option value="date">날짜</option>
-									</select>
-									<input type="text" name="search_text" id="search_text">
-									<input type="submit" value="검색">
-							</fieldset>
+								<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
+								<fieldset>
+									<p>
+										<legend >공지사항의 제목, 내용, 작성자로 검색하세요</legend>
+										<label for="notice_search" class="blind">공지사항 검색 분류</label>
+										<select name="notice_search" id="notice_search" title="공지사항 검색">
+											<option value="title">제목</option>
+											<option value="content">내용</option>
+											<option value="writer">작성자</option>
+										</select>
+										<label for="text_notice_search" class="blind">검색어</label>
+										<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요"/>
+										<input type="submit" value="검색" class="btn_search"/>
+									</p>
+								</fieldset>
 							</form>
 						</div>
-						<div class="div"></div>
+						<p class="paging">
+							<a href="#">
+								<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+							</a>
+							<a href="#">
+								<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+							</a>
+							<span>
+								<a href="#" class="select">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+							</span>
+							<a href="#">
+								<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+							</a>
+							<a href="#">
+								<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+							</a>
+						</p>
 					</div>
 				</div>
 		</div>
