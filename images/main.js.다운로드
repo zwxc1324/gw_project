@@ -1,0 +1,184 @@
+$(function(){
+	
+    /* mc_slide
+	----------------------------------------------------*/
+	function mc_slide(){
+		//변수정의
+		var	View = '.mc_slide .view_area', //슬라이드가	적용된는 영역
+            BtnPlay = '.mc_slide .btn_play', //플레이	버튼
+            BtnPause = '.mc_slide .btn_pause', //스탑	버튼
+            BtnPrev = '.mc_slide >.btn_area .btn_left', //왼쪽 버튼
+            BtnNext = '.mc_slide >.btn_area .btn_right',	//오른쪽 버튼
+			Pager = '.mc_slide .pager';
+		// 슬라이드 적용
+		$(View).cycle({
+			fx:	'fade',
+			timeout:1000,
+			prev:	BtnPrev,	
+			next:	BtnNext,
+			pager: Pager,
+			fit: 1,
+			pause:1
+		});
+		//pager에 타이틀 속성 넣기 
+		$(Pager).find('a').attr('title','알림창 보기');
+        //btn control
+		$(BtnPlay).hide();
+		$(BtnPlay).click(function(){
+			$(View).cycle('resume',true);
+			$(BtnPlay).hide();
+			$(BtnPause).show();
+			return false;
+		});
+		$(BtnPause).click(function(){
+			$(View).cycle('pause');
+			$(BtnPause).hide();
+			$(BtnPlay).show();
+			return false;
+		});
+	}
+	mc_slide();
+	
+	/* mc_srch_opt 검색옵션
+	--------------------------------------*/
+	function mc_srch_opt(){
+		var SelectInput = $('.mc_srch .opt input');
+		var clickChk=0;				
+        var className = 'on';
+        //radiobox의 라벨 오버했을 때
+		$(SelectInput).parent().hover(function(evt){
+			var chk = evt.target.childNodes[1].checked;
+			if(!chk){
+				$(this).addClass(className);
+			}
+			$(this).click(function() {
+				$(this).siblings().removeClass(className);
+			});
+		},function(evt){
+			var chk = evt.target.childNodes[1].checked;
+			if(!chk){
+				$(this).removeClass(className);
+			}
+		});
+        //radio버튼에 focus와 blur 이벤트 적용
+		var keyClassName = 'key_up';
+        $(SelectInput).each(function(){
+            $(this).keyup(function(evt){
+				$(this).parent().addClass(keyClassName);
+			});
+			$(this).focus(function(){
+                $(this)[0].checked=true;
+                $(this).parent().addClass(className);
+                $(this).parent().siblings().removeClass(className);
+            });
+            $(this).blur(function(){
+                $(this).parent().removeClass(keyClassName);
+            });
+        });
+	}
+	mc_srch_opt();
+	
+	/* 최신글 mc_latest 
+	------------------------------------------*/
+	function mc_latest(){
+		var	View ='.mc_latest .view_area',
+            BtnPrev = '.mc_latest >.btn_area .btn_prev',
+            BtnNext = '.mc_latest >.btn_area .btn_next',
+            BntPlay = '.mc_latest >.btn_area .btn_play',
+            BntPause = '.mc_latest >.btn_area .btn_pause';
+		//슬라이드 효과	적용
+		$(View).cycle({
+			fx:	'fade',
+			speed:0,
+			prev: BtnPrev,
+			next: BtnNext,
+			width: 800
+		});
+		//플레이 스탑	버튼 컨트롤
+		$(BntPlay).hide();
+		$(BntPause).click(function(){	
+			$(View).cycle('pause');
+			$(BntPause).hide();
+			$(BntPlay).show();
+			return false;
+		});
+		$(BntPlay).click(function(){ 
+			$(View).cycle('resume',true);
+			$(BntPause).show();
+			$(BntPlay).hide();
+			return false;
+		});
+	}
+	mc_latest();
+	
+	/* mc_banner festival 
+	--------------------------------------------*/
+	function mcBanner_festival(){
+		var View = '.mc_banner .festival .view',
+            BtnPrev = '.mc_banner .festival .btn_area .btn_prev',
+            BtnNext = '.mc_banner .festival .btn_area .btn_next',
+            BtnPlay = '.mc_banner .festival .btn_area .btn_play',
+            BtnStop = '.mc_banner .festival .btn_area .btn_stop';
+		$(View).cycle({
+			fx:	'fade',
+			speed:0,
+			timeout:0,
+			prev:	BtnPrev, 
+			next:	BtnNext
+		});
+		$(BtnPlay).hide();
+		$(BtnPlay).hide();
+		//플레이 버튼 클릭했을 때
+        $(BtnPlay).click(function(){
+			$(View).cycle('resume',true);
+			$(BtnPlay).hide();
+			$(BtnStop).show();
+			return false;
+		});
+        //정지 버튼 클릭했을 때
+		$(BtnStop).click(function(){
+			$(View).cycle('pause');
+			$(BtnStop).hide();
+			$(BtnPlay).show();
+			return false;
+		});
+	}
+	mcBanner_festival();
+	
+	/* mc_banner inform 
+	-----------------------------------------*/
+	function mcBanner_inform(){
+		var View = '.mc_banner .inform .view',
+            BtnPlay = '.mc_banner .inform .btn_area .btn_play',
+            BtnStop = '.mc_banner .inform .btn_area .btn_stop',
+            BtnPrev = '.mc_banner .inform .btn_area .btn_prev',
+            BtnNext = '.mc_banner .inform .btn_area .btn_next';
+		//slide 적용
+		$(View).cycle({
+			fx:	'fade',
+			speed: 0,
+			prev:	BtnPrev, 
+			next:	BtnNext
+		});
+		//btn control
+		$(BtnPlay).hide();
+		$(BtnPlay).hide();
+		//play버튼 클릭했을 때
+        $(BtnPlay).click(function(){
+            $(View).cycle('resume',true);
+            $(BtnPlay).hide();
+            $(BtnStop).show();
+            return false;
+        });
+        //stop버튼 클릭했을 때
+		$(BtnStop).click(function(){
+			$(View).cycle('pause');
+			$(BtnStop).hide();
+			$(BtnPlay).show();
+			return false;
+		});
+	}
+	mcBanner_inform();
+
+});
+

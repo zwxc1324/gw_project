@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="circle-empty" unicode="&#xf10c;" d="M429 654q-83 0-153-41t-110-111-41-152 41-152 110-111 153-41 152 41 110 111 41 152-41 152-110 111-152 41z m428-304q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="genderless" unicode="&#xf22d;" d="M571 314q0 104-73 177t-177 73-176-73-74-177 74-176 176-74 177 74 73 176z m72 0q0-65-25-124t-69-103-103-69-125-25-124 25-103 69-69 103-25 124 25 125 69 103 103 68 124 26 125-26 103-68 69-103 25-125z" horiz-adv-x="714.3" />
+
+<glyph glyph-name="picasa" unicode="&#xf345;" d="M250 760q10-12 158-144l-396-362q-12 48-12 96 0 130 67 240t183 170z m400 10l0-278-328 296q64 22 138 22 98 0 190-40z m70-40q94-64 147-165t53-215q0-80-26-152l-174 0 0 532z m-686-550q12 12 66 60l102 92 0-362q-116 80-168 210z m238-250l0 198 590 0q-56-100-151-163t-209-75l-84 0q-84 10-146 40z" horiz-adv-x="920" />
+</font>
+</defs>
+</svg>
