@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .pagecontrol_pause{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -35px -2px no-repeat;}
 
 /**** 헤더영역 ****/
-.wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border-left:1px solid #d0cecd;}
+.wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border:1px solid #d0cecd;}
 #header{width:213px;height:100%;/* border-left:1px solid #ddd; border-right:1px solid #ddd; */float:left;/* position:absolute;top:0;left:0; */}
 
 h1{height:207px;padding:10px 0 0 8px;}
@@ -76,13 +76,13 @@ h1{height:207px;padding:10px 0 0 8px;}
 
 /**** main 컨테이너영역 ****/
 #container{/* margin-left:214px; */float:right;height:100%;}
-#footer{float:right;background-color:#FFF;width:630px;  padding:10px 10px; font-size: 1.05em;}
-.footer_wrap{width:572px; border-top:2px solid #ddd;margin: 0 auto;padding:10px 0 0 3px;}
+#footer{/* float:right; */background-color:#FFF;width:100%;  padding:10px 10px; font-size: 1.05em;margin-top:10px;}
+.footer_wrap{width:89%; border-top:2px solid #ddd;margin: 0 auto;padding:10px 0 0 0;}
 #footer .footer_ul{ padding-bottom:5px;}
 #footer .footer_ul li{float: left;padding: 0 8px;border-left: 1px solid #aaa; }
 #footer .footer_ul li:first-child{border: none; padding-left: 0;}
-.footer_ul li a{font-size: 1em;}
-
+.footer_ul li a{font-size: 0.94em;font-weight:bold;}
+address, #footer p{font-size:0.9em}
 
 
 

@@ -1,5 +1,5 @@
 /**** 서브영역 ****/
-#sub_container{width:75%;padding-left:3.5%;float:left;font-size:16px;border-left:1px solid #d0cecd;}/* 서브 기본 폰트 16px */
+#sub_container{width:75%;padding-left:3.5%;float:left;font-size:14px;border-left:1px solid #d0cecd;}/* 서브 기본 폰트 16px */
 .con_title{/* background:url() 0 0 no-repeat; ***--다른 사이트 보니까 백그라운드라서 이미지 안넣고 비워둠--** */height:205px;border-bottom:1px solid #d0cecd;margin:0 auto;padding:85px 0 0 50px;width:100%;}
 .con_title p{font-size:0.9em;padding:0 0 10px 5px;}
 .ico_font_home{}
@@ -35,5 +35,5 @@ table{border-bottom:1px solid #525252;margin-bottom:30px;}
 .paging span a:hover, .paging span a:focus{font-weight:bold;text-decoration:underline;}
 
 /**/
-#footer{width:78.5%;float:left;margin-left:213px;}
-.footer_wrap{width:100%;}
+#footer{width:100%;padding:20px 0;}
+.footer_wrap{width:100%;padding:10px 0;}

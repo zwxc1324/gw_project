@@ -1,15 +1,4 @@
-<!doctype html>
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="Author" content="작성자">
-	<meta name="Keywords" content="단어(검색)">
-	<meta name="Description" content="문장(검색)">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
-	<title>GANGWON</title>
+<? include"inc/top.html"; ?>
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
 	<script type="text/javascript">
 	
@@ -19,90 +8,7 @@
 	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
 	<div class="wrap clearFix">
 		<!-- 헤더영역 -->
-		<header id="header">
-			<p class="skipmenu blind"><a href="#container">본문바로가기</a>	</p>
-			<h1><a href="index.html"><img src="images/common/logo.jpg" alt="사이버강원관광" /></a></h1>
-			<div class="langAndLog">
-				<div class="language">
-					<h2><a href="#">LANGUAGE</a></h2>
-					<ul class="clearFix">
-						<li><a href="#" target="_blank" title="새창"><img src="images/common/korea.png" alt="한국어" /></a></li>
-						<li><a href="#" target="_blank" title="새창"><img src="images/common/english.png" alt="영어" /></a></li>
-						<li><a href="#" target="_blank" title="새창"><img src="images/common/china.png" alt="중국어" /></a></li>
-						<li><a href="#" target="_blank" title="새창"><img src="images/common/japan.png" alt="일본어" /></a></li>
-					</ul>
-				</div>
-				<p class="login"><a href="#">LOGIN</a></p>
-			</div>
-			<div id="gnb">
-				<h2 class="blind">주 메뉴</h2>
-				<ul>
-					<li><a href="#" class="on">추천여행</a>
-						<ul class="lnb">
-							<li><a href="sub_base.html" class="on">계절테마여행</a></li>
-							<li><a href="#">추천여행코스</a></li>
-							
-							<li><a href="#"><!-- 강원도 추천 관광지 --> 강원도핫플레이스 10</a></li>
-							<li><a href="#">이야기가 있는 강원도</a></li>
-						</ul>
-					</li>
-					<li><a href="#">관광명소</a>
-						<ul class="lnb">
-							<li><a href="#">강원요기조기<!-- 여행테마칼럼 --></a></li>
-						</ul>
-					</li>
-					<li><a href="#">숙박/맛집</a>
-						<ul class="lnb">
-							<li><a href="#">숙박</a></li>
-							<li><a href="#">맛집</a></li>
-						</ul>
-					</li>
-					<li><a href="#">여행톡톡</a>
-						<ul class="lnb">
-							<li><a href="#">여행 Q&amp;A</a></li>
-							<li><a href="#">뉴스레터</a></li>
-						</ul>
-					</li>
-					<li><a href="#">여행길잡이</a>
-						<ul class="lnb">
-							<li><a href="#">새소식</a></li>
-							<li><a href="sub_souvenir.html">관광기념품</a></li>
-							<li><a href="touristguide_database.html">관광자료실</a></li>
-							<li><a href="#">홍보물신청</a></li>
-							<li><a href="#">해설사예약</a></li>
-							<li><a href="#">오시는길</a></li>
-							<li><a href="#">관광안내소</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="quickLink">
-				<h2 class="blind">홍보물 신청, 해설사예약, 오시는 길, 관광 안내소</h2>
-				<ul>
-					<li><a href="#"><img src="images/common/mctravelinfo_quicklink_promotion.png" alt="홍보물신청" />홍보물신청</a></li>
-					<li class="bd_l"><a href="#"><img src="images/common/mctravelinfo_quicklink_reservation.png" alt="해설사예약" />해설사예약</a></li>
-					<li><a href="#"><img src="images/common/mctravelinfo_quicklink_map.png" alt="오시는길" />오시는길</a></li>
-					<li class="bd_l"><a href="#"><img src="images/common/mctravelinfo_quicklink_guide.png" alt="관광안내소" />관광안내소</a></li>
-					<li class="search"><form action="#" method="get">
-						<fieldset>
-							<legend class="blind">통합검색</legend>
-							<label for="quickLink_search">검색어를 입력하세요.</label>
-							<input type="text" name="quickLink_search" id="quickLink_search" />
-							<input type="submit" value="검색" />
-						</fieldset>
-					</form></li>
-				<li class="movie"><iframe src="https://www.youtube.com/embed/3vMM41R1Dts" frameborder="0" title="임시동영상"></iframe></li>
-				</ul>
-			</div>
-			<div class="sns clearFix">
-				<ul>
-					<li><a href="http://blog.naver.com/traveloisoo" target="_blank" title="새창"><img src="images/common/topinfo_blog.gif" alt="네이버	밴드" /></a></li>
-					<li><a href="https://www.facebook.com/gwtalk" target="_blank" title="새창"><img src="images/common/topinfo_facebook.gif" alt="페이스북" /></a></li>
-					<li><a href="https://twitter.com/gangwontalk"	target="_blank"	title="새창"><img src="images/common/topinfo_twitter.gif" alt="트위터" /></a></li>
-					<li><a href="https://twitter.com/gangwontalk"	target="_blank"	title="새창"><img src="images/common/topinfo_instagram.gif" alt="인스타그램" /></a></li>					
-				</ul>
-			</div>
-		</header>
+		<? include"inc/header.html"; ?>
 		<!--// 헤더영역 -->
 		<!-- 컨테이너영역 --> 
 		<div id="sub_container" class="clearFix">
@@ -111,13 +17,13 @@
 					<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">추천여행</a> <strong class="ico_font_angle_r">계절테마여행</strong></p>
 					<h3>계절테마여행</h3>
 				</div>
-				
-
-		
+				<!-- 푸터영역 -->
+			<? include"inc/footer.html"; ?>
+			<!-- //푸터영역 -->
 		</div>
+		<!-- class="select" : 현재 선택 된 영역 표시 -->
 		<!-- //컨테이너영역 -->
-		
-		
 	</div>
 </body>
 </html>
+
