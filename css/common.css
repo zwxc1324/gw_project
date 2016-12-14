@@ -45,14 +45,15 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border:1px solid #d0cecd;}
 #header{width:213px;height:100%;/* border-left:1px solid #ddd; border-right:1px solid #ddd; */float:left;/* position:absolute;top:0;left:0; */}
 
-h1{height:180px;padding:10px 0 0 8px;}
-.langAndLog{position:relative;margin-top:-40px;margin-left:34px;}
+h1{height:140px;padding:5PX 0 0 8px;}
+.langAndLog{position:relative;margin-top:3px;margin-left:33px;}
+.language li > a, .login > a{font-size:0.9em;}
 .language{position:absolute;top:0;left:0;}
-.language ul{ padding:30px 10px;margin-left:-34px; }
+.language ul{background-color:#FFF; padding:5px 15px;margin-left:-34px;width:213px;margin-top:10px; }
 .language li{display:none;float:left;overflow:hidden;width:25%; padding:10px 5px;}
 .language h2:hover+ul>li,.language ul:hover li{display:block;background-color:#fff;}
-.login{position:absolute;top:0;left:80px;padding-left:20px;background:url(../images/common/sprite.png) -1px 2px no-repeat; background-size:500px 500px;}
-#gnb{padding-top:40px;}
+.login{position:absolute;top:0;left:80px;padding-left:24px;background:url(../images/common/sprite.png) 0px 2px no-repeat; background-size:500px 500px;}
+#gnb{padding-top:20px;}
 #gnb > ul > li a{font-size:1.9em;padding:11px 34px;display:block;border-top:1px solid #d0cecd; }
 #gnb > ul > li > a.on, #gnb > ul > li > a:hover, #gnb > ul > li > a:focus{background-color:#dc3d6c;color:#fff;}
 .quickLink li{float:left;width:50%;border-top:1px solid #d0cecd;}
