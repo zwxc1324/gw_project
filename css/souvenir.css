@@ -8,42 +8,20 @@
       font-weight: normal;
       font-style: normal;
     }
-
 #souvenir_s{width: 250px;height: 40px;font-size: 20px;padding-left: 88px;border-radius: 2px;
 	margin: 53px 10px 36px 0;}
 #souvenir_s option{font-size: 20px;}
 #souvenir_s+button{background: none;border: none;background: url(../images/common_sub/btn_enter.png) 0 0 no-repeat;
 width: 60px;height: 40px;text-indent: -9999px;margin-top: 17px;}
-
-.con_header{width: 100%;height: 267px;border-top: 3px solid #004884;border-bottom: 3px solid #004884;
-margin-bottom: 30px;}
-.image_1 img{width: 360px;margin: 10px 0px 0px 15px;}
-.image_1{float: left; border-right: 1px dotted #d1d1d1;width: 52%;}
-.award>p:first-child:before,.product_name>p:first-child:before,.winner>p:first-child:before,
-.award>p:first-child:after,.product_name>p:first-child:after,.winner>p:first-child:after{font-family: "fontello";}
-.award>p:first-child:before{content: "\f345";color: #333;padding-right: 10px;}
-.product_name>p:first-child:before,.winner>p:first-child:before{content: "\f10c";color: #333;padding-right: 7px;font-size: 18px;}
+.con_header{width: 1000px;height: 267px;border-top: 3px solid #004884;border-bottom: 3px solid #004884;}
+.image_1 img{width: 400px;height: 261px;margin-left: 40px;}
+.image_1{float: left; border-right: 1px dotted #d1d1d1;width: 509px;}
 .award,.product_name,.winner{float: right;}
 .award>p:first-child,.product_name>p:first-child,.winner>p:first-child{font-size: 24px;
-color: #004884;padding-top: 10px;padding-left: 8px;}
+color: #004884;}
 .award>p:last-child,.product_name>p:last-child,.winner>p:last-child{font-size: 18px;color: #505050;
-margin-top: 10px;margin-left: 32px;}
-.award{width: 48%;height: 77px;border-bottom: 1px dotted #d1d1d1;}
+margin-top: 18px;}
+.award{width: 491px;height: 77px;border-bottom: 1px dotted #d1d1d1;}
 .award>p:first-child{margin-bottom: -7px;}
-.award>p:last-child{margin-left: 43px;}
-.product_name{width: 48%;height: 95px;}
-.winner{width: 48%;height: 93px;}
-
-.con_body{width: 100%;}
-
-.section{width: 49%; float: left;padding-bottom: 30px;border: 3px solid #fff;}
-.section:hover{border: 3px solid #ef4f7b;}
-.img_sec{width: 50%;float: left;}
-.top_name{font-size: 18px;color: #004884;margin-bottom: 10px;}
-.b_award,.b_product_name,.b_winner{font-size: 16px;color: #000;}
-.b_award>p:first-child,.b_product_name>p:first-child,.b_winner>p:first-child{
-  font-size: 16px;color: #004884;}
-.top_name,.b_award,.b_product_name,.b_winner{font-family: "fontello";}
-.b_award,.b_product_name,.b_winner{ width: 42%;float: right;margin-bottom: 10px;}
-.top_name:before,.b_award>p:first-child:before{content: "\f345";color: #505050;margin-right: 3px;}
-.b_product_name>p:first-child:before,.b_winner>p:first-child:before{content: "\f10c";color: #505050;margin-right: 3px;}
+.product_name{width: 491px;height: 95px;}
+.winner{width: 491px;height: 93px;}

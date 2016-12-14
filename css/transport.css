@@ -1,6 +1,10 @@
 tr > td:first-child+td{text-align:center;}
 tr > td:first-child+td+td+td, tr > td:first-child+td+td+td+td+td, tr > th:first-child+th+th+th, tr > th:first-child+th+th+th+th+th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:47px;}
 tr>td:first-child+td{text-align:center;}
+select#trans_search {width:100px;height:30px;-webkit-appearance:none; appearance:none;border:0 none;}
+.sub_search button{width:100px;height:30px;background:none;border:1px solid #525252;}
+
+
 @media (max-width:1025px){
 
 }

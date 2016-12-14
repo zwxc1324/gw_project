@@ -18,22 +18,22 @@
 				<h3>오시는길</h3>
 			</div>
 			<div class="sub_search">
+				<h4 class="blind">오시는 길 검색</h4>
 				<form action="#" method="get">
 					<p><input type="hidden" name="hidden_search" value="notice" /></p>
 					<fieldset>
 						<p>
 							<legend >오시는길, 대중교통이용정보</legend>
 							<label for="notice_search" class="blind">교통편</label>
-							<select name="transport_search" id="transport_search" title="대중 교통편 검색">
+							<select name="trans_search" id="trans_search" title="대중 교통편 검색">
 								<option value="transport">교통편</option>
 								<option value="a">비행기</option>
 								<option value="t">기차</option>
 								<option value="b">버스</option>
 								<option value="s">선박</option>
 							</select>
-							<input type="button" value="출발지역" />
-							<input type="button" value="도착지역" />
-							<label for="text_notice_search" class="blind">검색어</label>
+							<button>출발지역</button>
+							<button>도착지역</button>
 							<input type="submit" value="검색" class="btn_search"/>
 						</p>
 					</fieldset>
@@ -44,8 +44,9 @@
 				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>
 			</div>
 			<div class="board_wrap">
+				<h5 class="blind">교통정보 자료</h5>
 				<table>
-					<caption>관광자료</caption>
+					<caption>교통정보 자료</caption>
 					<thead>
 						<tr>
 							<th scope="col">번호</th>
