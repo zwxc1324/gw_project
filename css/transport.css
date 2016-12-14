@@ -1,0 +1,15 @@
+tr > td:first-child+td{text-align:center;}
+tr > td:first-child+td+td+td, tr > td:first-child+td+td+td+td+td, tr > th:first-child+th+th+th, tr > th:first-child+th+th+th+th+th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:47px;}
+tr>td:first-child+td{text-align:center;}
+@media (max-width:1025px){
+
+}
+@media (max-width:800px){
+
+}
+@media (max-width:568px){
+
+}
+@media (max-width:375px){
+
+}

@@ -1,0 +1,221 @@
+<? include"inc/top.html"; ?>
+	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/transport.css" media="all" />
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body>
+	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
+	<div class="wrap clearFix">
+		<!-- 헤더영역 -->
+		<? include"inc/header.html"; ?>
+		<!--// 헤더영역 -->
+		<!-- 컨테이너영역 --> 
+		<div id="sub_container" class="clearFix">
+			<div class="con_title">
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
+				<h3>오시는길</h3>
+			</div>
+			<div class="sub_search">
+				<form action="#" method="get">
+					<p><input type="hidden" name="hidden_search" value="notice" /></p>
+					<fieldset>
+						<p>
+							<legend >오시는길, 대중교통이용정보</legend>
+							<label for="notice_search" class="blind">교통편</label>
+							<select name="transport_search" id="transport_search" title="대중 교통편 검색">
+								<option value="transport">교통편</option>
+								<option value="a">비행기</option>
+								<option value="t">기차</option>
+								<option value="b">버스</option>
+								<option value="s">선박</option>
+							</select>
+							<input type="button" value="출발지역" />
+							<input type="button" value="도착지역" />
+							<label for="text_notice_search" class="blind">검색어</label>
+							<input type="submit" value="검색" class="btn_search"/>
+						</p>
+					</fieldset>
+				</form>
+				
+			</div>	
+			<div class="position_page">
+				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>
+			</div>
+			<div class="board_wrap">
+				<table>
+					<caption>관광자료</caption>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">교통편</th>
+							<th scope="col">출발지역</th>
+							<th scope="col">출발지타는곳</th>
+							<th scope="col">도착지역</th>
+							<th scope="col">도착지내리는곳</th>
+							<th scope="col">소요시간</th>
+						</tr>
+						<tbody>
+							<tr>
+								<td>118</td>
+								<td>비행기</td>
+								<td>제주</td>
+								<td>제주국제공항</td>
+								<td>원주시</td>
+								<td>원주공항</td>
+								<td>70분</td>
+							</tr>
+							<tr>
+								<td>117</td>
+								<td>비행기</td>
+								<td>서울</td>
+								<td>김포공항</td>
+								<td>양양</td>
+								<td>양양</td>
+								<td>50분</td>
+							</tr>
+							<tr>
+								<td>116</td>
+								<td>비행기</td>
+								<td>부산</td>
+								<td>김해국제공항</td>
+								<td>양양</td>
+								<td>양양국제공항</td>
+								<td>60분</td>
+							</tr>
+							<tr>
+								<td>115</td>
+								<td>버스</td>
+								<td>서울</td>
+								<td>동서울터미널</td>
+								<td>인제군</td>
+								<td>인제시외버스터미널</td>
+								<td>170분</td>
+							</tr>
+							<tr>
+								<td>114</td>
+								<td>버스</td>
+								<td>서울</td>
+								<td>동서울터미널</td>
+								<td>인제군</td>
+								<td>인제시외버스터미널</td>
+								<td>170분</td>
+							</tr>
+							<tr>
+								<td>113</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>112</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>111</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>110</td>
+								<td>비행기</td>
+								<td>제주</td>
+								<td>제주국제공항</td>
+								<td>원주시</td>
+								<td>원주공항</td>
+								<td>70분</td>
+							</tr>
+							<tr>
+								<td>109</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>108</td>
+								<td>버스</td>
+								<td>충북</td>
+								<td>제천시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>240분</td>
+							</tr>
+							<tr>
+								<td>107</td>
+								<td>버스</td>
+								<td>충북</td>
+								<td>제천시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>240분</td>
+							</tr>
+							<tr>
+								<td>106</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>105</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+							<tr>
+								<td>104</td>
+								<td>버스</td>
+								<td>경북</td>
+								<td>경주시외버스터미널</td>
+								<td>강릉시</td>
+								<td>강릉시외버스터미널</td>
+								<td>300분</td>
+							</tr>
+						</tbody>
+					</thead>
+				</table>
+				<p class="paging">
+					<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
+					<a href="#"><img src="images/common_sub/page_btn_prev.png" alt="이전 보기" /></a>
+					<span>
+						<a href="#" class="select">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</span>
+					<a href="#"><img src="images/common_sub/page_btn_next.png" alt="다음 보기" /></a>
+					<a href="#"><img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" /></a>
+				</p>
+			</div>
+			<!-- 푸터영역 -->
+			<? include"inc/footer.html"; ?>
+			<!-- //푸터영역 -->
+		</div>
+		<!-- class="select" : 현재 선택 된 영역 표시 -->
+		<!-- //컨테이너영역 -->
+	</div>
+</body>
+</html>

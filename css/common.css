@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border:1px solid #d0cecd;}
 #header{width:213px;height:100%;/* border-left:1px solid #ddd; border-right:1px solid #ddd; */float:left;/* position:absolute;top:0;left:0; */}
 
-h1{height:207px;padding:10px 0 0 8px;}
+h1{height:180px;padding:10px 0 0 8px;}
 .langAndLog{position:relative;margin-top:-40px;margin-left:34px;}
 .language{position:absolute;top:0;left:0;}
 .language ul{ padding:30px 10px;margin-left:-34px; }
@@ -90,8 +90,7 @@ address, #footer p{font-size:0.9em}
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
 #header{height:100%;}
-#container{float:left; width:73%;}
-
+#container{float:left; width:73%;border-left:1px solid #d0cecd;}
 #footer{position: static;}
 
 		.col-pc-1{width:8.333%;}
@@ -110,9 +109,7 @@ address, #footer p{font-size:0.9em}
 }
 @media (max-width:800px){
 #header{float:none;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
-#container{float:none;margin-left:0;width:100%;}
-
-
+#container{float:none;margin-left:0;width:100%;border:none;}
 #footer{margin:0 auto;}
 
 .col-tablet-1{width:8.333%;}
@@ -128,11 +125,11 @@ address, #footer p{font-size:0.9em}
 .col-tablet-11{width:91.666%;}
 .col-tablet-12{width:100%;}
 }
+
 @media (max-width:568px){
 #contents{width:100%}
 .detail{width: 90%;}
 #footer{width:100%;}
-
 
 .col-mobile-1{width:8.333%;}
 .col-mobile-2{width:16.666%;}
