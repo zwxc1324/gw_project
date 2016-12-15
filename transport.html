@@ -2,41 +2,49 @@
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/transport.css" media="all" />
 	<script type="text/javascript">
-	/*
-*@addEvnt(evObj, evName, evH) : 이벤트 등록 메서드
-*@evObj {object} : 이벤트 대상
-*@evName {string} : 이벤트 명
-*@evH {function} : 이벤트 핸들러
-*/
-function addEvnt(evObj, evName, evH){
-	var events = evName.split(" ");
-	for(var i = 0 ; i < events.length ; i++){
-		if(document.addEventListener){
-			evObj.addEventListener(events[i], evH);
-		}else{
-			evObj.attachEvent("on" + events[i], evH);
-		}
-	}
-}
-
-
 
 function init(){
-	var btns = document.querySelectorAll("#btn_js button");
-	var divs = document.querySelectorAll(".sub_search div");
+	/*var btns = document.querySelectorAll("#btn_js input[type=button]");
+	var oldMenu = null;
+	function showHide(k){//k = 객체 : 함수 () 만들고 소괄호에 글자 넣으면 함수 
+		var myObj = k.srcElement;
+		var myObjParent = myObj.parentNode;
+		if(oldMenu) {
+			oldMenu.style.display = "none";
+			oldMenu = null;
+		}
+		var openDiv = nextElement(myObjParent);
+		if(openDiv) {
+			openDiv.style.display = "block";
+			oldMenu = openDiv;
+		}
+	}*/
+
+	//div 열고 닫기 
+	var btns = document.querySelectorAll("#btn_js input[type=button]");
+	var oldDiv = null;
+	function showHide(k){	
+		var h5 = k.srcElement;
+		if(oldDiv){
+			oldDiv.style.display = "none";
+			oldDiv = null;
+		}
+		var div = nextElement(h5.parentNode) ; //??
+		if(div){
+			div.style.display = "block";
+			oldDiv = div;
+		}
+	}
+	
+	var submit = document.querySelector("#btn_js input[type=submit]");
+	var divs = document.querySelectorAll("#btn_js div");
+	function closeDiv(){
+		divs.style.display = "none";
+	}
+	addEvnt(submit, "click", closeDiv);
 
 	for(var i = 0; i < btns.length; i++){
-		addEvnt(btns[i], "click", function showHide(){
-			
-			for(var i = 0; i < divs.length ; i++){
-				var k = i;
-				if(k == i){
-					divs[k].style.display = "block";
-				}else{
-					divs[k].style.display = "none";
-				}
-			}
-		});
+		addEvnt(btns[i], "click", showHide);
 	}
 }
 addEvnt(window,"load",init);
@@ -62,7 +70,7 @@ addEvnt(window,"load",init);
 				<form action="#" method="get" id="btn_js">
 					<fieldset>
 							<legend>오시는길, 대중교통이용정보</legend>
-							<h5 class="btn_trans"><button >교통편</button></h5>
+							<h5 class="btn_trans"><input type="button" value="교통편" /></h5>
 							<div class="trans">
 								<p>이용을 원하시는 교통편을 선택 해주세요.</p>
 								<ul class="clearFix">
@@ -72,7 +80,7 @@ addEvnt(window,"load",init);
 									<li><input type="button" value="선박" /></li>
 								</ul>
 							</div>
-							<h5 class="btn_departure"><button >출발지역</button></h5>
+							<h5 class="btn_departure"><input type="button" value="출발지역" /></h5>
 							<div class="departure">
 								<p>출발 지역을 선택 해주세요.</p>
 								<ul class="clearFix">
@@ -95,7 +103,7 @@ addEvnt(window,"load",init);
 									<li><input type="button" value="충북" /></li>
 								</ul>
 							</div>
-							<h5 class="btn_destination"><button >도착지역</button></h5>
+							<h5 class="btn_destination"><input type="button" value="도착지역" /></h5>
 							<div class="destination">
 								<p>도착지역을 선택 해주세요.</p>
 								<ul class="clearFix">
