@@ -9,11 +9,11 @@
       font-style: normal;
     }
 
-#souvenir_s{width: 200px;height: 30px;font-size: 14px;padding-left: 40px;border-radius: 2px;
+#souvenir_s{width: 250px;height: 40px;font-size: 20px;padding-left: 88px;border-radius: 2px;
 	margin: 53px 10px 36px 0;}
-#souvenir_s option{font-size: 14px;}
+#souvenir_s option{font-size: 20px;}
 #souvenir_s+button{background: none;border: none;background: url(../images/common_sub/btn_enter.png) 0 0 no-repeat;
-width: 45px;height: 30px;text-indent: -9999px;margin-top: 17px;}
+width: 60px;height: 40px;text-indent: -9999px;margin-top: 17px;}
 
 .con_header{width: 100%;height: 267px;border-top: 3px solid #004884;border-bottom: 3px solid #004884;
 margin-bottom: 30px;}
@@ -37,35 +37,14 @@ margin-top: 10px;margin-left: 32px;}
 
 .con_body{width: 100%;}
 
-.section{width: 47%; float: left;padding-bottom: 30px;border: 3px solid #fff;    margin: 0 15px 15px 0;}
+.section{width: 48%; float: left;padding-bottom: 30px;border: 3px solid #fff;    margin: 0 15px 15px 0;}
 .section:hover{border: 3px solid #ef4f7b;}
-.img_sec{width: 48%;float: left;}
+.img_sec{width: 50%;float: left;}
 .top_name{font-size: 18px;color: #004884;margin-bottom: 10px;}
-
+.b_award,.b_product_name,.b_winner{font-size: 16px;color: #000;}
 .b_award>p:first-child,.b_product_name>p:first-child,.b_winner>p:first-child{
   font-size: 16px;color: #004884;}
 .top_name,.b_award,.b_product_name,.b_winner{font-family: "fontello";}
-.b_award,.b_product_name,.b_winner{ font-size: 16px;color: #000;width: 150px;float: right;margin-bottom: 10px;margin-right: 15px;}
+.b_award,.b_product_name,.b_winner{ width: 42%;float: right;margin-bottom: 10px;margin-right: 10px;}
 .top_name:before,.b_award>p:first-child:before{content: "\f345";color: #505050;margin-right: 3px;}
 .b_product_name>p:first-child:before,.b_winner>p:first-child:before{content: "\f10c";color: #505050;margin-right: 3px;}
-
-@media (max-width:1025px) {
-  .award,.product_name,.winner{width: 45%;}
-  .img_sec{width: 80%;margin-left: 34px;}
-  .b_award,.b_product_name,.b_winner{float: left;margin-left: 34px;}
-}
-
-@media (max-width:568px) {
-  .con_header{height: 530px;}
-  .award,.product_name,.winner{float: left;border: none;margin-left: 18px;}
-  .award>p:first-child{margin: 0;}
-  .image_1{border: none;margin: 40px 0px 0px 15px;width: 50%;width: 96%;}
-  .image_1 img{margin: 0;width: 98%;}
-  .section{width: 100%;}
-  .img_sec{width: 97%%;}
-
-}
-
-@media (max-width:410px) {
-  .award,.product_name,.winner{width: 180px;}
-}

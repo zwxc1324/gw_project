@@ -4,13 +4,13 @@ tr>td:first-child+td{text-align:center;}
 
 
 .sub_search{position:relative;padding:100px 10% 0;}
-h5 input[type="button"]{position:absolute; top:30px; left:13%; width:22%; padding:10px 10px; border: 1px solid #d0cede; border-radius:3px; font-size:1.2em; background-color:#fff;}
-.btn_departure input[type="button"]{left:36%;}
-.btn_destination input[type="button"]{left:59%;}
+h5 button{position:absolute; top:30px; left:13%; width:22%; padding:10px 10px; border: 1px solid #d0cede; border-radius:3px; font-size:1.2em; background-color:#fff;}
+.btn_departure button{left:36%;}
+.btn_destination button{left:59%;}
 .btn_search{position:absolute;top:36px; left:82%}
 
-h5 input[type="button"]:hover, h5 input[type="button"]:focus{border-color:#525252;}
-h5 input[type="button"]:active{background-color:#333; color:#fff; }
+h5 button:hover, h5 button:focus{border-color:#525252;}
+h5 button:active{background-color:#333; color:#fff; }
 
 
 
