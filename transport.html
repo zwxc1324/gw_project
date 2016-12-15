@@ -2,41 +2,36 @@
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/transport.css" media="all" />
 	<script type="text/javascript">
-	/*
-*@addEvnt(evObj, evName, evH) : 이벤트 등록 메서드
-*@evObj {object} : 이벤트 대상
-*@evName {string} : 이벤트 명
-*@evH {function} : 이벤트 핸들러
-*/
-function addEvnt(evObj, evName, evH){
-	var events = evName.split(" ");
-	for(var i = 0 ; i < events.length ; i++){
-		if(document.addEventListener){
-			evObj.addEventListener(events[i], evH);
-		}else{
-			evObj.attachEvent("on" + events[i], evH);
-		}
-	}
-}
-
-
 
 function init(){
+	/*var btns = document.querySelectorAll("#btn_js button");
+	var oldMenu = null;
+	function showHide(k){//k = 객체 : 함수 () 만들고 소괄호에 글자 넣으면 함수 
+		//console.log(k);
+		var myObj = k.srcElement;
+		var myObjParent = myObj.parentNode;
+		//console.log(myObj);
+		
+		if(oldMenu) {
+			oldMenu.style.display = "none";
+			oldMenu = null;
+		}
+
+		var openDiv = nextElement(myObjParent);
+		if(openDiv) {
+			openDiv.style.display = "block";
+			oldMenu = openDiv;
+		}
+	}*/
 	var btns = document.querySelectorAll("#btn_js button");
-	var divs = document.querySelectorAll(".sub_search div");
+	console.log(btns);
+	function showHide(){
+		console.log(this);
+	
+	}
 
 	for(var i = 0; i < btns.length; i++){
-		addEvnt(btns[i], "click", function showHide(){
-			
-			for(var i = 0; i < divs.length ; i++){
-				var k = i;
-				if(k == i){
-					divs[k].style.display = "block";
-				}else{
-					divs[k].style.display = "none";
-				}
-			}
-		});
+		addEvnt(btns[i], "click", showHide);
 	}
 }
 addEvnt(window,"load",init);
