@@ -2,8 +2,48 @@
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/transport.css" media="all" />
 	<script type="text/javascript">
-	
+	/*
+*@addEvnt(evObj, evName, evH) : 이벤트 등록 메서드
+*@evObj {object} : 이벤트 대상
+*@evName {string} : 이벤트 명
+*@evH {function} : 이벤트 핸들러
+*/
+function addEvnt(evObj, evName, evH){
+	var events = evName.split(" ");
+	for(var i = 0 ; i < events.length ; i++){
+		if(document.addEventListener){
+			evObj.addEventListener(events[i], evH);
+		}else{
+			evObj.attachEvent("on" + events[i], evH);
+		}
+	}
+}
+
+
+
+function init(){
+	var btns = document.querySelectorAll("#btn_js button");
+	var divs = document.querySelectorAll(".sub_search div");
+
+	for(var i = 0; i < btns.length; i++){
+		addEvnt(btns[i], "click", function showHide(){
+			
+			for(var i = 0; i < divs.length ; i++){
+				var k = i;
+				if(k == i){
+					divs[k].style.display = "block";
+				}else{
+					divs[k].style.display = "none";
+				}
+			}
+		});
+	}
+}
+addEvnt(window,"load",init);
+
+
 	</script>
+
 </head>
 <body>
 	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
@@ -19,26 +59,67 @@
 			</div>
 			<div class="sub_search">
 				<h4 class="blind">오시는 길 검색</h4>
-				<form action="#" method="get">
-					<p><input type="hidden" name="hidden_search" value="notice" /></p>
+				<form action="#" method="get" id="btn_js">
 					<fieldset>
-						<p>
-							<legend >오시는길, 대중교통이용정보</legend>
-							<label for="notice_search" class="blind">교통편</label>
-							<select name="trans_search" id="trans_search" title="대중 교통편 검색">
-								<option value="transport">교통편</option>
-								<option value="a">비행기</option>
-								<option value="t">기차</option>
-								<option value="b">버스</option>
-								<option value="s">선박</option>
-							</select>
-							<button>출발지역</button>
-							<button>도착지역</button>
-							<input type="submit" value="검색" class="btn_search"/>
-						</p>
-					</fieldset>
+							<legend>오시는길, 대중교통이용정보</legend>
+							<h5 class="btn_trans"><button >교통편</button></h5>
+							<div class="trans">
+								<p>이용을 원하시는 교통편을 선택 해주세요.</p>
+								<ul class="clearFix">
+									<li><input type="button" value="비행기" /></li>
+									<li><input type="button" value="기차" /></li>
+									<li><input type="button" value="버스" /></li>
+									<li><input type="button" value="선박" /></li>
+								</ul>
+							</div>
+							<h5 class="btn_departure"><button >출발지역</button></h5>
+							<div class="departure">
+								<p>출발 지역을 선택 해주세요.</p>
+								<ul class="clearFix">
+									<li><input type="button" value="경기" /></li>
+									<li><input type="button" value="경남" /></li>
+									<li><input type="button" value="경북" /></li>
+									<li><input type="button" value="경주" /></li>
+									<li><input type="button" value="광주" /></li>
+									<li><input type="button" value="대구" /></li>
+									<li><input type="button" value="대전" /></li>
+									<li><input type="button" value="부산" /></li>
+									<li><input type="button" value="서울" /></li>
+									<li><input type="button" value="성남" /></li>
+									<li><input type="button" value="수원" /></li>
+									<li><input type="button" value="울산" /></li>
+									<li><input type="button" value="인천" /></li>
+									<li><input type="button" value="제주" /></li>
+									<li><input type="button" value="천안" /></li>
+									<li><input type="button" value="청주" /></li>
+									<li><input type="button" value="충북" /></li>
+								</ul>
+							</div>
+							<h5 class="btn_destination"><button >도착지역</button></h5>
+							<div class="destination">
+								<p>도착지역을 선택 해주세요.</p>
+								<ul class="clearFix">
+									<li><input type="button" value="강릉시" /></li>
+									<li><input type="button" value="고성군" /></li>
+									<li><input type="button" value="동해시" /></li>
+									<li><input type="button" value="삼척시" /></li>
+									<li><input type="button" value="속초시" /></li>
+									<li><input type="button" value="양구군" /></li>
+									<li><input type="button" value="양양군" /></li>
+									<li><input type="button" value="인제군" /></li>
+									<li><input type="button" value="정선군" /></li>
+									<li><input type="button" value="춘천시" /></li>
+									<li><input type="button" value="태백시" /></li>
+									<li><input type="button" value="평창군" /></li>
+									<li><input type="button" value="홍천군" /></li>
+									<li><input type="button" value="화천군" /></li>
+									<li><input type="button" value="횡성군" /></li>
+								</ul>
+							</div>
+							<input type="hidden" name="hidden_search" value="notice" />
+							<input type="submit" value="검색" class="btn_search" />
+						</fieldset>
 				</form>
-				
 			</div>	
 			<div class="position_page">
 				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>

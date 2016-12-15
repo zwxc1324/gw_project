@@ -1,8 +1,26 @@
 tr > td:first-child+td{text-align:center;}
 tr > td:first-child+td+td+td, tr > td:first-child+td+td+td+td+td, tr > th:first-child+th+th+th, tr > th:first-child+th+th+th+th+th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:47px;}
 tr>td:first-child+td{text-align:center;}
-select#trans_search {width:100px;height:30px;-webkit-appearance:none; appearance:none;border:0 none;}
-.sub_search button{width:100px;height:30px;background:none;border:1px solid #525252;}
+
+
+.sub_search{position:relative;padding:100px 10% 0;}
+h5 button{position:absolute; top:30px; left:13%; width:22%; padding:10px 10px; border: 1px solid #d0cede; border-radius:3px; font-size:1.2em; background-color:#fff;}
+.btn_departure button{left:36%;}
+.btn_destination button{left:59%;}
+.btn_search{position:absolute;top:36px; left:82%}
+
+h5 button:hover, h5 button:focus{border-color:#525252;}
+h5 button:active{background-color:#333; color:#fff; }
+
+
+
+h5 + div{display:none; width:100%; border-top:1px solid #fff;padding: 20px 0 30px;}
+/* .btn_trans + div {display:block;} */
+/* .btn_departure + div{display:block;} */
+.sub_search h5 + div > p {text-align:left;margin-bottom:10px; border-left:3px solid #e8177a;padding-left:5px;}
+
+h5 + div > ul > li{float:left;width:16.4%;padding:1% 5px; }
+h5 + div input[type=button]{width:100%; padding: 8px; border: 1px solid #d0cede; border-radius:3px;font-size:1em; background-color:#fffcfc;}
 
 
 @media (max-width:1025px){
