@@ -38,6 +38,11 @@ function init(){
 			th.style.backgroundColor="#fffafa";
 			th.style.borderColor ="#d0cecd";
 		}
+		//클릭이 있고 리브가 일어나면 클릭을 다시 실행
+		/*if(activBtn52){
+			activBtn();
+		}*/
+		
 	}
 	resetBtnTrans = null;
 	function showDiv(d){	
@@ -53,10 +58,14 @@ function init(){
 			oldDiv = openDiv;
 		}
 	}
+	var offActiveBtn = null;
 	function activBtn(b){
-		this.style.backgroundColor = "#525252";
-		this.style.color = "#fffafa";		
-		//chBgcBtn = bgcBtn;
+		var onActiveBtn = b.srcElement;
+			onActiveBtn.setAttribute("class","on");
+		if(offActiveBtn){
+			offActiveBtn.setAttribute("class","");
+		}
+		offActiveBtn = onActiveBtn;
 	}
 	
 	/* submit으로 닫기 */
@@ -78,7 +87,8 @@ function init(){
 			var eventI = t.srcElement;
 			var showTransBtn = eventI.value;
 			btns[0].value = showTransBtn;
-			}addEvnt(transBtns[i], "click", showTrans);
+			}
+			addEvnt(transBtns[i], "click", showTrans);
 		}());
 	}
 	for(var i = 0; i < depBtns.length; i++){

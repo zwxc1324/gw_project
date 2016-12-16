@@ -30,6 +30,8 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .clearFix:after{content:"";display:block;clear:both;}
 .clearFix{*zoom:1;}
 *[class*=" "]:after,*[class*="ico_font_"]:before{font-family:'fontello';font-size:1em;}
+.tOut{text-indent:-9999px; width:0; height:0;}
+
 
 /**** 슬라이드컨트롤러 ****/
 .pagecontrol{position: absolute; bottom: 5px; left: 50%; margin-left: -23px; text-indent: -9999px;}

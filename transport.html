@@ -24,64 +24,64 @@
 				<h4 class="blind">오시는 길 검색</h4>
 				<form action="#" method="get" id="btn_js">
 					<fieldset>
-							<legend>오시는길, 대중교통이용정보</legend>
-							<h5 class="btn_trans"><input type="button" value="교통편" /></h5>
-							<div class="trans">
-								<p>이용을 원하시는 교통편을 선택 해주세요.</p>
-								<ul class="clearFix">
-									<li><input type="button" value="비행기" /></li>
-									<li><input type="button" value="기차" /></li>
-									<li><input type="button" value="버스" /></li>
-									<li><input type="button" value="선박" /></li>
-								</ul>
-							</div>
-							<h5 class="btn_departure"><input type="button" value="출발지역" /></h5>
-							<div class="departure">
-								<p>출발 지역을 선택 해주세요.</p>
-								<ul class="clearFix">
-									<li><input type="button" value="경기" /></li>
-									<li><input type="button" value="경남" /></li>
-									<li><input type="button" value="경북" /></li>
-									<li><input type="button" value="경주" /></li>
-									<li><input type="button" value="광주" /></li>
-									<li><input type="button" value="대구" /></li>
-									<li><input type="button" value="대전" /></li>
-									<li><input type="button" value="부산" /></li>
-									<li><input type="button" value="서울" /></li>
-									<li><input type="button" value="성남" /></li>
-									<li><input type="button" value="수원" /></li>
-									<li><input type="button" value="울산" /></li>
-									<li><input type="button" value="인천" /></li>
-									<li><input type="button" value="제주" /></li>
-									<li><input type="button" value="천안" /></li>
-									<li><input type="button" value="청주" /></li>
-									<li><input type="button" value="충북" /></li>
-								</ul>
-							</div>
-							<h5 class="btn_destination"><input type="button" value="도착지역" /></h5>
-							<div class="destination">
-								<p>도착지역을 선택 해주세요.</p>
-								<ul class="clearFix">
-									<li><input type="button" value="강릉시" /></li>
-									<li><input type="button" value="고성군" /></li>
-									<li><input type="button" value="동해시" /></li>
-									<li><input type="button" value="삼척시" /></li>
-									<li><input type="button" value="속초시" /></li>
-									<li><input type="button" value="양구군" /></li>
-									<li><input type="button" value="양양군" /></li>
-									<li><input type="button" value="인제군" /></li>
-									<li><input type="button" value="정선군" /></li>
-									<li><input type="button" value="춘천시" /></li>
-									<li><input type="button" value="태백시" /></li>
-									<li><input type="button" value="평창군" /></li>
-									<li><input type="button" value="홍천군" /></li>
-									<li><input type="button" value="화천군" /></li>
-									<li><input type="button" value="횡성군" /></li>
-								</ul>
-							</div>
-							<input type="hidden" name="hidden_search" value="notice" />
-							<input type="submit" value="검색" class="btn_search" />
-						</fieldset>
+						<legend>오시는길, 대중교통이용정보</legend>
+						<h5 class="btn_trans tOut">교통편<input type="button" value="교통편"/></h5>
+						<div class="trans">
+							<p>이용을 원하시는 교통편을 선택 해주세요.</p>
+							<ul class="clearFix">
+								<li><input type="button" value="비행기" id="air"/></li>
+								<li><input type="button" value="기차" title="train"/></li>
+								<li><input type="button" value="버스" /></li>
+								<li><input type="button" value="선박" /></li>
+							</ul>
+						</div>
+						<h5 class="btn_departure tOut">출발지역<input type="button" value="출발지역" /></h5>
+						<div class="departure">
+							<p>출발 지역을 선택 해주세요.</p>
+							<ul class="clearFix">
+								<li><input type="button" value="경기" /></li>
+								<li><input type="button" value="경남" /></li>
+								<li><input type="button" value="경북" /></li>
+								<li><input type="button" value="경주" /></li>
+								<li><input type="button" value="광주" /></li>
+								<li><input type="button" value="대구" /></li>
+								<li><input type="button" value="대전" /></li>
+								<li><input type="button" value="부산" /></li>
+								<li><input type="button" value="서울" /></li>
+								<li><input type="button" value="성남" /></li>
+								<li><input type="button" value="수원" /></li>
+								<li><input type="button" value="울산" /></li>
+								<li><input type="button" value="인천" /></li>
+								<li><input type="button" value="제주" /></li>
+								<li><input type="button" value="천안" /></li>
+								<li><input type="button" value="청주" /></li>
+								<li><input type="button" value="충북" /></li>
+							</ul>
+						</div>
+						<h5 class="btn_destination tOut">도착지역<input type="button" value="도착지역" /></h5>
+						<div class="destination">
+							<p>도착지역을 선택 해주세요.</p>
+							<ul class="clearFix">
+								<li><input type="button" value="강릉시" /></li>
+								<li><input type="button" value="고성군" /></li>
+								<li><input type="button" value="동해시" /></li>
+								<li><input type="button" value="삼척시" /></li>
+								<li><input type="button" value="속초시" /></li>
+								<li><input type="button" value="양구군" /></li>
+								<li><input type="button" value="양양군" /></li>
+								<li><input type="button" value="인제군" /></li>
+								<li><input type="button" value="정선군" /></li>
+								<li><input type="button" value="춘천시" /></li>
+								<li><input type="button" value="태백시" /></li>
+								<li><input type="button" value="평창군" /></li>
+								<li><input type="button" value="홍천군" /></li>
+								<li><input type="button" value="화천군" /></li>
+								<li><input type="button" value="횡성군" /></li>
+							</ul>
+						</div>
+						<input type="hidden" name="hidden_search" value="notice" />
+						<input type="submit" value="검색" class="btn_search" />
+					</fieldset>
 				</form>
 			</div>	
 			<div class="position_page">
@@ -101,144 +101,144 @@
 							<th scope="col">도착지내리는곳</th>
 							<th scope="col">소요시간</th>
 						</tr>
-						<tbody>
-							<tr>
-								<td>118</td>
-								<td>비행기</td>
-								<td>제주</td>
-								<td>제주국제공항</td>
-								<td>원주시</td>
-								<td>원주공항</td>
-								<td>70분</td>
-							</tr>
-							<tr>
-								<td>117</td>
-								<td>비행기</td>
-								<td>서울</td>
-								<td>김포공항</td>
-								<td>양양</td>
-								<td>양양</td>
-								<td>50분</td>
-							</tr>
-							<tr>
-								<td>116</td>
-								<td>비행기</td>
-								<td>부산</td>
-								<td>김해국제공항</td>
-								<td>양양</td>
-								<td>양양국제공항</td>
-								<td>60분</td>
-							</tr>
-							<tr>
-								<td>115</td>
-								<td>버스</td>
-								<td>서울</td>
-								<td>동서울터미널</td>
-								<td>인제군</td>
-								<td>인제시외버스터미널</td>
-								<td>170분</td>
-							</tr>
-							<tr>
-								<td>114</td>
-								<td>버스</td>
-								<td>서울</td>
-								<td>동서울터미널</td>
-								<td>인제군</td>
-								<td>인제시외버스터미널</td>
-								<td>170분</td>
-							</tr>
-							<tr>
-								<td>113</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>112</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>111</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>110</td>
-								<td>비행기</td>
-								<td>제주</td>
-								<td>제주국제공항</td>
-								<td>원주시</td>
-								<td>원주공항</td>
-								<td>70분</td>
-							</tr>
-							<tr>
-								<td>109</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>108</td>
-								<td>버스</td>
-								<td>충북</td>
-								<td>제천시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>240분</td>
-							</tr>
-							<tr>
-								<td>107</td>
-								<td>버스</td>
-								<td>충북</td>
-								<td>제천시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>240분</td>
-							</tr>
-							<tr>
-								<td>106</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>105</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-							<tr>
-								<td>104</td>
-								<td>버스</td>
-								<td>경북</td>
-								<td>경주시외버스터미널</td>
-								<td>강릉시</td>
-								<td>강릉시외버스터미널</td>
-								<td>300분</td>
-							</tr>
-						</tbody>
 					</thead>
+					<tbody>
+						<tr>
+							<td>118</td>
+							<td>비행기</td>
+							<td>제주</td>
+							<td>제주국제공항</td>
+							<td>원주시</td>
+							<td>원주공항</td>
+							<td>70분</td>
+						</tr>
+						<tr>
+							<td>117</td>
+							<td>비행기</td>
+							<td>서울</td>
+							<td>김포공항</td>
+							<td>양양</td>
+							<td>양양</td>
+							<td>50분</td>
+						</tr>
+						<tr>
+							<td>116</td>
+							<td>비행기</td>
+							<td>부산</td>
+							<td>김해국제공항</td>
+							<td>양양</td>
+							<td>양양국제공항</td>
+							<td>60분</td>
+						</tr>
+						<tr>
+							<td>115</td>
+							<td>버스</td>
+							<td>서울</td>
+							<td>동서울터미널</td>
+							<td>인제군</td>
+							<td>인제시외버스터미널</td>
+							<td>170분</td>
+						</tr>
+						<tr>
+							<td>114</td>
+							<td>버스</td>
+							<td>서울</td>
+							<td>동서울터미널</td>
+							<td>인제군</td>
+							<td>인제시외버스터미널</td>
+							<td>170분</td>
+						</tr>
+						<tr>
+							<td>113</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>112</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>111</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>110</td>
+							<td>비행기</td>
+							<td>제주</td>
+							<td>제주국제공항</td>
+							<td>원주시</td>
+							<td>원주공항</td>
+							<td>70분</td>
+						</tr>
+						<tr>
+							<td>109</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>108</td>
+							<td>버스</td>
+							<td>충북</td>
+							<td>제천시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>240분</td>
+						</tr>
+						<tr>
+							<td>107</td>
+							<td>버스</td>
+							<td>충북</td>
+							<td>제천시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>240분</td>
+						</tr>
+						<tr>
+							<td>106</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>105</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+						<tr>
+							<td>104</td>
+							<td>버스</td>
+							<td>경북</td>
+							<td>경주시외버스터미널</td>
+							<td>강릉시</td>
+							<td>강릉시외버스터미널</td>
+							<td>300분</td>
+						</tr>
+					</tbody>
 				</table>
 				<p class="paging">
 					<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
