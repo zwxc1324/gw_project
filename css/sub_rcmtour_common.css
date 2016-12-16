@@ -12,27 +12,33 @@
 		.col-maxpc-11{width:91.666%;}
 		.col-maxpc-12{width:100%;}
 
-.rcmtour_wrap{padding: 53px 5px 30px;}
-.rcmtour_wrap ul{margin: 0 auto;}
-.rcmtour_wrap ul li{float: left; padding:0 20px 40px;/*  margin: 0 auto 60px; */ }
+.rcmtour_wrap{padding: 53px 5px 15px;}
+.rcmtour_wrap ul{margin: 0 auto 30px;}
+.rcmtour_wrap ul li{float: left; padding:0 20px; margin-bottom: 60px;}
 .rcmtour_wrap ul a{display: block; padding-left: 15px; border-left: 2px solid #d0cecd; position: relative;}
 /* .rcmtour_wrap a:hover, .rcmtour_wrap a:focus{border-left: 2px solid #ef4c79;} */
 .rcmtour_wrap ul li figure img{width: 100%;}
 .rcmtour_wrap ul li p{text-align: left;}
-.rcmtour_wrap ul li p:first-child {font-size: 1.1em; font-weight: bold; margin: 10px 0 15px;}
-.rcmtour_wrap ul li p:first-child strong{font-size: 1.2em; font-weight: bold;}
-.rcmtour_wrap ul li p:first-child + p{line-height: 17px; /* height: 70px; */ overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3;-webkit-box-orient: vertical;display: -webkit-box;word-wrap:break-word; }
+/* 말줄임 스크립트로? */
+.rcmtour_wrap ul li p:first-child {font-size: 1.1em; font-weight: bold; height: 45px ;margin: 10px 0 13px;}
+.rcmtour_wrap ul li p:first-child span{overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1;-webkit-box-orient: vertical;display: -webkit-box;word-wrap:break-word;}
+.rcmtour_wrap ul li p:first-child strong{font-size: 1.2em; line-height: 24px; font-weight: bold; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1;-webkit-box-orient: vertical;display: -webkit-box;word-wrap:break-word;}
+.rcmtour_wrap ul li p:first-child + p{line-height: 17px; /* height: 70px; */ overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3;-webkit-box-orient: vertical;display: -webkit-box;word-wrap:break-word;}
 .rcmtour_wrap ul li:hover p, .rcmtour_wrap li:focus p{color: #ef4c79;}
 
 @media (max-width:1025px){
 	.col-pc-6{width:50%;}
+	.rcmtour_wrap ul li{padding:0 23px;}
 	
 }
 
 @media (max-width:800px){
 
+.rcmtour_wrap{padding: 53px 0 15px;}
 }
 
 @media (max-width:568px){
 .col-mobile-12{width:100%;}
+.rcmtour_wrap ul a{ border: none; padding:0 8px 15px; border-bottom: 2px solid #d0cecd;}
+.rcmtour_wrap ul li p:first-child + p{font-size: 1.1em; line-height: 20px;}
 }
