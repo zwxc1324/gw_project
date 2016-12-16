@@ -4,13 +4,13 @@ tr>td:first-child+td{text-align:center;}
 
 
 .sub_search{position:relative;padding:100px 10% 0;}
-h5 input[type="button"]{position:absolute; top:30px; left:13%; width:22%; padding:10px 10px; border: 1px solid #d0cede; border-radius:3px; font-size:1.2em; background-color:#fff;}
-.btn_departure input[type="button"]{left:36%;}
-.btn_destination input[type="button"]{left:59%;}
+h5 input[type=button]{position:absolute; top:30px; left:13%; width:22%; padding:8px 10px; border: 1px solid #d0cede; border-radius:3px; font-size:1.2em; background-color:#fff;}
+.btn_departure input[type=button]{left:36%;}
+.btn_destination input[type=button]{left:59%;}
 .btn_search{position:absolute;top:36px; left:82%}
 
-h5 input[type="button"]:hover, h5 input[type="button"]:focus{border-color:#525252;}
-h5 input[type="button"]:active{background-color:#333; color:#fff; }
+h5 input[type=button]:hover, h5 input[type=button]:focus{border-color:#525252;}
+h5 input[type=button]:active{background-color:#333; color:#fff; }
 
 
 
@@ -19,19 +19,32 @@ h5 + div{display:none; width:100%; border-top:1px solid #fff;padding: 20px 0 30p
 /* .btn_departure + div{display:block;} */
 .sub_search h5 + div > p {text-align:left;margin-bottom:10px; border-left:3px solid #e8177a;padding-left:5px;}
 
-h5 + div > ul > li{float:left;width:16.4%;padding:1% 5px; }
-h5 + div input[type=button]{width:100%; padding: 8px; border: 1px solid #d0cede; border-radius:3px;font-size:1em; background-color:#fffcfc;}
+h5 + div > ul > li{float:left;width:16.4%;padding:5px; }
+h5 + div input[type=button]{width:100%; padding: 8px; border: 1px solid #d0cede; border-radius:3px;font-size:1em; background-color:#fffafa;}
 
 
 @media (max-width:1025px){
 
 }
 @media (max-width:800px){
-
 }
 @media (max-width:568px){
+.sub_search{padding-left:5%;padding-right:5%;}
+h5 input[type=button]{font-size:1.1em;}
+h5 + div input[type=button]{font-size:0.95em;}
+h5 input[type=button]{left:4%;min-width:28%;}
+.btn_departure input[type=button]{left:32%;}
+.btn_destination input[type=button]{left:58%;}
+.btn_search{position:absolute;top:36px; left:88%; top:33px;}
 
 }
 @media (max-width:375px){
-
+.sub_search{padding-left:3%;padding-right:3%;}
+h5 input[type=button]{left:2%;min-width:24%;}
+.btn_departure input[type=button]{left:28%;}
+.btn_destination input[type=button]{left:54%;}
+.btn_search{position:absolute;top:36px; left:80%; top:32px;}
+h5 input[type=button]{font-size:0.9em;}
+h5 + div > ul > li{padding:3px;min-width:19.9%;}
+h5 + div input[type=button]{font-size:0.8em;padding:8px 6px}
 }
