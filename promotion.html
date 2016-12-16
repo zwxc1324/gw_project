@@ -1,0 +1,51 @@
+<? include"inc/top.html"; ?>
+	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/news.css" media="all" />
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body>
+	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
+	<div class="wrap clearFix">
+		<!-- 헤더영역 -->
+		<? include"inc/header.html"; ?>
+		<!--// 헤더영역 -->
+		<!-- 컨테이너영역 --> 
+		<div id="sub_container" class="clearFix">
+			<div class="con_title">
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">홍보물신청</strong></p>
+				<h3>홍보물신청</h3>
+			</div>
+			<div class="sub_search">
+				<form action="#" method="get">
+					<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
+					<fieldset>
+						<legend >공지사항의 제목, 내용, 작성자로 검색하세요</legend>
+						<p>
+							<label for="notice_search" class="blind">공지사항 검색 분류</label>
+							<select name="notice_search" id="notice_search" title="공지사항 검색">
+								<option value="title">제목</option>
+								<option value="content">내용</option>
+								<option value="writer">작성자</option>
+							</select>
+							<label for="text_notice_search" class="blind">검색어</label>
+							<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력해주세요."/>
+							<input type="submit" value="검색" class="btn_search"/>
+						</p>
+					</fieldset>
+				</form>
+			</div>	
+			<div class="position_page">
+				<p>▷ 전체 : <span class="pos_page_total"> 26</span>, 현재페이지 :<span class="pos_page_now"> 1/3 </span></p>
+			</div>
+
+			<!-- 푸터영역 -->
+			<? include"inc/footer.html"; ?>
+			<!-- //푸터영역 -->
+		</div>
+		<!-- class="select" : 현재 선택 된 영역 표시 -->
+		<!-- //컨테이너영역 -->
+	</div>
+</body>
+</html>
