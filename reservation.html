@@ -1,0 +1,288 @@
+<? include"inc/top.html"; ?>
+	<script type="text/javascript" src="js/reservation.js"></script>
+	<script type="text/javascript" src="js/placeholders.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/reservation.css" media="all" />
+<!-- 	<script type="text/javascript">
+</script> -->
+
+</head>
+<body>
+	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
+	<div class="wrap clearFix">
+		<!-- 헤더영역 -->
+		<? include"inc/header.html"; ?>
+		<!--// 헤더영역 -->
+		<!-- 컨테이너영역 --> 
+		<div id="sub_container" class="clearFix">
+			<div class="con_title">
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">해설사예약</strong></p>
+				<h3>해설사예약</h3>
+			</div>
+			<div class="sub_reserv_wrap clearFix">
+				<div class="sub_reserv_info">
+					<h4 class="blind">예약신청 설명</h4>
+					<p>**신청 전 읽어주시기 바랍니다.</p>
+					<p>
+						<input type="button" value="예약신청 설명">
+					</p>
+					<div class="info_wrap">
+						<div>
+							<p>신청방법</p>
+							<p>예약은 인터넷으로만 합니다.<br>
+								답사 7일전에 미리 신청하셔야 합니다.<br>
+								신청결과는 예약페이지에서 확인할 수 있습니다.</p>
+						</div>
+						<div>
+							<p>유의사항</p>
+							<p>예약신청이 많을 경우 접수는 되지만, 예약이 안 될 수도 있습니다.<br>
+								접수 결과를 반드시 확인하시기바랍니다.<br>
+								예약시간보다 30분이 지나면 취소가 되오니 시간을 꼭 지켜주시기 바랍니다.<br>
+								취소 및 변경시 반드시 담당해설사에게 연락해주시기 바랍니다. </p>
+						</div>
+						<div class="info_use">
+							<p>이용방법</p>
+							<p><strong>강릉시</strong><br>
+								해설 업무시간 - 9:30 ~ 17:00 (중식시간  - 12:00~13:30)<br>
+								해설 가능인원 -최소 15명 이상<br>
+								2월은 오죽헌박물관 해설사를 운영하지 않습니다.</p>
+							<p><strong>영월군</strong><br>
+								예약시 전화로 문의주시면 안내해 드리며 사전 예약 없이 방문시 문화관광해설 가능합니다.</p>
+							<p><strong>인제군</strong><br>
+								예약시 전화로 문의주시면 안내해 드립니다.</p>
+							<p><strong>속초시</strong><br>
+								월요일은 문화관광해설사를 운영하지 않습니다.<br>
+								예약시 참고하시어 착오 없으시길 바랍니다.</p>
+							<p><strong>고성군</strong><br>
+								해설가능인원 15명 이상<br>
+								2주 전 예약 시에 해설 가능합니다.<br>
+								예약 시 전화로 사전 문의 부탁드립니다</p>
+						</div>
+						<div>
+							<p>그 외 각 시군 전화 문의</p>
+							<ul class="clearFix">
+								<li>춘천시 123-4567</li>
+								<li>원주시 123-4567</li>
+								<li>강릉시 123-4567</li>
+								<li>동해시 123-4567</li>
+								<li>태백시 123-4567</li>
+								<li>속초시 123-4567</li>
+								<li>평창군 123-4567</li>
+								<li>철원군 123-4567</li>
+								<li>정선군 123-4567</li>
+								<li>영월군 123-4567</li>
+								<li>양양군 123-4567</li>
+								<li>인제군 123-4567</li>
+								<li>양구군 123-4567</li>
+								<li>횡성군 123-4567</li>
+								<li>화천군 123-4567</li>
+								<li>홍천군 123-4567</li>
+								<li>고성군 123-4567</li>
+								<li>삼척시 123-4567</li>
+								<li>강원도 123-4567</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sub_reserv">
+					<h4 class="blind">예약 신청</h4>
+					<form action="#" method="get" id="btn_js">
+						<fieldset>
+							<legend>해설사예약</legend>
+							<div class="sec_1 clearFix">
+							  <h5><label for="rsvCf">예약 확인</label></h5>
+							  	<p class="sec_1_txt">예약신청시 접수가 완료된 상태가 아닙니다.입력하신 이메일을 통해서 예약 접수 결과를 확인하거나, 반드시 홈페이지 '문화관광해설사 예약페이지'에서 확인하세요.</p>
+								<p class="col-maxpc-10"><input type="email" id="rsvCf" placeholder="예약확인 이메일입력"></p>
+								<p class="col-maxpc-2"><input type="submit" value="확인"></p>
+							</div>
+							<div class="sec_2">
+							  <h5>관광지 선택</h5>
+								<p class="sec_2_1 col-maxpc-4"><input type="button" value="시/군선택"></p>
+								<div class="area1 col-maxpc-12">
+									<!-- <p>이용을 원하시는 교통편을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="춘천시"/></li>
+										<li><input type="button" value="원주시" ></li>
+										<li><input type="button" value="강릉시" /></li>
+										<li><input type="button" value="동해시" /></li>
+										<li><input type="button" value="태백시" /></li>
+										<li><input type="button" value="속초시" /></li>
+										<li><input type="button" value="평창군" /></li>
+										<li><input type="button" value="철원군" /></li>
+										<li><input type="button" value="정선군" /></li>
+										<li><input type="button" value="영월군" /></li>
+										<li><input type="button" value="양양군" /></li>
+										<li><input type="button" value="인제군" /></li>
+										<li><input type="button" value="양구군" /></li>
+										<li><input type="button" value="횡성군" /></li>
+										<li><input type="button" value="화천군" /></li>
+										<li><input type="button" value="홍천군" /></li>
+										<li><input type="button" value="고성군" /></li>
+										<li><input type="button" value="삼척시" /></li>
+										<li><input type="button" value="강원도" /></li>
+									</ul>
+								</div>
+								<p class="sec_2_2 col-maxpc-4"><input type="button" value="관광지선택"></p>
+								<div class="area2 col-maxpc-12">
+									<!-- <p>출발 지역을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="관광지A" /></li>
+										<li><input type="button" value="관광지B" /></li>
+										<li><input type="button" value="관광지C" /></li>
+										<li><input type="button" value="관광지D" /></li>
+										<li><input type="button" value="관광지E" /></li>
+										<li><input type="button" value="관광지F" /></li>
+										<li><input type="button" value="관광지G" /></li>
+										<li><input type="button" value="관광지H" /></li>
+										<li><input type="button" value="관광지I" /></li>
+										<li><input type="button" value="관광지J" /></li>
+										<li><input type="button" value="관광지K" /></li>
+									</ul>
+								</div>
+								<p class="sec_2_3 col-maxpc-4"><input type="text" title="기타 입력" placeholder="기타 입력"></p>
+							</div>
+							<div class="sec_3">
+							  <h5>예약 일시</h5>
+								<p class="sec_3_1 col-maxpc-3"><input type="button" value="년"></p>
+								<div class="time1 col-maxpc-12">
+									<!-- <p>이용을 원하시는 교통편을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="2016년"></li>
+										<li><input type="button" value="2017년"></li>
+										<li><input type="button" value="2018년"></li>
+										<li><input type="button" value="2019년"></li>
+										<li><input type="button" value="2020년"></li>
+									</ul>
+								</div>
+								<p class="sec_3_2 col-maxpc-3"><input type="button" value="월"></p>
+								<div class="time2 col-maxpc-12">
+									<!-- <p>출발 지역을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="1월"></li>
+										<li><input type="button" value="2월"></li>
+										<li><input type="button" value="3월"></li>
+										<li><input type="button" value="4월"></li>
+										<li><input type="button" value="5월"></li>
+										<li><input type="button" value="6월"></li>
+										<li><input type="button" value="7월"></li>
+										<li><input type="button" value="8월"></li>
+										<li><input type="button" value="9월"></li>
+										<li><input type="button" value="10월"></li>
+										<li><input type="button" value="11월"></li>
+										<li><input type="button" value="12월"></li>
+									</ul>
+								</div>
+								<p class="sec_3_3 col-maxpc-3"><input type="button" value="일"></p>
+								<div class="time3 col-maxpc-12">
+									<!-- <p>출발 지역을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="1일"></li>
+										<li><input type="button" value="2일"></li>
+										<li><input type="button" value="3일"></li>
+										<li><input type="button" value="4일"></li>
+										<li><input type="button" value="5일"></li>
+										<li><input type="button" value="6일"></li>
+										<li><input type="button" value="7일"></li>
+										<li><input type="button" value="8일"></li>
+										<li><input type="button" value="9일"></li>
+										<li><input type="button" value="10일"></li>
+										<li><input type="button" value="11일"></li>
+										<li><input type="button" value="12일"></li>
+										<li><input type="button" value="13일"></li>
+										<li><input type="button" value="14일"></li>
+										<li><input type="button" value="15일"></li>
+										<li><input type="button" value="16일"></li>
+										<li><input type="button" value="17일"></li>
+										<li><input type="button" value="18일"></li>
+										<li><input type="button" value="19일"></li>
+										<li><input type="button" value="20일"></li>
+										<li><input type="button" value="21일"></li>
+										<li><input type="button" value="22일"></li>
+										<li><input type="button" value="23일"></li>
+										<li><input type="button" value="24일"></li>
+										<li><input type="button" value="25일"></li>
+										<li><input type="button" value="26일"></li>
+										<li><input type="button" value="27일"></li>
+										<li><input type="button" value="28일"></li>
+										<li><input type="button" value="29일"></li>
+										<li><input type="button" value="30일"></li>
+									</ul>
+								</div>
+								<p class="sec_3_4 col-maxpc-3"><input type="button" value="시"></p>
+								<div class="time4 col-maxpc-12">
+									<!-- <p>출발 지역을 선택 해주세요.</p> -->
+									<ul class="clearFix">
+										<li><input type="button" value="9:00" /></li>
+										<li><input type="button" value="9:30" /></li>
+										<li><input type="button" value="10:00" /></li>
+										<li><input type="button" value="10:30" /></li>
+										<li><input type="button" value="11:00" /></li>
+										<li><input type="button" value="11:30" /></li>
+										<li><input type="button" value="12:00" /></li>
+										<li><input type="button" value="12:30" /></li>
+										<li><input type="button" value="13:00" /></li>
+										<li><input type="button" value="13:30" /></li>
+										<li><input type="button" value="14:00" /></li>
+										<li><input type="button" value="14:30" /></li>
+										<li><input type="button" value="15:00" /></li>
+										<li><input type="button" value="15:30" /></li>
+										<li><input type="button" value="16:00" /></li>
+										<li><input type="button" value="16:30" /></li>
+									</ul>
+								</div>
+							</div>
+							<div class="sec_4 clearFix">
+							  <div>
+							  		<h5><label for="rsvName">인솔자 이름</label></h5>
+							  		<p><input type="text" id="rsvName" value="강원도"></p>
+							  	</div>
+							  	<div>
+							  		<h5><label for="rsvPhone">연락처</label></h5>
+									<p><input type="text" id="rsvPhone" value="010-123-4567"></p>
+							  </div>
+							</div>
+							<div class="sec_5">
+							  <h5><label for="rsvAddress">거주지역</label></h5>
+								<p class="col-maxpc-12"><input type="text" id="rsvAddress" value="서울특별시 가구 나동"></p>
+							</div>
+							<div class="sec_6">
+							  <h5><label for="rsvMail">이메일</label></h5>
+								<p class="col-maxpc-12"><input type="email" id="rsvMail" placeholder="ex) ****@naver.com"></p>
+							</div>
+							<div class="sec_7 clearFix">
+							  <h5>방문인원</h5>
+							  	<ul class="clearFix">
+							  		<li class="col-maxpc-4"><label for="nbP1">어린이</label><input type="number" min="0" placeholder="0" id="nbP1"></li>
+							  		<li class="col-maxpc-4"><label for="nbP2">청소년</label><input type="number" min="0" placeholder="0" id="nbP2"></li>
+							  		<li class="col-maxpc-4"><label for="nbP3">성인</label><input type="number" min="0" placeholder="0" id="nbP3"></li>
+							  	</ul>
+								<p><label for="nbPTotal">전체</label><input type="number" placeholder="0" id="nbPTotal"></p>
+							</div>
+							<div class="sec_8 clearFix">
+							  <h5>관광목적</h5>
+								<P><input type="radio" name="rsvRadio" id="rsvRadio1"><label for="rsvRadio1">가족관광</label></P>
+								<P><input type="radio" name="rsvRadio" id="rsvRadio2"><label for="rsvRadio2">수학여행</label></P>
+								<P><input type="radio" name="rsvRadio" id="rsvRadio3"><label for="rsvRadio3">동호회</label></P>
+								<P><input type="radio" name="rsvRadio" id="rsvRadio4"><label for="rsvRadio4">기타</label></P>
+							</div>
+							<div class="sec_9">
+							  <h5><label for="userRqr">요청사항</label></h5>
+								<textarea name="userRqr" id="userRqr" class="col-maxpc-12" cols="30" rows="5"></textarea>
+							</div>
+							<input type="hidden" name="hidden_search" value="notice" />
+							<input type="submit" value="신청" class="btn_submit">
+							<input type="reset" value="취소">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!-- 푸터영역 -->
+			<? include"inc/footer.html"; ?>
+			<!-- //푸터영역 -->
+		</div>
+		<!-- class="select" : 현재 선택 된 영역 표시 -->
+		<!-- //컨테이너영역 -->
+	</div>
+</body>
+</html>

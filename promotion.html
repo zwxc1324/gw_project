@@ -1,6 +1,6 @@
 <? include"inc/top.html"; ?>
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/news.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/promotion.css" media="all" />
 	<script type="text/javascript">
 	
 	</script>
@@ -14,30 +14,203 @@
 		<!-- 컨테이너영역 --> 
 		<div id="sub_container" class="clearFix">
 			<div class="con_title">
-				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">홍보물신청</strong></p>
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a><strong class="ico_font_angle_r">홍보물신청</strong></p>
 				<h3>홍보물신청</h3>
 			</div>
-			<div class="sub_search">
-				<form action="#" method="get">
-					<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
-					<fieldset>
-						<legend >공지사항의 제목, 내용, 작성자로 검색하세요</legend>
-						<p>
-							<label for="notice_search" class="blind">공지사항 검색 분류</label>
-							<select name="notice_search" id="notice_search" title="공지사항 검색">
-								<option value="title">제목</option>
-								<option value="content">내용</option>
-								<option value="writer">작성자</option>
-							</select>
-							<label for="text_notice_search" class="blind">검색어</label>
-							<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력해주세요."/>
-							<input type="submit" value="검색" class="btn_search"/>
-						</p>
-					</fieldset>
-				</form>
-			</div>	
+			<div class="promInfo">
+				<h4 class="blind">홍보물 신청 방법</h4>
+				<p class="dot">홍보물 발송은 오후1시 기준으로 발송되어 기준시간 이전은 당일, 이후 신청건은 다음날 발송됩니다.(주말, 공휴일 제외)</p>
+				<p class="color"><span>신청방법: </span>강원도지도 1인 1부 무료신청가능 <br /> 지도 외 책자는 우체국 택배로 착불 발송됩니다.(문의 033.244.0088)</p>
+				<p>＊일반 우편 발송으로 3~5일 가량 소요된 여행계획 일주일전에 신청바랍니다.</p>
+				<p class="dot">관광안내소와 고속도로 휴게소 등 지도를 대량으로 요청하는 경우, 연락주시면 친절히 안내해드리겠습니다.</p>
+				<p>
+					<strong >강원도 종합관광안내소:</strong> <span class="ico_font_phone">033.244.9988</span>
+				</p>
+				<p class="dot">관광홍보물 신청 시 수집된 개인정보는 신청일 기준 당해 연도까지만 보관되고 삭제됩니다.</p>
+			</div>
+			<div class="getInfo clearFix">
+				<div class="seeInfo col-mobile-12  ico_font_down">
+					<a href="#" >
+							<img src="images/promotion/2.jpg" alt="관광정정보이미지" />
+						<p>관광정보 보기</p></a>
+				</div>
+				<div class="seeMap col-mobile-12 ico_font_down">
+					<a href="#" ><img src="http://placehold.it/100x60" alt="관광정정보이미지" />
+						<p>관광지도 보기</p></a>
+				</div>
+				<div class="seeAdd col-mobile-12  ico_font_down">
+					<a href="#"  class="ico_font_down"><img src="http://placehold.it/100x60" alt="관광정정보이미지" />
+						<p>도 홍보물 신청</p></a>
+				</div>
+				<div class="min_search col-mobile-12">
+					<form action="#" method="get">
+						<p><input type="hidden" name="hidden_min_search" value="hidden_min_search" /></p>
+						<fieldset>
+							<legend>홍보물 신청 확인</legend>
+							<p><label for="no_search">홍보물 신청 확인</label></p>
+							<p>
+								<input type="text" name="no_search" id="no_search" title="신청 번호를 입력해주세요" placeholder="신청하신 번호를 입력해주세요."/>
+								<input type="text" name="name_search" id="name_search" title="이름을 입력해주세요" placeholder="이름을 입력해주세요."/>
+								<input type="submit" value="검색" class="btn_search"/>
+							</p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
 			<div class="position_page">
-				<p>▷ 전체 : <span class="pos_page_total"> 26</span>, 현재페이지 :<span class="pos_page_now"> 1/3 </span></p>
+				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>
+			</div>
+			<div class="board_wrap">
+				<h5 class="blind">홍보물 신청 현황</h5>
+				<table>
+					<caption>홍보물 신청 현황</caption>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">이름</th>
+							<th scope="col">주소</th>
+							<th scope="col">등록일</th>
+							<th scope="col">발송일</th>
+							<th scope="col">발송여부</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>11891</td>
+							<td>박**</td>
+							<td>대구광역시</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20"> </time></td>
+							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
+						</tr>
+						<tr>
+							<td>11890</td>
+							<td>최**</td>
+							<td>부산광역시</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20"> </time></td>
+							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
+						</tr>
+						<tr>
+							<td>11889</td>
+							<td>윤**</td>
+							<td>대전광역시</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20"> </time></td>
+							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
+						</tr>
+						<tr>
+							<td>11888</td>
+							<td>기**</td>
+							<td>충청북도</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20"> </time></td>
+							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11886</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11885</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11884</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+						<tr>
+							<td>11887</td>
+							<td>김**</td>
+							<td>경기도 성남</td>
+							<td><time datetime="2016-12-20">2016.12.20</time></td>
+							<td><time datetime="2016-12-20">2016.12.23</time></td>
+							<td><input type="submit" value="발송" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="paging">
+					<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
+					<a href="#"><img src="images/common_sub/page_btn_prev.png" alt="이전 보기" /></a>
+					<span>
+						<a href="#" class="select">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</span>
+					<a href="#"><img src="images/common_sub/page_btn_next.png" alt="다음 보기" /></a>
+					<a href="#"><img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" /></a>
+				</p>
 			</div>
 
 			<!-- 푸터영역 -->

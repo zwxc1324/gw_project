@@ -1,0 +1,90 @@
+@charset "utf-8";
+    .col-maxpc-1{width:8.333%;}
+    .col-maxpc-2{width:16.666%;}
+    .col-maxpc-3{width:25%;}
+    .col-maxpc-4{width:33.333%;}
+    .col-maxpc-5{width:41.666%;}
+    .col-maxpc-6{width:50%;}
+    .col-maxpc-7{width:58.333%;}
+    .col-maxpc-8{width:66.666%;}
+    .col-maxpc-9{width:75%;}
+    .col-maxpc-10{width:83.333%;}
+    .col-maxpc-11{width:91.666%;}
+    .col-maxpc-12{width:100%;}
+
+.sub_reserv_info{position: relative;float: right;width: 35%;padding: 30px 15px;}
+.sub_reserv_info > p{margin-bottom: 20px; }
+.sub_reserv_info > p input[type=button]{margin-bottom: 20px; display: none; font-size: 1.05em;padding: 8px 10%; border: none;border-radius: 3px; background-color: #333; color: #fff;}
+.sub_reserv_info .info_wrap div{margin-bottom: 25px;}
+.sub_reserv_info .info_wrap div p{padding-left: 15px;}
+.sub_reserv_info .info_wrap div p:first-child{font-size: 1.1em; font-weight:bold; padding-left: 6px; margin:0 0 5px 6px;border-left: 3px solid #dc3d6c;}
+.sub_reserv_info .info_wrap div p strong{font-weight: bold;}
+.sub_reserv_info .info_wrap .info_use p{margin:0 0 5px 6px;}
+.sub_reserv_info .info_wrap div ul{padding-left: 15px;}
+.sub_reserv_info .info_wrap div ul li{float: left;width: 50%;}
+
+
+.sub_reserv_wrap{padding: 53px 6px;}
+.sub_reserv{float: left;width: 63%; background-color: #f5f5f5;border: 1px solid #d0cecd; padding: 15px;}
+.sub_reserv input{width: 100%;font-size: 1.05em;padding: 8px 2%;background-color: #fff;border: 1px solid #d0cede;border-radius: 3px;}
+.sub_reserv input[type=button].on{background-color:#333 !important; color:#fff !important; }
+.sub_reserv input[type=submit]{background-color: #333; color: #fff;}
+
+fieldset > div{position: relative;}
+.sub_reserv fieldset p + div{display: none; padding-top: 10px; margin-top: 15px;border-top: 1px solid #fff;}
+.sub_reserv fieldset p + div.on{display: block;}
+.sub_reserv fieldset div h5{font-size: 1.1em; font-weight: bold;padding-left: 6px; margin:0 0 7px 6px;border-left: 3px solid #dc3d6c;}
+.sub_reserv fieldset div p{padding: 2px 3px;}
+.sub_reserv fieldset > div{padding: 15px 0;}
+.sec_1, .sec_2, .sec_3, .sec_6, .sec_7, .sec_8{border-bottom: 1px solid #d0cecd; padding-bottom: 20px;}
+.sub_reserv fieldset .sec_1 p{float: left;}
+.sub_reserv fieldset .sec_1 .sec_1_txt{font-size: 0.9em; padding-left: 12px;}
+.sub_reserv fieldset .sec_1 p label{position: absolute; bottom: 28px; left: 20px;}
+.sub_reserv fieldset .sec_2{position: relative;}
+.sub_reserv fieldset .sec_2 .sec_2_2{position: absolute; top: 43px; left: 33.332%;}
+.sub_reserv fieldset .sec_2 .sec_2_3{position: absolute; top: 43px; left: 66.666%;}
+.sub_reserv fieldset .sec_2 .sec_2_3 label{position: absolute; bottom: 11px; left: 20px;}
+.sub_reserv fieldset .sec_3{position: relative;}
+.sub_reserv fieldset .sec_3 .sec_3_2{position: absolute; top: 43px; left: 25%;}
+.sub_reserv fieldset .sec_3 .sec_3_3{position: absolute; top: 43px; left: 50%;}
+.sub_reserv fieldset .sec_3 .sec_3_4{position: absolute; top: 43px; left: 75%;}
+.sub_reserv fieldset .sec_4 div:first-child{float: left; width: 49%}
+.sub_reserv fieldset .sec_4 div:first-child + div{float: right; width: 49%}
+.sub_reserv fieldset .sec_7{position: relative;}
+.sub_reserv fieldset .sec_7 ul{width: 70%; margin-left: 30%;}
+.sub_reserv fieldset .sec_7 ul li{float: left;padding: 2px 3px;}
+.sub_reserv fieldset .sec_7 p{width: 27%; padding-right: 10px;position: absolute; left: 0; top: 43px; border-right: 1px solid #fff;}
+.sub_reserv fieldset .sec_8 p{float: left; position: relative;width: 25%;}
+.sub_reserv fieldset .sec_8 p input{position: absolute; left: -9999px;}
+.sub_reserv fieldset .sec_8 p label{cursor: pointer; height: 29px; display: inline-block; line-height: 30px;padding-left: 40%; background: url(../images/reservation/chkbox.gif) 10px 0 no-repeat;}
+.sub_reserv fieldset .sec_8 p label.on{background-image: url(../images/reservation/chkboxOn.gif);}
+.sub_reserv fieldset .sec_9 textarea{border: 1px solid #d0cede; border-radius: 3px;padding: 8px 2%; margin-bottom: 15px;}
+.sub_reserv fieldset > input[type=submit]{width: 20%; margin-left: 30%;}
+.sub_reserv fieldset > input[type=reset]{cursor: pointer;width: 15%; background-color: #ddd;}
+
+.sub_reserv fieldset div div ul li{float: left; width:16.666%; padding: 2px 3px;}
+
+
+@media (max-width:1025px){
+  .sub_reserv_info{padding: 0 15px;}
+  .sub_reserv_info{float: none; width: 100%;}
+  .sub_reserv_info > p{margin-bottom: 5px; }
+  .sub_reserv_info > p input[type=button]{display: block;margin-bottom: 20px;}
+  .sub_reserv_info .info_wrap div ul li{width: 33.333%;}
+  .sub_reserv_info .info_wrap{display: none;}
+  .sub_reserv{float: none; width: 100%;}
+}
+
+@media (max-width:800px){
+  .sub_reserv_wrap{padding: 30px 6px;}
+  .sub_reserv{width: 100%;}
+}
+
+@media (max-width:568px){
+  .sub_reserv_info { padding: 0 5px;}
+  .sub_reserv_info > p input[type=button]{display: block;margin-bottom: 20px; width: 100%;}
+  .sub_reserv input{font-size: 0.85em;}
+  .sub_reserv_info .info_wrap div ul li{width: 50%;}
+  .sub_reserv fieldset .sec_8 p{width: 50%; margin-bottom: 5px;}
+  .sub_reserv fieldset .sec_8 p label{padding-left: 32%;
+}

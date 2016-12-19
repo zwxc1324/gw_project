@@ -1,15 +1,17 @@
-/**** reset ****/
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* *** reset ****/
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 @font-face {
       font-family: 'fontello';
-      src: url('./font/fontello.eot?12552668');
-      src: url('./font/fontello.eot?12552668#iefix') format('embedded-opentype'),
-           url('./font/fontello.woff?12552668') format('woff'),
-           url('./font/fontello.ttf?12552668') format('truetype'),
-           url('./font/fontello.svg?12552668#fontello') format('svg');
+      src: url('./font/fontello.eot?60317404');
+      src: url('./font/fontello.eot?60317404#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?60317404') format('woff'),
+           url('./font/fontello.ttf?60317404') format('truetype'),
+           url('./font/fontello.svg?60317404#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
-    }
+    }  
+ 
 *{padding:0;margin:0;}
 *,*:after,*:before{box-sizing:border-box;}
 body{overflow-y:scroll;}
@@ -23,13 +25,13 @@ table{border-collapse:collapse;border-spacing:0;width:100%;}
 caption{text-indent:-9999px; width:0; height:0;overflow:hidden; visibility:hidden;}
 legend{position:absolute;left:-9999px; height:0; overflow:hidden; visibility:hidden; font-size:0;}
 hr, .blind{position:absolute;left:-9999px;}
-a{text-decoration:none; color:#525252;}
+a{text-decoration:none; color:#525252; }
 body,select,option,button,input{/* height: 100%; */ font:12px/1.3 'Nanum Gothic','나눔고딕',  Gothic, '고딕', Dotum ,'돋움', sans-serif; color:#525252; }
 address,em{font-style:normal;}
 h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 .clearFix:after{content:"";display:block;clear:both;}
 .clearFix{*zoom:1;}
-*[class*=" "]:after,*[class*="ico_font_"]:before{font-family:'fontello';font-size:1em;}
+*[class*="ico_font_"]:after,*[class*="ico_font_"]:before{font-family:"fontello";font-size:1em;}
 .tOut{text-indent:-9999px; width:0; height:0;}
 
 
@@ -45,26 +47,29 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 
 /**** 헤더영역 ****/
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border:1px solid #d0cecd;}
-#header{width:213px;height:100%;/* border-left:1px solid #ddd; border-right:1px solid #ddd; */float:left;/* position:absolute;top:0;left:0; */}
+#header{width:213px; height:100%; float:left;}
 
 h1{height:140px;padding:5PX 0 0 8px;}
+h1 > a > img:first-child + img{display:none;}
+
+.m_gnb{display:none; position:absolute; top:24px; left:5%;}
+.m_gnb > span{text-indent:-9999px; position:absolute;}
 .langAndLog{position:relative;margin-top:3px;margin-left:33px;}
 .language li > a, .login > a{font-size:0.9em;}
 .language{position:absolute;top:0;left:0;}
-.language ul{background-color:#FFF; padding:0px 15px;margin-left:-34px;width:215px;margin-top:8px; }
-.language li{display:none;float:left;overflow:hidden;width:25%; padding:10px 5px;}
-.language h2:hover+ul>li,.language ul:hover li{display:block;background-color:#fff;}
+.language ul{display:none; background-color:#FFF; padding:0px 15px;margin-left:-34px;width:215px;margin-top:8px; }
+.language li{float:left;overflow:hidden;width:25%; padding:10px 5px;}
+/* .language h2:hover+ul, .language h2:focus+ul{display:block;background-color:#fff;} */
 .login{position:absolute;top:0;left:80px;padding-left:24px;background:url(../images/common/sprite.png) 0px 2px no-repeat; background-size:500px 500px;}
-#gnb{padding-top:24px;}
-#gnb > ul > li a{font-size:1.9em;padding:11px 34px;display:block;border-top:1px solid #d0cecd; }
-#gnb > ul > li > a.on, #gnb > ul > li > a:hover, #gnb > ul > li > a:focus{background-color:#dc3d6c;color:#fff;}
+#gnb{padding-top:24px;background-color:#fff; }
+#gnb > ul > li  a{font-size:1.9em;padding:11px 34px;display:block;border-top:1px solid #d0cecd; }
+#gnb > ul > li > a.on/* , #gnb > ul > li > a:hover, #gnb > ul > li > a:focus */{background-color:#dc3d6c;color:#fff;}
 .quickLink li{float:left;width:50%;border-top:1px solid #d0cecd;}
 .bd_l{border-left:1px solid #d0cecd;}
 .quickLink li a{font-size:1.12em;height:90px;display:block;text-align:center;padding:7px 20px 5px;}
 .quickLink li a:hover,.quickLink li a:focus	{color:#dc3d6c;font-weight:bold;}
 
 #gnb .lnb {display:none;background-color:#f5f5f5;padding:10px 0;}
-#gnb li:hover .lnb{display:block;}
 #gnb .lnb li a{font-size:1.2em;border:none;padding:5px 34px;}
 #gnb .lnb li a.on,#gnb .lnb li a:hover, #gnb .lnb li a:focus{color:#dc3d6c;font-weight:bold;}
 .quickLink .search{background:url(../images/common/search_gnb.png) 12px 9px   no-repeat;width:100%;height:58px;padding:15px 18px;text-align:center;}
@@ -88,7 +93,9 @@ h1{height:140px;padding:5PX 0 0 8px;}
 address, #footer p{font-size:0.9em}
 
 
-
+/* 탑버튼 */
+#topBtn{width:50px; height: 50px; background-color:#e8177a; position:fixed; bottom:15px;right:0px;z-index:100;text-align:center;line-height:48px;}
+#topBtn a{color:#fff; }
 
 /*** 미디어쿼리 ***/
 @media (max-width:1025px){
@@ -111,7 +118,29 @@ address, #footer p{font-size:0.9em}
 
 }
 @media (max-width:800px){
-#header{float:none;width:100%;height:121px;overflow:hidden;}/* 임시로 오버플로 히든 줌 */
+#header{position:relative;margin-top:35px;float:none;width:100%;height:100px;z-index:20;}
+#gnb{border-bottom:1px solid #d0cede;}
+
+.m_gnb{display:block; }
+.ico_font_resMenu:before{content:"\e824"; display:block; font-size:3.1em; color:#d0cecd;}
+
+
+
+.langAndLog{position:absolute; top:-35px; left: 0;margin:0;width:100%;height:35px;background-color:#f5f5f5;}
+.language, .login{position:static;float:left;padding:0;background:none;}
+.language > h3 > a, .login a{display:block;text-align:center;line-height:35px;height:35px;font-size:1.3em;/* font-weight:bold; */ }
+.language ul{width:350px;margin:0;}
+
+h1{height:100%; border-bottom:1px solid #d0cecd;border-top:1px solid #d0cecd;}
+h1 > a > img:first-child{display:none;}
+h1 > a > img:first-child + img{display:block;width:100%;padding-top:15px;}
+h1 > a{display:block;text-align:center;padding-left:55px;width:320px; margin:0 auto;}
+
+#gnb{padding-top:0;display:none;}
+/* #header:hover #gnb{display:block;} */
+.quickLink{display:none;}
+.sns{display:none;}
+
 #container{float:none;margin-left:0;width:100%;border:none;}
 #footer{margin:0 auto;}
 
@@ -130,6 +159,8 @@ address, #footer p{font-size:0.9em}
 }
 
 @media (max-width:568px){
+
+/* h1 > a > img:first-child + img{width:90%;} */
 #contents{width:100%}
 .detail{width: 90%;}
 #footer{width:100%;}
@@ -147,4 +178,8 @@ address, #footer p{font-size:0.9em}
 .col-mobile-11{width:91.666%;}
 .col-mobile-12{width:100%;}
 
+}
+@media (max-width:375px){
+
+h1 > a > img:first-child + img{width:95%;}
 }

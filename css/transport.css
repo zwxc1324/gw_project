@@ -1,3 +1,4 @@
+@charset "utf-8";
 tr > td:first-child+td{text-align:center;}
 tr > td:first-child+td+td+td, tr > td:first-child+td+td+td+td+td, tr > th:first-child+th+th+th, tr > th:first-child+th+th+th+th+th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 tr>td:first-child+td{text-align:center;}
@@ -28,6 +29,9 @@ input[type=button]:active{background-color:#ffeeee;}
 @media (max-width:800px){
 h5 input[type=button]{/* width:21%; */}
 tr>th:first-child+th+th, tr>th:first-child+th+th+th+th, tr>td:first-child+td+td, tr>td:first-child+td+td+td+td{display:none;}
+h5 input[type=button]{left:5%;} 
+.btn_departure input[type=button]{left:30%;}
+.btn_destination input[type=button]{left:55%;}
 }
 @media (max-width:568px){
 .sub_search{padding-left:5%;padding-right:5%;}
@@ -36,6 +40,8 @@ tr>th:first-child+th+th+th+th+th+th, tr>th:first-child+th+th+th+th+th+th, tr>td:
 h5 input[type=button]{left:5%;} 
 .btn_departure input[type=button]{left:30%;}
 .btn_destination input[type=button]{left:55%;}
+h5 + div > ul > li{padding:5px 0;}
+h5 + div input[type=button]{font-size:0.89em;}
 }
 @media (max-width:375px){
 .sub_search{padding-left:3%;padding-right:3%;}
