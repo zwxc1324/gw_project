@@ -36,14 +36,14 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 
 
 /**** 슬라이드컨트롤러 ****/
-
-.pagecontrol{position: absolute; bottom: 8px; left: 47%; margin-left: -37px; text-indent: -9999px;}
-.pagecontrol button{border: none; background: none; }
-.pagecontrol button img{width: 14px; height: 14px;}
-.pagecontrol button span{position: absolute; left: -9999px;}
-.pgc_pageList li button{width: 14px; height: 14px; margin-right: 5px; float:left;}
-.pgc_pageList li button.on{width: 14px; height: 14px;}
-
+.pagecontrol{position: absolute; bottom: 5px; left: 50%; margin-left: -23px; text-indent: -9999px;}
+.pgc_pageList li{width: 14px; height: 14px; margin-right: 3px; background: url(../images/common/slidecontrol.png) -1px -2px no-repeat; float:left;}
+.pgc_pageList li.on{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -18px -2px no-repeat;}
+.pgc_pageList li a{display: block; width: 10px; height: 10px; }
+.pagecontrol a{display: none;}
+.pagecontrol a.on{display: inline-block;}
+.pagecontrol_play{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -51px -2px no-repeat;}
+.pagecontrol_pause{width: 14px; height: 14px; background: url(../images/common/slidecontrol.png) -35px -2px no-repeat;}
 
 /**** 헤더영역 ****/
 .wrap{font-size:1em;max-width:1400px;width:100%;min-width:320px;margin:0 auto;position:relative;border:1px solid #d0cecd;}
