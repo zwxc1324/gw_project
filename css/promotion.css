@@ -30,8 +30,9 @@
 #notice_search option{font-size:15px;}
 
 /* 테이블 수취확인*/
-.yet{color:#3879d9;background-color:#fff;border:1px solid #d0cede;}
+
 .board_wrap input[type=button], .board_wrap input[type=reset]{width:40px;height:25px;background-color:#fffafa;border:1px solid #d0cede;margin:2px;border-radius:3px;}
+.board_wrap input[type=button].yet{color:#3879d9;background-color:#fff;border:1px solid #d0cede;}
 
 /**취소버튼 컬러**/
 .board_wrap input[type=button]{background-color:#333;color:#fff;border:none;}

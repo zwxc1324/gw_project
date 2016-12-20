@@ -3,7 +3,47 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/sub_rcmtour_common.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/top10.css" media="all" />
-    <script type="text/javascript" src="js/btn_top10.js"></script>
+    <script type="text/javascript">
+    function addEvent(evObj, evName, evH) {
+        var arrEvent = evName.split(" ");
+
+        for (var i = 0; i < arrEvent.length; i++) {
+            if (document.addEventListener) {
+                evObj.addEventListener(arrEvent[i], evH);
+            } else {
+                evObj.attachEvent("on" + arrEvent[i], evH);
+            }
+        }
+    }
+
+    var init = function() {
+           var btn_tab = document.querySelectorAll(".contents_main h4 button");
+
+           for (var i = 0; i < btn_tab.length; i++) {
+
+            (function() {
+                var num = i;
+                addEvent(btn_tab[i], "click", function() {
+                    var notice = document.querySelector(".contents_main");
+                    var notice_div = document.querySelectorAll(".contents_main>div");
+                    //console.log(notice_div.length);
+                    for (var i = 0; i < notice_div.length; i++) {
+                        if (i == num) {
+                            notice_div[i].style.display = "block";
+                            btn_tab[i].setAttribute("class", "on");
+                        } else {
+                            notice_div[i].style.display = "none";
+                            btn_tab[i].setAttribute("class", "");
+                        }
+                    }
+                });
+            }());
+        }
+    }
+
+
+    addEvent(window, "load", init);
+    </script>
     </head>
 
     <body>
@@ -15,15 +55,15 @@
                 <!-- 컨테이너영역 -->
                 <div id="sub_container" class="clearFix">
                     <div class="con_title">
-                        <p class="location"><a href="index.html" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">추천여행</a> <strong class="ico_font_angle_r">강원도 핫플레이스 10</strong></p>
+                        <p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">추천여행</a> <strong class="ico_font_angle_r">강원도 핫플레이스 10</strong></p>
                         <h3>강원도 핫플레이스 10</h3>
                     </div>
                     <div class="contents_wrap col-pc-12">
                         <div class="con_sub_title">
-                            <img src="images/top10/bg_con_sub_title.png" alt="정보">
+                            <img src="images/top10/bg_con_sub_title.jpg" alt="정보">
                         </div>
                         <div class="contents_main">
-                            <h4 class="btn_top10_1 col-pc-6 col-mobile-6"><button class="on">한국인 Top10</button></h4>
+                            <h4 class="btn_top10_1 col-pc-6 col-mobile-6"><button>내국인 Top10</button></h4>
                             <div>
                                 <h5 class="col-pc-12 col-tablet-12 col-mobile-12">바다도 좋고, 물도 좋은 <span>강릉 경포해변</span></h5>
                                 <div>
@@ -60,7 +100,7 @@
                                         <p>휴휴암은 양양에 위치한 사찰로 1999년 바닷가에 누운 부처님 형상의 바위가 발견되며 불자들 사이에 명소로 부상했습니다. 또 바다에 크고 작은 수만마리의 황어떼가 몰려 들어와 물고기떼를 보기 위해 많은 사람들이 방문을 하고 있습니다. 원래 방생을 하면 먼바다로 떠나야 하는데 이곳 황어들은 떠나지 않고 이곳에 계속 머물고 있다고 합니다. 쉬고 또 쉰다는 뜻을 가진 휴휴암에서 지친 몸과 마음을 위로 받아 보세요.</p>
                                     </div>
                                 </div>
-                                <h5>라이더들의 낭만물길 여행지 <span>춘천 강촌</span></h5>
+                                <h5>낭만물길 여행지 <span>춘천 강촌</span></h5>
                                 <div>
                                     <a href="#"><img src="images/top10/top_10_6.jpg" alt="강촌"></a>
                                     <div>
@@ -98,7 +138,7 @@
                             </div>
                             <h4 class="btn_top10_2 col-pc-6 col-mobile-6"><button>외국인 Top10</button></h4>
                             <div>
-                                <h5 class="col-pc-12 col-tablet-12 col-mobile-12">전세계인의 동화나라<span>춘천 남이섬</span></h5>
+                                <h5 class="col-pc-12 col-tablet-12 col-mobile-12">동화나라 <span>춘천 남이섬</span></h5>
                                 <div>
                                     <a href="#"><img class="col-pc-5 col-tablet-12 col-mobile-12" src="images/top10/top_10_11.jpg" alt="남이섬"></a>
                                     <div class="max-pc-6 col-pc-6 col-tablet-12 col-mobile-12">
@@ -133,7 +173,7 @@
                                         <p>휴휴암은 양양에 위치한 사찰로 1999년 바닷가에 누운 부처님 형상의 바위가 발견되며 불자들 사이에 명소로 부상했습니다. 또 바다에 크고 작은 수만마리의 황어떼가 몰려 들어와 물고기떼를 보기 위해 많은 사람들이 방문을 하고 있습니다. 원래 방생을 하면 먼바다로 떠나야 하는데 이곳 황어들은 떠나지 않고 이곳에 계속 머물고 있다고 합니다. 쉬고 또 쉰다는 뜻을 가진 휴휴암에서 지친 몸과 마음을 위로 받아 보세요.</p>
                                     </div>
                                 </div>
-                                <h5>라이더들의 낭만물길 여행지 <span>춘천 강촌</span></h5>
+                                <h5>낭만물길 여행지 <span>춘천 강촌</span></h5>
                                 <div>
                                     <a href="#"><img src="images/top10/top_10_6.jpg" alt="강촌"></a>
                                     <div>

@@ -3,11 +3,8 @@
 
 .contents_main{position:relative; }
 .contents_main h4{margin-bottom: 100px;}
-.contents_main h4 button{display: block;text-indent: -9999px; width: 150px;height: 30px; position: absolute; top: -50px; left:0;
-						background: url(../images/top10/btn_k.png) 0 0 no-repeat;border: none;}
-.contents_main .btn_top10_2 button {position: absolute; top: -50px; left:150px; background-image: url(../images/top10/btn_f.png);}
-.contents_main h4 button.on{background: url(../images/top10/btn_k_ov.png)}
-.contents_main .btn_top10_2 button.on{background: url(../images/top10/btn_f_ov.png)}
+.contents_main button {position: absolute; top: -50px; left:0;}
+.contents_main .btn_top10_2 button {position: absolute; top: -50px; left:90px;}
 .contents_main >div {display: none;}
 .contents_main .btn_top10_1 +div {display: block;}
 

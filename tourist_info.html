@@ -14,21 +14,25 @@
 				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">관광안내소</strong></p>
 				<h3>관광안내소</h3>
 			</div>
+			<p>찾으시는 관광안내소를 안내소명, 지역명으로 검색해주세요.</p>
 			<div class="sub_search">
-				<h4 class="blind">관광안내소 검색</h4>
 				<form action="#" method="get">
 					<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
 					<fieldset>
-						<legend >찾으시는 관광안내소의 지역을 입력해주세요</legend>
+						<legend >찾으시는 관광안내소를 안내소명, 지역명으로 검색해주세요.</legend>
 						<p>
-							<label for="notice_search" class="blind">관광안내소 검색</label>
+							<label for="notice_search" class="blind">관광안내소검색</label>
+							<select name="notice_search" id="notice_search" title="관광안내소검색">
+								<option value="title">안내소명</option>
+								<option value="content">지역명</option>
+							</select>
 							<label for="text_notice_search" class="blind">검색어</label>
-							<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력해주세요."/>
+							<input type="search" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력하세요."/>
 							<input type="submit" value="검색" class="btn_search"/>
 						</p>
 					</fieldset>
 				</form>
-			</div>	
+			</div>
 			<div class="position_page">
 				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>
 			</div>
@@ -39,7 +43,7 @@
 						<h6 class="blind">순천역 관광안내소</h6>
 						<div class="img"><a href="#"><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p ><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -51,7 +55,7 @@
 						<h6 class="blind">원주시 관광안내소</h6>
 						<div class="img"><a href="#"><img src="images/tourist_info/tour_1.jpg" alt="춘천 관광안내소" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -63,7 +67,7 @@
 						<h6 class="blind">강릉역 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -75,7 +79,7 @@
 						<h6 class="blind">무릉 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -87,7 +91,7 @@
 						<h6 class="blind">횡성군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -99,7 +103,7 @@
 						<h6 class="blind">평창군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -111,7 +115,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -123,7 +127,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -135,7 +139,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -147,7 +151,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -159,7 +163,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>
@@ -171,7 +175,7 @@
 						<h6 class="blind">정선군 관광안내소</h6>
 						<div class="img"><a href=""><img src="images/tourist_info/tour_1.jpg" alt="" /></a></div>
 						<div class="imgInfo ">
-							<p><span>안내소명 :</span> 순천역 관광안내소</p>
+							<p><span class="ico_font_info">안내소명 :</span> 순천역 관광안내소</p>
 							<p><span>전화번호 :</span> 250-4312 </p>
 							<p><span>주소 :</span> 순천시 평화로1</p>
 							<p><span>설치위치:</span> 교통거점형</p>

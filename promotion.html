@@ -1,55 +1,7 @@
 <? include"inc/top.html"; ?>
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/promotion.css" media="all" />
-	<script type="text/javascript">
-	function init(){
-		var btns =  document.querySelectorAll("#prom_req input");
-
-		for(var i = 0; i < btns.length; i++){
-
-			(function(){
-				var b = i;
-				function ChBtn(k){
-					var btnR = k.srcElement;
-					var btnV = btnR.getAttribute("value");
-					if(btnV == "취소"){
-						var rBtn = btnV.replace("취소", "취소되었습니다");
-						btnR.value = "취소되었습니다";
-						//var cancelBtn = b.setAttribute("value" , rBtn);
-						btnR.style.width = 90 + "px";
-
-						/*미발송 없애기*/
-						var yet = btns[b] - 1;
-						console.log(btns[b]);
-						btnR.parentNode.childNodes[0].style.display = "none";
-
-					}
-						/*
-						var noneBtn = btnR.parentNode.childNodes[0];
-						var disBtn = noneBtn.getAttribute("value");
-						if(disBtn = "미발송" && noneBtn.nextElement = btnR){
-							
-							.style.display = "none";
-							//btnV = null;*/
-
-					else if(btnV == "취소되었습니다"){
-						var cancelBtn = btnV.replace("취소되었습니다", "취소");
-						var noneBtn = btnR.value ="취소";
-						btnR.style.width = 40 + "px";
-						btnR.parentNode.childNodes[0].style.display = "inline";
-					
-						
-					}
-					
-				}addEvnt(btns[i], "click", ChBtn);
-			}());
-		}
-
-
-		
-	}addEvnt(window,"load",init);
-
-	</script>
+	<script type="text/javascript" src="js/promotion.js"></script>
 </head>
 <body>
 	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
