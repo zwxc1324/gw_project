@@ -66,4 +66,6 @@ tr>td:first-child+td{max-width:250px;}
 }
 @media (max-width:375px){
 tr>td:first-child+td{max-width:200px;}
+
+.contents_wrap .contents_main h5 span{color: #00529b; font-size: 22px; display: block; text-align: left;}
 }
