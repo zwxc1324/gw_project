@@ -1,24 +1,24 @@
 <? include"inc/top.html"; ?>
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/hotel.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/beach.css" media="all">
 	<script src="js/common.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	function init() {
-		var btn_tab = document.querySelectorAll(".hotel_wrap .h_btn_1>button,.hotel_wrap .h_btn_2>button,.hotel_wrap .h_btn_3>button");
+		var btn_tab = document.querySelectorAll(".beach_wrap h4 button");
 
 			for(var i = 0;i < btn_tab.length; i++){
 				(function(){
 					var num = i;
 					addEvnt(btn_tab[i],"click",function(){
-						var hotel = document.querySelector(".hotel_wrap");
-						var hotel_div = hotel.querySelectorAll(".h_tab_1,.h_tab_2,.h_tab_3");
-						for(var i = 0; i < hotel_div.length; i++){
+
+						var beach_div = document.querySelectorAll(".beach_wrap >div");
+						for(var i = 0; i < beach_div.length; i++){
 							if(i == num){
-								hotel_div[i].style.display = "block";
+								beach_div[i].style.display = "block";
 								btn_tab[i].setAttribute("class","on");
 							}else{
-								hotel_div[i].style.display = "none";
+								beach_div[i].style.display = "none";
 								btn_tab[i].setAttribute("class","");
 							}
 						}
@@ -31,98 +31,85 @@
 	</script>
 </head>
 <body>
-	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
+	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->
 	<div class="wrap clearFix">
 		<!-- 헤더영역 -->
 		<? include"inc/header.html"; ?>
 		<!--// 헤더영역 -->
-		<!-- 컨테이너영역 --> 
+		<!-- 컨테이너영역 -->
 		<div id="sub_container" class="clearFix">
 				<div class="con_title">
-					<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">관광명소</a> <strong class="ico_font_angle_r">해변</strong></p>
+					<p class="location"><a href="index.html" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">관광명소</a> <strong class="ico_font_angle_r">해변</strong></p>
 					<h3>해변</h3>
 				</div>
-				<div class="hotel_wrap">
-					<p class="b_btn_1"><button class="on">선호도순</button></p>
-					<div class="b_tab_1">
+				<div class="beach_wrap">
+					<h4 class="b_btn_1"><button class="on">선호도순</button></h4>
+					<div>
 						<ul class="clearFix">
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/beach.png" alt="경포비치호텔">
+										<img src="images/beach/beach_1.jpg" alt="정암해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>경포비치호텔</p>
-												<p>강릉시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p>정암해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/boyang.png" alt="동해보양온천">
+										<img src="images/beach/beach_2.jpg" alt="죽도해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>동해보양온천 컨벤션</p>
-												<p>동해시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p>죽도해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/felice.png" alt="호텔펠리스">
+										<img src="images/beach/beach_3.jpg" alt="맹방해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>호텔펠리스</p>
+												<p>맹방해변</p>
 												<p>삼척시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/land.png" alt="강원랜드">
+										<img src="images/beach/beach_4.jpg" alt="잔교리해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>강원랜드</p>
-												<p>정선군</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p>잔교리해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
+										<img src="images/beach/beach_5.jpg" alt="사근진해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>드래곤밸리관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>휘닉스파크관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
+												<p>사근진해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -130,12 +117,12 @@
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/kcp.png" alt="KCP호텔">
+										<img src="images/beach/beach_6.jpg" alt="정동진해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>양구 KCP호텔</p>
-												<p>양구군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
+												<p>정동진해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -143,38 +130,12 @@
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/morning.png" alt="호텔굿모닝">
+										<img src="images/beach/beach_7.jpg" alt="망상해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>호텔굿모닝</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/sulak.png" alt="설악파크">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔 설악파크</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>뉴동해관광호텔</p>
+												<p>망상해변</p>
 												<p>동해시</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -182,12 +143,12 @@
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/bears.png" alt="베어스관광호텔">
+										<img src="images/beach/beach_8.jpg" alt="경포해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>춘천 베어스관광호텔</p>
-												<p>삼천동</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
+												<p>경포해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -195,12 +156,51 @@
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
+										<img src="images/beach/beach_9.jpg" alt="설악파크">
 										<figcaption>
 											<div class="sec_left">
-												<p>더케이설악산가족호텔</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_2.png" alt="별2개"></p>
+												<p>화진포해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_10.jpg" alt="인구해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>인구해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_11.jpg" alt="추암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>추암해변</p>
+												<p>동해시</p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_12.jpg" alt="자작도해변 ">
+										<figcaption>
+											<div class="sec_left">
+												<p>자작도해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_2.png" alt="별2개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -227,139 +227,17 @@
 							</a>
 						</p>
 					</div>
-					<p class="b_btn_2"><button>신규등록순</button></p>
-					<div class="b_tab_2">
+					<h4 class="b_btn_2"><button>신규등록순</button></h4>
+					<div>
 						<ul class="clearFix">
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/sulak.png" alt="설악파크">
+										<img src="images/beach/beach_4.jpg" alt="망상해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>호텔 설악파크</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>휘닉스파크관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>드래곤밸리관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/bears.png" alt="베어스관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>춘천 베어스관광호텔</p>
-												<p>삼천동</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
-										<figcaption>
-											<div class="sec_left">
-												<p>더케이설악산가족호텔</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_2.png" alt="별2개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/felice.png" alt="호텔펠리스">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔펠리스</p>
-												<p>삼척시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/kcp.png" alt="KCP호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>양구 KCP호텔</p>
-												<p>양구군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/boyang.png" alt="동해보양온천">
-										<figcaption>
-											<div class="sec_left">
-												<p>동해보양온천 컨벤션</p>
+												<p>망상해변</p>
 												<p>동해시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/land.png" alt="강원랜드">
-										<figcaption>
-											<div class="sec_left">
-												<p>강원랜드</p>
-												<p>정선군</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/morning.png" alt="호텔굿모닝">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔굿모닝</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -367,26 +245,148 @@
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/beach.png" alt="경포비치호텔">
+										<img src="images/beach/beach_5.jpg" alt="경포해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>경포비치호텔</p>
+												<p>경포해변</p>
 												<p>강릉시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
+										<img src="images/beach/beach_6.jpg" alt="정동진해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>뉴동해관광호텔</p>
+												<p>정동진해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_7.jpg" alt="인구해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>인구해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_8.jpg" alt="추암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>추암해변</p>
+												<p>속초시</p>
+												<p><img src="images/beach/star_2.png" alt="별2개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_1.jpg" alt="정암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>정암해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_5.jpg" alt="사근진해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>사근지해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_2.jpg" alt="죽도해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>죽도해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_3.jpg" alt="맹방해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>맹방해변</p>
+												<p>삼척시</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_9.jpg" alt="화진포해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>화진포해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_10.jpg" alt="인구해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>인구해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_11.jpg" alt="추암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>추암해변</p>
 												<p>동해시</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
 											</div>
 										</figcaption>
 									</figure>
@@ -413,164 +413,164 @@
 							</a>
 						</p>
 					</div>
-					<p class="b_btn_3"><button>이름순</button></p>
-					<div class="b_tab_3">
+					<h4 class="b_btn_3"><button>이름순</button></h4>
+					<div>
 						<ul class="clearFix">
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/land.png" alt="강원랜드">
+										<img src="images/beach/beach_8.jpg" alt="경포해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>강원랜드</p>
-												<p>정선군</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/beach.png" alt="경포비치호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>경포비치호텔</p>
+												<p>경포해변</p>
 												<p>강릉시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
+										<img src="images/beach/beach_3.jpg" alt="망상해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>뉴동해관광호텔</p>
+												<p>망상해변</p>
 												<p>동해시</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
 											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/boyang.png" alt="동해보양온천">
+										<img src="images/beach/beach_3.jpg" alt="맹방해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>동해보양온천 컨벤션</p>
-												<p>동해시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
-										<figcaption>
-											<div class="sec_left">
-												<p>더케이설악산가족호텔</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_2.png" alt="별2개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>드래곤밸리관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/kcp.png" alt="KCP호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>양구 KCP호텔</p>
-												<p>양구군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/bears.png" alt="베어스관광호텔">
-										<figcaption>
-											<div class="sec_left">
-												<p>춘천 베어스관광호텔</p>
-												<p>삼천동</p>
-												<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/morning.png" alt="호텔굿모닝">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔굿모닝</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/sulak.png" alt="설악파크">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔 설악파크</p>
-												<p>속초시</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-											</div>
-										</figcaption>
-									</figure>
-								</a>
-							</li>
-							<li><a href="#">
-									<figure class="li_sec">
-										<img src="images/hotel/felice.png" alt="호텔펠리스">
-										<figcaption>
-											<div class="sec_left">
-												<p>호텔펠리스</p>
+												<p>맹방해변</p>
 												<p>삼척시</p>
-												<p><img src="images/hotel/star_5.png" alt="별5개"></p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
 											</div>
-											<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
 										</figcaption>
 									</figure>
 								</a>
 							</li>
 							<li><a href="#">
 									<figure class="li_sec">
-										<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
+										<img src="images/beach/beach_5.jpg" alt="사근진해변">
 										<figcaption>
 											<div class="sec_left">
-												<p>휘닉스파크관광호텔</p>
-												<p>평창군</p>
-												<p><img src="images/hotel/star_4.png" alt="별4개"></p>
+												<p>사근진해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_10.jpg" alt="인구해변 ">
+										<figcaption>
+											<div class="sec_left">
+												<p>인구해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_2.png" alt="별2개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_12.jpg" alt="자작도해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>자작도해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_4.jpg" alt="잔교리해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>잔교리해변</p>
+												<p>양구군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_6.jpg" alt="정동진해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>정동진해변</p>
+												<p>강릉시</p>
+												<p><img src="images/beach/star_3.png" alt="별3개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_1.jpg" alt="정암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>정암해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_2.jpg" alt="죽도해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>죽도해변</p>
+												<p>양양군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
+											</div>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_11.jpg" alt="추암해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>추암해변</p>
+												<p>동해시</p>
+												<p><img src="images/beach/star_5.png" alt="별5개"></p>
+											</div>
+											<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li><a href="#">
+									<figure class="li_sec">
+										<img src="images/beach/beach_9.jpg" alt="화진포해변">
+										<figcaption>
+											<div class="sec_left">
+												<p>화진포해변</p>
+												<p>고성군</p>
+												<p><img src="images/beach/star_4.png" alt="별4개"></p>
 											</div>
 										</figcaption>
 									</figure>

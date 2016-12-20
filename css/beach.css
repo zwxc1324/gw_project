@@ -1,0 +1,46 @@
+@charset "utf-8";
+.beach_wrap{background: url(../images/hotel/bg_tab_wrap.png) 0 50px no-repeat;margin-top: 100px;
+position: relative;}
+
+.beach_wrap li{float: left;padding: 10px 10px;margin: 60px 0px 0px 20px;border: 1px solid #fff;
+height: 100%;width: 30%;}
+.beach_wrap li:hover{border: 1px solid #dc3d6c;}
+.beach_wrap li .li_sec>img:first-child{float: left;width: 100%; min-height: 225px;}
+.beach_wrap li .sec_left{float: left;}
+.beach_wrap li .sec_left p{font-size: 15px;color: #558ea9;}
+.beach_wrap li .sec_left p:first-child{font-size: 20px;color: #ee5f4a;white-space: nowrap;overflow: hidden;
+	text-overflow: ellipsis;width: 145px;}
+.beach_wrap li .sec_right{float: right; margin:10px 10px 0 0;}
+
+.b_btn_1{margin-left: 20px;}
+.b_btn_1 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_1.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;}
+.b_btn_1 button.on{background: url(../images/hotel/bg_tab_btn_1_ov.png) 0 0 no-repeat;}
+.b_btn_2 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_2.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 170px;}
+.b_btn_2 button.on{background: url(../images/hotel/bg_tab_btn_2_ov.png) 0 0 no-repeat;}
+.b_btn_3 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_3.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 320px;}
+.b_btn_3 button.on{background: url(../images/hotel/bg_tab_btn_3_ov.png) 0 0 no-repeat;}
+
+
+.beach_wrap h4 + div{display: none;}
+.beach_wrap .b_btn_1 + div{display: block;}
+
+.paging{margin-top: 70px;}
+
+@media (max-width: 1025px) {
+	.beach_wrap li{width: 40%;margin-left: 40px;}
+	.beach_wrap li .sec_left p:first-child{width: 140px;}
+}
+
+@media (max-width:610px) {
+	.beach_wrap li .sec_left p:first-child{width: 125px;}
+
+}
+
+@media (max-width:568px) {
+	.beach_wrap li{width: 100%;margin-left: 0; background: none;}
+	.beach_wrap li .sec_left p{font-size: 20px;}
+	.beach_wrap li .sec_left p:first-child{font-size: 30px;width: 240px;}
+}
