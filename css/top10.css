@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+.contents_main{position:relative; }
+.contents_main h4{margin-bottom: 100px;}
+.contents_main button {position: absolute; top: -50px; left:0;}
+.contents_main .btn_top10_2 button {position: absolute; top: -50px; left:90px;}
+.contents_main >div {display: none;}
+.contents_main .btn_top10_1 +div {display: block;}
+
+
+.contents_main h5 {padding-left: 30px; background: url(../images/top10/star.png) 0 3px no-repeat; font-size: 20px;font-weight: bold; margin-bottom: 11px;}
+.contents_main h5 span{color: #00529b; font-size: 22px; }
+.contents_main >div >div{overflow: hidden; margin: 20px 0 80px;}
+.contents_main >div >div img {float: right; min-height: 140px; width: 42%;}
+.contents_main >div >div >div {float: left; padding-left: 20px; width: 55%;}
+.contents_main >div >div >div p{padding-left: 10px; text-align: justify;}

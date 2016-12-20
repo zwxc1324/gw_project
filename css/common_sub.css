@@ -51,6 +51,9 @@ tr>td:first-child+td{max-width:300px;}
 .con_title{height:115px;padding-top:35px;}
 .board_wrap table  > thead tr > th:first-child{display:none;}
 .board_wrap table > tbody > tr > td:first-child{display:none;}
+.contents_wrap .contents_main >div >div >div{float: none; width: 100%;  padding: 0 ; }
+.contents_wrap .contents_main >div >div img{ float: none; width: 100%; min-height: auto; margin-bottom: 20px; }
+.contents_wrap .contents_main >div >div >div p{padding-right:10px;text-align: justify;}
 }
 
 @media (max-width:568px){
