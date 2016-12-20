@@ -9,13 +9,21 @@
 
 			(function(){
 				var b = i;
-				function ChBtn(b){
-					//var btnR = b.srcElement;
-					var btnV = this.getAttribute("value");
-					if(btnV = "취소"){
+				function ChBtn(k){
+					var btnR = k.srcElement;
+					var btnV = btnR.getAttribute("value");
+					if(btnV == "취소"){
 						var rBtn = btnV.replace("취소", "취소되었습니다");
-						var cancelBtn = this.setAttribute("value" , rBtn);
-						this.style.width = 90 + "px";
+						btnR.value = "취소되었습니다";
+						//var cancelBtn = b.setAttribute("value" , rBtn);
+						btnR.style.width = 90 + "px";
+
+						/*미발송 없애기*/
+						var yet = btns[b] - 1;
+						console.log(btns[b]);
+						btnR.parentNode.childNodes[0].style.display = "none";
+
+					}
 						/*
 						var noneBtn = btnR.parentNode.childNodes[0];
 						var disBtn = noneBtn.getAttribute("value");
@@ -23,14 +31,15 @@
 							
 							.style.display = "none";
 							//btnV = null;*/
-						}
-					/*}else if(btnV = "취소되었습니다"){
-						alert(12);
+
+					else if(btnV == "취소되었습니다"){
 						var cancelBtn = btnV.replace("취소되었습니다", "취소");
-						var noneBtn = btnR.setAttribute("value" , cancelBtn);
-						//btnR.style.width = 90 + "px";
-						btnR.parentNode.childNodes[0].style.display = "block";
-					}*/
+						var noneBtn = btnR.value ="취소";
+						btnR.style.width = 40 + "px";
+						btnR.parentNode.childNodes[0].style.display = "inline";
+					
+						
+					}
 					
 				}addEvnt(btns[i], "click", ChBtn);
 			}());
