@@ -3,47 +3,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/sub_rcmtour_common.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/top10.css" media="all" />
-    <script type="text/javascript">
-    function addEvent(evObj, evName, evH) {
-        var arrEvent = evName.split(" ");
-
-        for (var i = 0; i < arrEvent.length; i++) {
-            if (document.addEventListener) {
-                evObj.addEventListener(arrEvent[i], evH);
-            } else {
-                evObj.attachEvent("on" + arrEvent[i], evH);
-            }
-        }
-    }
-
-    var init = function() {
-           var btn_tab = document.querySelectorAll(".contents_main h4 button");
-
-           for (var i = 0; i < btn_tab.length; i++) {
-
-            (function() {
-                var num = i;
-                addEvent(btn_tab[i], "click", function() {
-                    var notice = document.querySelector(".contents_main");
-                    var notice_div = document.querySelectorAll(".contents_main>div");
-                    //console.log(notice_div.length);
-                    for (var i = 0; i < notice_div.length; i++) {
-                        if (i == num) {
-                            notice_div[i].style.display = "block";
-                            btn_tab[i].setAttribute("class", "on");
-                        } else {
-                            notice_div[i].style.display = "none";
-                            btn_tab[i].setAttribute("class", "");
-                        }
-                    }
-                });
-            }());
-        }
-    }
-
-
-    addEvent(window, "load", init);
-    </script>
+    <script type="text/javascript" src="js/btn_top10.js"></script>
     </head>
 
     <body>
@@ -55,7 +15,7 @@
                 <!-- 컨테이너영역 -->
                 <div id="sub_container" class="clearFix">
                     <div class="con_title">
-                        <p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">추천여행</a> <strong class="ico_font_angle_r">강원도 핫플레이스 10</strong></p>
+                        <p class="location"><a href="index.html" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">추천여행</a> <strong class="ico_font_angle_r">강원도 핫플레이스 10</strong></p>
                         <h3>강원도 핫플레이스 10</h3>
                     </div>
                     <div class="contents_wrap col-pc-12">
@@ -63,7 +23,7 @@
                             <img src="images/top10/bg_con_sub_title.jpg" alt="정보">
                         </div>
                         <div class="contents_main">
-                            <h4 class="btn_top10_1 col-pc-6 col-mobile-6"><button>내국인 Top10</button></h4>
+                            <h4 class="btn_top10_1 col-pc-6 col-mobile-6"><button class="on">한국인 Top10</button></h4>
                             <div>
                                 <h5 class="col-pc-12 col-tablet-12 col-mobile-12">바다도 좋고, 물도 좋은 <span>강릉 경포해변</span></h5>
                                 <div>
