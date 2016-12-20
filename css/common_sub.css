@@ -54,6 +54,7 @@ tr>td:first-child+td{max-width:300px;}
 .contents_wrap .contents_main >div >div >div{float: none; width: 100%;  padding: 0 ; }
 .contents_wrap .contents_main >div >div img{ float: none; width: 100%; min-height: auto; margin-bottom: 20px; }
 .contents_wrap .contents_main >div >div >div p{padding-right:10px;text-align: justify;}
+
 }
 
 @media (max-width:568px){
@@ -62,7 +63,7 @@ tr>td:first-child+td{max-width:250px;}
 .board_wrap table > tbody > tr > td:first-child+td+td{display:none;}
 .board_wrap table  > thead tr > th:first-child+th+th+th+th{display:none;}
 .board_wrap table > tbody > tr > td:first-child+td+td+td+td{display:none;}
-
+.contents_main h5 span{display: block; text-align: left;}
 }
 @media (max-width:375px){
 tr>td:first-child+td{max-width:200px;}
