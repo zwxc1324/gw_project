@@ -1,0 +1,43 @@
+@charset "utf-8";
+.hotel_wrap{background: url(../images/hotel/bg_tab_wrap.png) 0 50px no-repeat;margin-top: 100px;
+position: relative;}
+
+.hotel_wrap li{float: left;padding: 10px 10px;margin: 60px 0px 0px 20px;border: 1px solid #fff;
+height: 100%;background: url(../images/hotel/bg_li_1.png) 0 0 no-repeat;width: 30%;}
+.hotel_wrap li:hover{border: 1px solid #dc3d6c;}
+.hotel_wrap li .li_sec>img:first-child{float: left;width: 100%;}
+.hotel_wrap li .sec_left{float: left;}
+.hotel_wrap li .sec_left p{font-size: 15px;color: #558ea9;}
+.hotel_wrap li .sec_left p:first-child{font-size: 20px;color: #ee5f4a;white-space: nowrap;overflow: hidden;
+	text-overflow: ellipsis;width: 145px;}
+.hotel_wrap li .sec_right{float: right;}
+
+.h_btn_1{margin-left: 20px;}
+.h_btn_1 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_1.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;}
+.h_btn_1 button.on{background: url(../images/hotel/bg_tab_btn_1_ov.png) 0 0 no-repeat;}
+.h_btn_2 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_2.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 170px;}
+.h_btn_2 button.on{background: url(../images/hotel/bg_tab_btn_2_ov.png) 0 0 no-repeat;}
+.h_btn_3 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_3.png) 0 0 no-repeat;
+width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 320px;}
+.h_btn_3 button.on{background: url(../images/hotel/bg_tab_btn_3_ov.png) 0 0 no-repeat;}
+
+.h_tab_2,.h_tab_3{display: none;}
+
+.paging{margin-top: 70px;}
+
+@media (max-width: 1025px) {
+	.hotel_wrap li{width: 40%;margin-left: 40px;}
+	.hotel_wrap li .sec_left p:first-child{width: 140px;}
+}
+
+@media (max-width:610px) {
+	.hotel_wrap li .sec_left p:first-child{width: 125px;}
+}
+
+@media (max-width:568px) {
+	.hotel_wrap li{width: 100%;margin-left: 0; background: none;}
+	.hotel_wrap li .sec_left p{font-size: 20px;}
+	.hotel_wrap li .sec_left p:first-child{font-size: 30px;width: 240px;}
+}
