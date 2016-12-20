@@ -6,29 +6,36 @@
 .dot:before{content:"";border-left:2px solid #e8177a;margin-left:-8px;padding-left:5px;}
 .promInfo .color{color:#3879d9;width:70%;font-size:0.98em;margin-bottom:4px;}
 .promInfo h4+p+p+p, .promInfo h4+p+p+p+p+p{font-size:0.9em;width:70%;margin-top:0px;}
-
 .promInfo strong{color:#00b553;font-weight:bold;font-size:1.2em; }
 .ico_font_phone{display:block;margin-top:5px;font-size:1.3em;}
 .ico_font_phone:before{content:"\e817";color:#333;padding-right:15px; font-size:1.2em;}
 
-/*fffafa*/
-
-.getInfo > div{float:left;border:1px solid #d0cede; width:22%;height:100px;background-color:#f5f5f5;border-radius:3px;margin:3% 1.5%;position:relative;}
-.ico_font_down:after{content:"\e807";display:none;font-size:3em;position:absolute;top:15%; left:0%;width:100%;text-align:center;}
+/*4가지 이미지 다운로두*/
+.getInfo > div{box-shadow:inset 0 0 50px #fffafa;float:left;border:1px solid #d0cede;width:40%;height:100%;/* background-color:#fffafa; */border-radius:3px;margin:3% 5% 2%;position:relative;}
+.ico_font_down:after{content:"\e807";display:none;font-size:3em;position:absolute;top:20%; left:0%;width:100%;text-align:center;}
 .getInfo > div:hover.ico_font_down:after, .getInfo > div:focus.ico_font_down:after{display:block;}
 .getInfo > div:hover a{opacity:0.5;}
 .getInfo>div>a{display:block;text-align:center;padding:5%;vertical-align:middle;}
-.getInfo>div>a>img{width:100px;border-radius:3px;}
-.getInfo>div>a>p{padding-top:5px;}
+.getInfo>div>a>img{width:70%;border-radius:3px;}
+.getInfo>div>a>p{padding-top:5%;font-size:1.2em;}
+.getInfo .sub_search{width:90%;}
+.getInfo > p{width:85%;font-size:1.1em;margin: 3% 7% 0;float:left;}
 
-.min_search fieldset>p{font-size:0.8em;text-align:center;margin:7px 0 4px;}
-.min_search fieldset>p>input[type=text]{width:85%;margin-bottom:2px;}
-.min_search fieldset>p>input[type=submit]{padding:4px 10px;margin:0 auto 5px;font-size:0.8em;display:block;}
 
-.board_wrap input[type=button], .board_wrap input[type=reset], .board_wrap input[type=submit]{width:40px;height:25px;background-color:#fffafa;border:1px solid #d0cede;margin:2px;border-radius:3px;}
+/* .getInfo .min_search {width:90%;margin:3% 5%;}
+.min_search form p {font-size:1.2em;text-align:center;margin-bottom:3% ;}
+.min_search p input[type=search]{font-size:1em;width:40%;margin-bottom:2%;height:30px;}.min_search fieldset>p>input[type=submit]{padding:2% 4%;margin:0 auto;font-size:1em;} */
+
+/* option글자 크기 조정 --안된다. 해결하기 */
+#notice_search option{font-size:15px;}
+
+/* 테이블 수취확인*/
+.yet{color:#3879d9;background-color:#fff;border:1px solid #d0cede;}
+.board_wrap input[type=button], .board_wrap input[type=reset]{width:40px;height:25px;background-color:#fffafa;border:1px solid #d0cede;margin:2px;border-radius:3px;}
 
 /**취소버튼 컬러**/
-.board_wrap input[type=button]{}
+.board_wrap input[type=button]{background-color:#333;color:#fff;border:none;}
+.board_wrap input[type=reset]{background-color:#fff;color:#e8177a;}
 
 
 /*플롯 해제*/
@@ -36,12 +43,14 @@
 
 /* 미디어쿼리 */
 @media (max-width:800px){
-.getInfo>div{width:40%;margin:3% 5%;}
-
+.getInfo > div{width:42%;margin: 2%;}
+.getInfo>div>a{padding:5% 3%;}
 
 }
-
+@media (max-width:568px){
+.getInfo > div{font-size:0.8em;}
+}
 @media (max-width:375px){
-.getInfo .col-mobile-12{width:80%;margin:5% 10%;}
+.getInfo > div{width:80%;margin: 3% 10%;font-size:0.9em;}
 
 }

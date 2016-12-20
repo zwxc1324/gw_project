@@ -2,7 +2,44 @@
 	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/promotion.css" media="all" />
 	<script type="text/javascript">
-	
+	function init(){
+		var btns =  document.querySelectorAll("#prom_req input");
+
+		for(var i = 0; i < btns.length; i++){
+
+			(function(){
+				var b = i;
+				function ChBtn(b){
+					//var btnR = b.srcElement;
+					var btnV = this.getAttribute("value");
+					if(btnV = "취소"){
+						var rBtn = btnV.replace("취소", "취소되었습니다");
+						var cancelBtn = this.setAttribute("value" , rBtn);
+						this.style.width = 90 + "px";
+						/*
+						var noneBtn = btnR.parentNode.childNodes[0];
+						var disBtn = noneBtn.getAttribute("value");
+						if(disBtn = "미발송" && noneBtn.nextElement = btnR){
+							
+							.style.display = "none";
+							//btnV = null;*/
+						}
+					/*}else if(btnV = "취소되었습니다"){
+						alert(12);
+						var cancelBtn = btnV.replace("취소되었습니다", "취소");
+						var noneBtn = btnR.setAttribute("value" , cancelBtn);
+						//btnR.style.width = 90 + "px";
+						btnR.parentNode.childNodes[0].style.display = "block";
+					}*/
+					
+				}addEvnt(btns[i], "click", ChBtn);
+			}());
+		}
+
+
+		
+	}addEvnt(window,"load",init);
+
 	</script>
 </head>
 <body>
@@ -31,172 +68,205 @@
 			<div class="getInfo clearFix">
 				<div class="seeInfo col-mobile-12  ico_font_down">
 					<a href="#" >
-							<img src="images/promotion/2.jpg" alt="관광정정보이미지" />
-						<p>관광정보 보기</p></a>
+							<img src="images/promotion/prom_1.jpg" alt="관광정정보이미지" />
+						<p>강원랜드 관광 정보</p></a>
 				</div>
 				<div class="seeMap col-mobile-12 ico_font_down">
-					<a href="#" ><img src="http://placehold.it/100x60" alt="관광정정보이미지" />
-						<p>관광지도 보기</p></a>
+					<a href="#" ><img src="images/promotion/prom_2.jpg" alt="관광정정보이미지" />
+						<p>크리스마스 이벤트 보기</p></a>
 				</div>
 				<div class="seeAdd col-mobile-12  ico_font_down">
-					<a href="#"  class="ico_font_down"><img src="http://placehold.it/100x60" alt="관광정정보이미지" />
+					<a href="#"  class="ico_font_down"><img src="images/promotion/prom_3.jpg" alt="관광정정보이미지" />
+						<p>틀린그림 찾기</p></a>
+				</div>
+				<div class="seeAdd col-mobile-12  ico_font_down">
+					<a href="#"  class="ico_font_down"><img src="images/promotion/prom_4.jpg" alt="관광정정보이미지" />
 						<p>도 홍보물 신청</p></a>
 				</div>
-				<div class="min_search col-mobile-12">
+				<p class="dot">이름, 접수번호를 이용하여 홍보물 신청 현황을 검색해주세요.</p>
+				<div class="sub_search">
+					<form action="#" method="get">
+						<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
+						<fieldset>
+							<legend >이름, 접수번호로 검색하세요</legend>
+							<p>
+								<label for="notice_search" class="blind">홍보물 신청 현황 검색</label>
+								<select name="notice_search" id="notice_search" title="공지사항 검색">
+									<option value="title">이름</option>
+									<option value="content">접수번호</option>
+								</select>
+								<label for="text_notice_search" class="blind">검색어</label>
+								<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력하세요."/>
+								<input type="submit" value="검색" class="btn_search"/>
+							</p>
+						</fieldset>
+					</form>
+				</div>
+				<!-- <div class="min_search col-mobile-12">
 					<form action="#" method="get">
 						<p><input type="hidden" name="hidden_min_search" value="hidden_min_search" /></p>
 						<fieldset>
 							<legend>홍보물 신청 확인</legend>
 							<p><label for="no_search">홍보물 신청 확인</label></p>
 							<p>
-								<input type="text" name="no_search" id="no_search" title="신청 번호를 입력해주세요" placeholder="신청하신 번호를 입력해주세요."/>
-								<input type="text" name="name_search" id="name_search" title="이름을 입력해주세요" placeholder="이름을 입력해주세요."/>
+								<label for="name_search">이름:</label>
+								</label><input type="search" name="name_search" id="name_search" title="이름을 입력해주세요" placeholder="이름을 입력해주세요."/>
+							</p>
+							<p>
+								<label for="no_search">신청 번호 :
+								<input type="search" name="no_search" id="no_search" title="신청 번호를 입력해주세요" placeholder="신청하신 번호를 입력해주세요."/>
+				
 								<input type="submit" value="검색" class="btn_search"/>
 							</p>
 						</fieldset>
 					</form>
-				</div>
+				</div> -->
 			</div>
 			<div class="position_page">
 				<p>▷ 전체 : <span class="pos_page_total"> 126</span>, 현재페이지 :<span class="pos_page_now"> 1/6 </span></p>
 			</div>
 			<div class="board_wrap">
 				<h5 class="blind">홍보물 신청 현황</h5>
-				<table>
-					<caption>홍보물 신청 현황</caption>
-					<thead>
-						<tr>
-							<th scope="col">번호</th>
-							<th scope="col">이름</th>
-							<th scope="col">주소</th>
-							<th scope="col">등록일</th>
-							<th scope="col">발송일</th>
-							<th scope="col">발송여부</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>11891</td>
-							<td>박**</td>
-							<td>대구광역시</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20"> </time></td>
-							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
-						</tr>
-						<tr>
-							<td>11890</td>
-							<td>최**</td>
-							<td>부산광역시</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20"> </time></td>
-							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
-						</tr>
-						<tr>
-							<td>11889</td>
-							<td>윤**</td>
-							<td>대전광역시</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20"> </time></td>
-							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
-						</tr>
-						<tr>
-							<td>11888</td>
-							<td>기**</td>
-							<td>충청북도</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20"> </time></td>
-							<td><input type="button" value="미발송" /><input type="reset" value="취소" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11886</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11885</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11884</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-						<tr>
-							<td>11887</td>
-							<td>김**</td>
-							<td>경기도 성남</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td><time datetime="2016-12-20">2016.12.23</time></td>
-							<td><input type="submit" value="발송" /></td>
-						</tr>
-					</tbody>
-				</table>
+				<form action="#" method="get" id="prom_req">
+					<fieldset>
+						<legend>홍보물 신청 현황</legend>
+						<table>
+							<caption>홍보물 신청 현황</caption>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">이름</th>
+									<th scope="col">주소</th>
+									<th scope="col">등록일</th>
+									<th scope="col">발송일</th>
+									<th scope="col">발송여부</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>11891</td>
+									<td>박**</td>
+									<td>대구광역시</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20"> </time></td>
+									<td><input type="button" value="미발송" class="yet"/><input type="reset" value="취소" /></td>
+								</tr>
+								<tr>
+									<td>11890</td>
+									<td>최**</td>
+									<td>부산광역시</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20"> </time></td>
+									<td><input type="button" value="미발송" class="yet"/><input type="reset" value="취소" /></td>
+								</tr>
+								<tr>
+									<td>11889</td>
+									<td>윤**</td>
+									<td>대전광역시</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20"> </time></td>
+									<td><input type="button" value="미발송" class="yet"/><input type="reset" value="취소" /></td>
+								</tr>
+								<tr>
+									<td>11888</td>
+									<td>기**</td>
+									<td>충청북도</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20"> </time></td>
+									<td><input class="yet" type="button" value="미발송" /><input type="reset" value="취소" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11886</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11885</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11884</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+								<tr>
+									<td>11887</td>
+									<td>김**</td>
+									<td>경기도 성남</td>
+									<td><time datetime="2016-12-20">2016.12.20</time></td>
+									<td><time datetime="2016-12-20">2016.12.23</time></td>
+									<td><input type="button" value="발송" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+				</form>
 				<p class="paging">
 					<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
 					<a href="#"><img src="images/common_sub/page_btn_prev.png" alt="이전 보기" /></a>
