@@ -2,9 +2,9 @@
 
 .visual{position:absolute;top:0;left:213px; width: 1050px;}
 .slogan_img{/* width: 1050px; */ height:100%;/* height:920px; */}
-.m_v_slide{width: 230px;height: 150px;background-color: #fff;display: inline-block;
+.m_v_slide{width: 240px;height: 260px;background-color: #fff;display: inline-block;
 	opacity: 0.5; -ms-filter:alpha(opacity=50); filter: alpha(opacity=50); margin: 100px 0 0 15px;}
-.m_v_slide p{font-size: 28px;color: #0e213b;margin-top: 35px;}
+.m_v_slide p{font-size: 28px;color: #0e213b;margin-top: 90px;}
 
 .visual_slide{width: 90px;}
 .m_v_s_c{position: absolute;top: 0;}
