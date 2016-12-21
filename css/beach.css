@@ -11,16 +11,13 @@ height: 100%;width: 30%;}
 .beach_wrap li .sec_left p:first-child{font-size: 20px;color: #ee5f4a;white-space: nowrap;overflow: hidden;
 	text-overflow: ellipsis;width: 145px;}
 .beach_wrap li .sec_right{float: right; margin:10px 10px 0 0;}
-
-.b_btn_1{margin-left: 20px;}
-.b_btn_1 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_1.png) 0 0 no-repeat;
-width: 150px;height: 50px;border: none;}
+.beach_wrap button{text-indent: -9999px; width: 20%;height: 50px;border: none; }
+.b_btn_1{margin-left: 20px; }
+.b_btn_1 button{background: url(../images/hotel/bg_tab_btn_1.png) 0 0 no-repeat;}
 .b_btn_1 button.on{background: url(../images/hotel/bg_tab_btn_1_ov.png) 0 0 no-repeat;}
-.b_btn_2 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_2.png) 0 0 no-repeat;
-width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 170px;}
+.b_btn_2 button{background: url(../images/hotel/bg_tab_btn_2.png) 0 0 no-repeat; position: absolute;top: 0;left: 170px;}
 .b_btn_2 button.on{background: url(../images/hotel/bg_tab_btn_2_ov.png) 0 0 no-repeat;}
-.b_btn_3 button{text-indent: -9999px;background: url(../images/hotel/bg_tab_btn_3.png) 0 0 no-repeat;
-width: 150px;height: 50px;border: none;position: absolute;top: 0;left: 320px;}
+.b_btn_3 button{background: url(../images/hotel/bg_tab_btn_3.png) 0 0 no-repeat;top: 0;left: 190px;}
 .b_btn_3 button.on{background: url(../images/hotel/bg_tab_btn_3_ov.png) 0 0 no-repeat;}
 
 
