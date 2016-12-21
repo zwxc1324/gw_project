@@ -1,5 +1,5 @@
 @charset "utf-8";
-.beach_wrap{background: url(../images/hotel/bg_tab_wrap.png) 0 50px no-repeat;margin-top: 100px;
+.beach_wrap{margin-top: 100px;
 position: relative;}
 
 .beach_wrap li{float: left;padding: 10px 10px;margin: 60px 0px 0px 20px;border: 1px solid #fff;
@@ -11,14 +11,13 @@ height: 100%;width: 30%;}
 .beach_wrap li .sec_left p:first-child{font-size: 20px;color: #ee5f4a;white-space: nowrap;overflow: hidden;
 	text-overflow: ellipsis;width: 145px;}
 .beach_wrap li .sec_right{float: right; margin:10px 10px 0 0;}
-.beach_wrap button{text-indent: -9999px; width: 20%;height: 50px;border: none; }
-.b_btn_1{margin-left: 20px; }
-.b_btn_1 button{background: url(../images/hotel/bg_tab_btn_1.png) 0 0 no-repeat;}
-.b_btn_1 button.on{background: url(../images/hotel/bg_tab_btn_1_ov.png) 0 0 no-repeat;}
-.b_btn_2 button{background: url(../images/hotel/bg_tab_btn_2.png) 0 0 no-repeat; position: absolute;top: 0;left: 170px;}
-.b_btn_2 button.on{background: url(../images/hotel/bg_tab_btn_2_ov.png) 0 0 no-repeat;}
-.b_btn_3 button{background: url(../images/hotel/bg_tab_btn_3.png) 0 0 no-repeat;top: 0;left: 190px;}
-.b_btn_3 button.on{background: url(../images/hotel/bg_tab_btn_3_ov.png) 0 0 no-repeat;}
+.beach_wrap .b_btn_1{ background: url(../images/beach/bg_tab_wrap.png) 0 bottom repeat-x; padding-bottom: 1px;}
+.beach_wrap button{text-indent: -9999px; width: 17.6470%; min-height: 60px; border: none; background: url(../images/hotel/bg_tab_btn_1.png) 0 bottom no-repeat; background-size: 100%;}
+.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
+.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 17.6470%;}
+.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 17.6470%;}
+.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 35.294%;}
+.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 35.294%;}
 
 
 .beach_wrap h4 + div{display: none;}
@@ -30,7 +29,14 @@ height: 100%;width: 30%;}
 	.beach_wrap li{width: 40%;margin-left: 40px;}
 	.beach_wrap li .sec_left p:first-child{width: 140px;}
 }
-
+@media(max-width:800px){
+	.beach_wrap button{text-indent: -9999px; width: 25%; min-height: 60px;}
+	.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
+	.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 25%;}
+	.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 25%;}
+	.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 50%;}
+	.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 50%;}
+}
 @media (max-width:610px) {
 	.beach_wrap li .sec_left p:first-child{width: 125px;}
 
@@ -40,4 +46,10 @@ height: 100%;width: 30%;}
 	.beach_wrap li{width: 100%;margin-left: 0; background: none;}
 	.beach_wrap li .sec_left p{font-size: 20px;}
 	.beach_wrap li .sec_left p:first-child{font-size: 30px;width: 240px;}
-}
+	.beach_wrap button{text-indent: -9999px; width: 33.3%; min-height: 55px;}
+	.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
+	.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 33.3%;}
+	.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 33.3%;}
+	.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 66.6%;}
+	.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 66.6%;}
+}.6
