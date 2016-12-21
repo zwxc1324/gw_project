@@ -9,172 +9,174 @@
 		<? include"inc/header.html"; ?>
 		<!--// 헤더영역 -->
 		<!-- 컨테이너영역 --> 
-		<div id="sub_container" class="clearFix">
+		<div id="container">
 			<div class="con_title">
-				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">새소식</strong></p>
-				<h3>새소식</h3>
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
+				<h3>오시는길</h3>
 			</div>
-			<p>강원 관광의 새로운 소식을 알려드립니다.  </p>
-			<div class="sub_search">
-				<form action="#" method="get">
-					<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
-					<fieldset>
-						<legend >공지사항의 제목, 내용, 작성자로 검색하세요</legend>
-						<p>
-							<label for="notice_search" class="blind">공지사항 검색 분류</label>
-							<select name="notice_search" id="notice_search" title="공지사항 검색">
-								<option value="title">제목</option>
-								<option value="content">내용</option>
-								<option value="writer">작성자</option>
-							</select>
-							<label for="text_notice_search" class="blind">검색어</label>
-							<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력해주세요."/>
-							<input type="submit" value="검색" class="btn_search"/>
-						</p>
-					</fieldset>
-				</form>
-			</div>	
-			<div class="position_page">
-				<p>▷ 전체 : <span class="pos_page_total"> 26</span>, 현재페이지 :<span class="pos_page_now"> 1/3 </span></p>
+			<div id="sub_container" >
+				<p>강원 관광의 새로운 소식을 알려드립니다.  </p>
+				<div class="sub_search">
+					<form action="#" method="get">
+						<p><input type="hidden" name="hidden_notice_search" value="notice" /></p>
+						<fieldset>
+							<legend >공지사항의 제목, 내용, 작성자로 검색하세요</legend>
+							<p>
+								<label for="notice_search" class="blind">공지사항 검색 분류</label>
+								<select name="notice_search" id="notice_search" title="공지사항 검색">
+									<option value="title">제목</option>
+									<option value="content">내용</option>
+									<option value="writer">작성자</option>
+								</select>
+								<label for="text_notice_search" class="blind">검색어</label>
+								<input type="text" name="text_notice_search" id="text_notice_search" title="검색어를 입력하세요" placeholder="검색어를 입력해주세요."/>
+								<input type="submit" value="검색" class="btn_search"/>
+							</p>
+						</fieldset>
+					</form>
+				</div>	
+				<div class="position_page">
+					<p>▷ 전체 : <span class="pos_page_total"> 26</span>, 현재페이지 :<span class="pos_page_now"> 1/3 </span></p>
+				</div>
+				<div class="board_wrap">
+					<table>
+						<caption>관광자료</caption>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">제목</th>
+								<th scope="col">이름</th>
+								<th scope="col">날짜</th>
+								<th scope="col">조회수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>752</td>
+								<td><a href="#">서울·강원·경기, '평창올림픽 특수' 해외관광객 유치 노린다</a></td>
+								<td>강원관광</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>37</td>
+							</tr>
+							<tr>
+								<td>751</td>
+								<td><a href="#">한류 팬미팅 연계 일본관광객 올림픽개최지 대거 방문으로 훈풍 </a></td>
+								<td>강원관광</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>455</td>
+							</tr>
+							<tr>
+								<td>750</td>
+								<td><a href="#">외국인 개별관광객 유치를 위한 9개국 온라인 오피니언 리더</a></td>
+								<td>강원관광</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>315</td>
+							</tr>
+							<tr>
+								<td>32</td>
+								<td><a href="#">강원도, 중국 최대 국영여행사 CTS와 중국관광객 유치 업무 협약</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>31</td>
+								<td><a href="#">EATOF 10개국 지방정부 2018평창!문화·관광올림픽 힘 합친다.</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>30</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>29</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>28</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>26</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>25</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>23</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>22</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
+								<td>관리자</td>
+								<td><time datetime="2016-12-20">2016.12.20</time></td>
+								<td>3536</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="paging">
+						<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
+						<a href="#"><img src="images/common_sub/page_btn_prev.png" alt="이전 보기" /></a>
+						<span>
+							<a href="#" class="select">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+						</span>
+						<a href="#"><img src="images/common_sub/page_btn_next.png" alt="다음 보기" /></a>
+						<a href="#"><img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" /></a>
+					</p>
+				</div>
+				<!-- 푸터영역 -->
+				<? include"inc/footer.html"; ?>
+				<!-- //푸터영역 -->
 			</div>
-			<div class="board_wrap">
-				<table>
-					<caption>관광자료</caption>
-					<thead>
-						<tr>
-							<th scope="col">번호</th>
-							<th scope="col">제목</th>
-							<th scope="col">이름</th>
-							<th scope="col">날짜</th>
-							<th scope="col">조회수</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>752</td>
-							<td><a href="#">서울·강원·경기, '평창올림픽 특수' 해외관광객 유치 노린다</a></td>
-							<td>강원관광</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>37</td>
-						</tr>
-						<tr>
-							<td>751</td>
-							<td><a href="#">한류 팬미팅 연계 일본관광객 올림픽개최지 대거 방문으로 훈풍 </a></td>
-							<td>강원관광</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>455</td>
-						</tr>
-						<tr>
-							<td>750</td>
-							<td><a href="#">외국인 개별관광객 유치를 위한 9개국 온라인 오피니언 리더</a></td>
-							<td>강원관광</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>315</td>
-						</tr>
-						<tr>
-							<td>32</td>
-							<td><a href="#">강원도, 중국 최대 국영여행사 CTS와 중국관광객 유치 업무 협약</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>31</td>
-							<td><a href="#">EATOF 10개국 지방정부 2018평창!문화·관광올림픽 힘 합친다.</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>30</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>29</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>28</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>27</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>26</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>25</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>24</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>23</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>22</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-						<tr>
-							<td>21</td>
-							<td><a href="#">2015년 강원관광기본현황(14월 말 기준)</a></td>
-							<td>관리자</td>
-							<td><time datetime="2016-12-20">2016.12.20</time></td>
-							<td>3536</td>
-						</tr>
-					</tbody>
-				</table>
-				<p class="paging">
-					<a href="#"><img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" /></a>
-					<a href="#"><img src="images/common_sub/page_btn_prev.png" alt="이전 보기" /></a>
-					<span>
-						<a href="#" class="select">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a href="#">6</a>
-					</span>
-					<a href="#"><img src="images/common_sub/page_btn_next.png" alt="다음 보기" /></a>
-					<a href="#"><img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" /></a>
-				</p>
-			</div>
-			<!-- 푸터영역 -->
-			<? include"inc/footer.html"; ?>
-			<!-- //푸터영역 -->
 		</div>
 		<!-- class="select" : 현재 선택 된 영역 표시 -->
 		<!-- //컨테이너영역 -->

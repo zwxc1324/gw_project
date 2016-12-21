@@ -1,5 +1,5 @@
 @charset "utf-8";
 table{table-layout: fixed;}
-tr>td:first-child+td{display:block;}
+/* tr>td:first-child+td{display:block;} */
 .con_title + p{margin: 20px 0; border-left: 3px solid #e8177a; padding-left: 5px;}
 #notice_search{background-color:#fffafa;}

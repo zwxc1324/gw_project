@@ -29,8 +29,9 @@
 /* option글자 크기 조정 --안된다. 해결하기 */
 #notice_search option{font-size:15px;}
 
-/* 테이블 수취확인*/
+.board_wrap thead > tr > th:firsth-child, .board_wrap tbody > tr > td:firsth-child{max-width:10px;}
 
+/* 테이블 수취확인*/
 .board_wrap input[type=button], .board_wrap input[type=reset]{width:40px;height:25px;background-color:#fffafa;border:1px solid #d0cede;margin:2px;border-radius:3px;}
 .board_wrap input[type=button].yet{color:#3879d9;background-color:#fff;border:1px solid #d0cede;}
 

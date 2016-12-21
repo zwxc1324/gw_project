@@ -12,45 +12,47 @@
 		<? include"inc/header.html"; ?>
 		<!--// 헤더영역 -->
 		<!-- 컨테이너영역 --> 
-		<div id="sub_container" class="clearFix">
+		<div id="container">
 			<div class="con_title">
-				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행톡톡</a> <strong class="ico_font_angle_r">뉴스레터</strong></p>
-				<h3>뉴스레터</h3>
+				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
+				<h3>오시는길</h3>
 			</div>
-			<div class="newsletter_wrap">
-				<div class="newsletter_info newsletter_info_2 clearFix">
-					<p class="col-maxpc-9 col-pc-8"><strong>강원도 관광 소식을 전해드리는 소식지</strong><br>
-						회원정보에서 메일 정보와 수신여부를 확인하세요. 매월 이메일을 통해서 편하게 받아 보실 수 있습니다.</p>
-					<p class="col-maxpc-2 col-pc-3 col-tablet-3"><a href="sub_tt_newsletter.html"><span class="ico_font_newsletterList"> 목록보기</span></a></p>
-				</div>
-				<div class="nletter_apl_box">
-					<div>
-						<p>뉴스레터 구독신청</p>
-						<p>- 회원은 로그인 후 <span>[회원정보수정]</span>에서 신청 및 해지하실 수 있습니다.<br>
-							- 대소문자 구분 및 앞뒤 공배 등에 주의하여 입력해 주세요.<br>
-							- 뉴스레터를 받아보실 E-mail 주소를 정확하게 입력해 주세요.<br>
-						</p>
-						<form action="#" method="post">
-							<fieldset>
-								<legend>뉴스레터 구독신청</legend>
-								<div>
-									<p><label for="nl_user_name">이  름</label><input type="text" id="nl_user_name" placeholder="아이디를 입력하세요"></p>
-									<p><label for="nl_user_mail">이메일</label><input type="email" id="nl_user_mail" placeholder="이메일을 입력하세요"></p>
-									<button>신청하기</button>
-									<!-- <p><input type="submit" value="신청하기"></p> -->
-								</div>
-							</fieldset>
-						</form>
+			<div id="sub_container" >
+				<div class="newsletter_wrap">
+					<div class="newsletter_info newsletter_info_2 clearFix">
+						<p class="col-maxpc-9 col-pc-8"><strong>강원도 관광 소식을 전해드리는 소식지</strong><br>
+							회원정보에서 메일 정보와 수신여부를 확인하세요. 매월 이메일을 통해서 편하게 받아 보실 수 있습니다.</p>
+						<p class="col-maxpc-2 col-pc-3 col-tablet-3"><a href="sub_tt_newsletter.html"><span class="ico_font_newsletterList"> 목록보기</span></a></p>
 					</div>
-				</div>
+					<div class="nletter_apl_box">
+						<div>
+							<p>뉴스레터 구독신청</p>
+							<p>- 회원은 로그인 후 <span>[회원정보수정]</span>에서 신청 및 해지하실 수 있습니다.<br>
+								- 대소문자 구분 및 앞뒤 공배 등에 주의하여 입력해 주세요.<br>
+								- 뉴스레터를 받아보실 E-mail 주소를 정확하게 입력해 주세요.<br>
+							</p>
+							<form action="#" method="post">
+								<fieldset>
+									<legend>뉴스레터 구독신청</legend>
+									<div>
+										<p><label for="nl_user_name">이  름</label><input type="text" id="nl_user_name" placeholder="아이디를 입력하세요"></p>
+										<p><label for="nl_user_mail">이메일</label><input type="email" id="nl_user_mail" placeholder="이메일을 입력하세요"></p>
+										<button>신청하기</button>
+										<!-- <p><input type="submit" value="신청하기"></p> -->
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
 
+				</div>
+				<!-- 푸터영역 -->
+				<? include"inc/footer.html"; ?>
+				<!-- //푸터영역 -->
 			</div>
-			<!-- 푸터영역 -->
-			<? include"inc/footer.html"; ?>
-			<!-- //푸터영역 -->
 		</div>
-		<!-- class="select" : 현재 선택 된 영역 표시 -->
-		<!-- //컨테이너영역 -->
+			<!-- class="select" : 현재 선택 된 영역 표시 -->
+			<!-- //컨테이너영역 -->
 	</div>
 </body>
 </html>
