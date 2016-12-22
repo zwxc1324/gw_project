@@ -3,6 +3,7 @@
 /* 서브 기본 폰트 16px */
 #container{
 	padding-left:200px;
+
 }
 
 #sub_container{
@@ -19,6 +20,7 @@
 	height:169px;
 	margin:0 auto;
 	padding:80px 0 0 20px;
+	border-left:1px solid #d0cecd;
 	border-bottom:1px solid #d0cecd;
 }
 .con_title p{font-size:0.9em;padding:0 0 10px 5px;}

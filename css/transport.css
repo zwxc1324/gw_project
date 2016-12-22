@@ -1,4 +1,6 @@
 @charset "utf-8";
+#sub_container > p{line-height:160%; padding-left: 6px;}
+#sub_container > p:first-child{border-left: 3px solid #e8177a;margin-left: -4px;}
 tr > td:first-child+td{text-align:center;}
 tr > td:first-child+td+td+td, tr > td:first-child+td+td+td+td+td, tr > th:first-child+th+th+th, tr > th:first-child+th+th+th+th+th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 tr>td:first-child+td{text-align:center;}
@@ -49,4 +51,5 @@ h5 + div input[type=button]{font-size:0.89em;}
 h5 input[type=button]{font-size:0.9em;}
 h5 + div > ul > li{padding:3px;min-width:19.9%;}
 h5 + div input[type=button]{font-size:0.8em;padding:8px 6px}
+tr>th:first-child, tr>td:first-child{display:none;}
 }

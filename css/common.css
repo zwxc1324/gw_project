@@ -42,9 +42,11 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 	font-size:1em;
 }
 #header{
-  position:absolute; top:0; left:0;
+	position:absolute; top:0; left:0;
 	width:200px; 
+	height:943px;
 	background-color:white;
+	
 }
 #container{
 	width:100%;
@@ -88,7 +90,7 @@ h1,h2,h3,h4,h5,h6,strong{font-size:100%;font-weight:normal;}
 /**** 헤더영역 ****/
 #headerTop{
 	height:169px;
-	border-right:1px solid #d0cecd;
+	border-bottom:1px solid #d0cecd;
 }
 h1{padding:0 0 0 0px;}
 h1 > a > img:first-child + img{display:none;}
@@ -135,6 +137,7 @@ h1 > a > img:first-child + img{display:none;}
 /* 네비 */
 #gnb{background-color:#fff; }
 #gnb > ul > li  a{font-size:1.9em;padding:11px 34px;display:block;border-top:1px solid #d0cecd; }
+#gnb > ul > li:first-child  a{border-top:0 none; }
 #gnb > ul > li > a.on/* , #gnb > ul > li > a:hover, #gnb > ul > li > a:focus */{background-color:#dc3d6c;color:#fff;}
 
 .quickLink li{
@@ -231,6 +234,14 @@ address, #footer p{font-size:0.9em}
 /* 	height:169px; */
 	height:100%;
 }
+.langWrap{
+	display:none; 
+	position:absolute; 
+	left:0;top:37px;
+	width:100%;
+	background-color:#FFF; 
+}
+
 /** 포커스 조정 **/
 /* #container{
 	padding-left:0;
@@ -243,7 +254,8 @@ address, #footer p{font-size:0.9em}
 	margin-left:-100px;
 }
 
- */
+*/
+
 /**비율에 맞게 넓게**/
 #container{
 	margin-top:-100px;
