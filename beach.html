@@ -1,612 +1,451 @@
 <? include"inc/top.html"; ?>
-	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/beach.css" media="all">
-	<script src="js/common.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	function init() {
-		var btn_tab = document.querySelectorAll(".beach_wrap h4 button");
+    <link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/beach.css" media="all">
+    <script src="js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    function init() {
+        var btn_tab = document.querySelectorAll(".beach_wrap h4 button");
 
-			for(var i = 0;i < btn_tab.length; i++){
-				(function(){
-					var num = i;
-					addEvnt(btn_tab[i],"click",function(){
+        for (var i = 0; i < btn_tab.length; i++) {
+            (function() {
+                var num = i;
+                addEvnt(btn_tab[i], "click", function() {
 
-						var beach_div = document.querySelectorAll(".beach_wrap >div");
-						for(var i = 0; i < beach_div.length; i++){
-							if(i == num){
-								beach_div[i].style.display = "block";
-								btn_tab[i].setAttribute("class","on");
-							}else{
-								beach_div[i].style.display = "none";
-								btn_tab[i].setAttribute("class","");
-							}
-						}
-					});
-				}());
-			}
+                    var beach_div = document.querySelectorAll(".beach_wrap >div");
+                    for (var i = 0; i < beach_div.length; i++) {
+                        if (i == num) {
+                            beach_div[i].style.display = "block";
+                            btn_tab[i].setAttribute("class", "on");
+                        } else {
+                            beach_div[i].style.display = "none";
+                            btn_tab[i].setAttribute("class", "");
+                        }
+                    }
+                });
+            }());
+        }
 
-	}
-	addEvnt(window,"load",init)
-	</script>
-</head>
-<body>
-	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->
-	<div class="wrap clearFix">
-		<!-- 헤더영역 -->
-		<? include"inc/header.html"; ?>
-		<!--// 헤더영역 -->
-		<!-- 컨테이너영역 -->
-		<div id="container">
-			<div class="con_title">
-				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
-				<h3>오시는길</h3>
-			</div>
-			<div id="sub_container" >
-					<div class="beach_wrap">
-						<h4 class="b_btn_1"><button class="on">선호도순</button></h4>
-						<div>
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_1.jpg" alt="정암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정암해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_2.jpg" alt="죽도해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>죽도해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_3.jpg" alt="맹방해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>맹방해변</p>
-													<p>삼척시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_4.jpg" alt="잔교리해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>잔교리해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_5.jpg" alt="사근진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>사근진해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_6.jpg" alt="정동진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정동진해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_7.jpg" alt="망상해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>망상해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_8.jpg" alt="경포해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_9.jpg" alt="설악파크.">
-											<figcaption>
-												<div class="sec_left">
-													<p>화진포해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_10.jpg" alt="인구해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>인구해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_11.jpg" alt="추암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>추암해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_12.jpg" alt="자작도해변 ">
-											<figcaption>
-												<div class="sec_left">
-													<p>자작도해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
+    }
+    addEvnt(window, "load", init)
+    </script>
+    </head>
+
+    <body>
+        <!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->
+        <div class="wrap clearFix">
+            <!-- 헤더영역 -->
+            <? include"inc/header.html"; ?>
+                <!--// 헤더영역 -->
+                <!-- 컨테이너영역 -->
+                <div id="container">
+                    <div class="con_title">
+                        <p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
+                        <h3>오시는길</h3>
+                    </div>
+                    <div id="sub_container">
+                        <div class="beach_wrap">
+                            <h4 class="b_btn_1"><button class="on">선호도순</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_1.jpg" alt="정암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정암해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_2.jpg" alt="죽도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>죽도해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_3.png" alt="맹방해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>맹방해변 <span>삼척시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_4.jpg" alt="잔교리해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>잔교리해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_5.jpg" alt="사근진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>사근진해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_6.png" alt="정동진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정동진해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_11.jpg" alt="추암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>추암해변 <span>동해시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_7.jpg" alt="망상해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>망상해변 <span>동해시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_8.jpg" alt="경포해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>경포해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_9.jpg" alt="화진포해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>화진포해변 <span>고성군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_10.jpg" alt="인구해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>인구해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_12.jpg" alt="자작도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>자작도해변 <span>고성군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
 									<a href="#" class="select">1</a>
 									<a href="#">2</a>
 									<a href="#">3</a>
 								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-						<h4 class="b_btn_2"><button>신규등록순</button></h4>
-						<div>
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_4.jpg" alt="망상해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>망상해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_5.jpg" alt="경포해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_6.jpg" alt="정동진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정동진해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_7.jpg" alt="인구해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>인구해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_8.jpg" alt="추암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>추암해변</p>
-													<p>속초시</p>
-													<p><img src="images/beach/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_1.jpg" alt="정암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정암해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_5.jpg" alt="사근진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>사근지해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_2.jpg" alt="죽도해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>죽도해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_3.jpg" alt="맹방해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>맹방해변</p>
-													<p>삼척시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_9.jpg" alt="화진포해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>화진포해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_10.jpg" alt="인구해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>인구해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_11.jpg" alt="추암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>추암해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                            <h4 class="b_btn_2"><button>신규등록순</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_4.jpg" alt="망상해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>망상해변 <span>동해시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_5.jpg" alt="경포해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>경포해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_3.png" alt="맹방해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>맹방해변 <span>삼척시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_6.png" alt="정동진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정동진해변 <span>고성군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_7.jpg" alt="인구해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>인구해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_8.jpg" alt="추암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>추암해변 <span>속초시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_1.jpg" alt="정암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정암해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_5.jpg" alt="사근진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>사근진해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_2.jpg" alt="죽도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>죽도해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_2.jpg" alt="죽도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>죽도해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
 									<a href="#" class="select">1</a>
 									<a href="#">2</a>
 									<a href="#">3</a>
 								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-						<h4 class="b_btn_3"><button>이름순</button></h4>
-						<div>
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_8.jpg" alt="경포해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_3.jpg" alt="망상해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>망상해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_3.jpg" alt="맹방해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>맹방해변</p>
-													<p>삼척시</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_5.jpg" alt="사근진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>사근진해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_10.jpg" alt="인구해변 ">
-											<figcaption>
-												<div class="sec_left">
-													<p>인구해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_12.jpg" alt="자작도해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>자작도해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_4.jpg" alt="잔교리해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>잔교리해변</p>
-													<p>양구군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_6.jpg" alt="정동진해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정동진해변</p>
-													<p>강릉시</p>
-													<p><img src="images/beach/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_1.jpg" alt="정암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>정암해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_2.jpg" alt="죽도해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>죽도해변</p>
-													<p>양양군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_11.jpg" alt="추암해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>추암해변</p>
-													<p>동해시</p>
-													<p><img src="images/beach/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/beach/gold-medal.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/beach/beach_9.jpg" alt="화진포해변">
-											<figcaption>
-												<div class="sec_left">
-													<p>화진포해변</p>
-													<p>고성군</p>
-													<p><img src="images/beach/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                            <h4 class="b_btn_3"><button>이름순</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_4.jpg" alt="망상해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>망상해변 <span>동해시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_5.jpg" alt="경포해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>경포해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_3.png" alt="맹방해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>맹방해변 <span>삼척시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_6.png" alt="정동진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정동진해변 <span>고성군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_7.jpg" alt="인구해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>인구해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_8.jpg" alt="추암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>추암해변 <span>속초시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_1.jpg" alt="정암해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>정암해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_5.jpg" alt="사근진해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>사근진해변 <span>강릉시</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_2.jpg" alt="죽도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>죽도해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/beach/beach_2.jpg" alt="죽도해변">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>죽도해변 <span>양양군</span></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
 									<a href="#" class="select">1</a>
 									<a href="#">2</a>
 									<a href="#">3</a>
 								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-					</div>
-				<!-- 푸터영역 -->
-				<? include"inc/footer.html"; ?>
-				<!-- //푸터영역 -->
-			</div>
-		</div>
-		<!-- class="select" : 현재 선택 된 영역 표시 -->
-		<!-- //컨테이너영역 -->
-	</div>
-</body>
-</html>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 푸터영역 -->
+                        <? include"inc/footer.html"; ?>
+                            <!-- //푸터영역 -->
+                    </div>
+                </div>
+                <!-- class="select" : 현재 선택 된 영역 표시 -->
+                <!-- //컨테이너영역 -->
+        </div>
+    </body>
 
+    </html>
