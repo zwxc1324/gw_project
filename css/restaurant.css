@@ -1,0 +1,52 @@
+@charset "utf-8";
+.res_wrap{margin-top: 100px;
+position: relative;}
+
+.res_wrap li{float: left;padding: 10px 10px;margin: 60px 0px 0px 20px;border: 1px solid #fff;width: 30%;}
+.res_wrap li:hover img{border: 2px solid #dc3d6c;}
+
+.res_wrap .li_sec img{border-radius: 3px; border: 2px solid #fff;}
+.res_wrap .li_sec {position: 	relative;}
+.res_wrap .li_sec .li_sec_tit_wrap{width: 100%; background: rgba(255,255,255,0.6);
+					padding: 7px 40px 3px; position: absolute;	bottom:0;left:0; font-weight:bold; margin-bottom: 17px;}
+.res_wrap .li_sec .li_sec_tit_wrap p{font-size: 18px; text-align:center; color: #333; font-weight: bold; letter-spacing: -0.12em;}
+.res_wrap .li_sec .li_sec_tit_wrap p +p{font-size: 12px;}
+.res_wrap .r_btn_1{ border-bottom: 1px solid #00529c;}
+.res_wrap button{ width: 25%; padding: 10px 0; border: 1px solid #00529c; color: #525252; border-bottom: none;
+					background-color: #fff; font-weight: bold; font-size: 14px;}
+.r_btn_1 button.on{border-bottom: none; background-color:#00529c; color: #fff;}
+.r_btn_2 button{position: absolute; top:0; left: 25%; border-left: none;}
+.r_btn_2 button.on{position: absolute; top:0; left: 25%; background-color:#00529c; color: #fff; }
+.r_btn_3 button{position: absolute; top:0; left: 50%; border-left: none;}
+.r_btn_3 button.on{position: absolute; top:0; left: 50%; background-color:#00529c; color: #fff;}
+.r_btn_4 button{position: absolute; top:0; left: 75%; border-left: none;}
+.r_btn_4 button.on{position: absolute; top:0; left: 75%; background-color:#00529c; color: #fff;}
+
+
+.res_wrap h4 + div{display: none;}
+.res_wrap .r_btn_1 + div{display: block;}
+
+.paging{margin-top: 70px;}
+.space{margin: 70px 0 40px 0; height: 10px;}
+
+@media (max-width: 1025px) {
+	.res_wrap li{width: 40%;margin-left: 40px;}
+}
+@media(max-width:800px){
+	.res_wrap button{ font-size: 15px; }
+
+
+}
+@media (max-width:610px) {
+	.res_wrap .li_sec .li_sec_tit_wrap p{font-size: 16px;}
+	.res_wrap .li_sec .li_sec_tit_wrap p+p{font-size: 14px;}
+
+}
+
+@media (max-width:568px) {
+	.res_wrap li{width: 100%;margin-left: 0; background: none;}
+	.res_wrap button{font-size: 13px;}
+	.res_wrap .li_sec .li_sec_tit_wrap p{font-size: 25px;}
+	.res_wrap .li_sec .li_sec_tit_wrap p+p{font-size: 21px;}
+
+}

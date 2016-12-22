@@ -18,3 +18,16 @@
 .contents_main >div >div img {float: right; min-height: 140px; width: 42%;}
 .contents_main >div >div >div {float: left; padding-left: 20px; width: 55%;}
 .contents_main >div >div >div p{padding-left: 10px; text-align: justify;}
+
+@media(max-width:1000px){
+	.contents_main >div >div >div {float: left;  width: 50%;}
+	.contents_main >div >div >div p{letter-spacing: -0.07em;}
+	.contents_main >div >div img {float: right;  width: 45%;}
+
+}
+@media(max-width:600px){
+	.contents_main >div >div >div {display: block; padding: 10px; width: 100%;}
+	.contents_main >div >div >div p{letter-spacing: normal; padding: 0;}
+	.contents_main >div >div img {display: block; width: 100%;}
+
+}

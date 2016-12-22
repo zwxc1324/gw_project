@@ -11,13 +11,14 @@ position: relative;}
 					padding: 7px 40px 3px; position: absolute;	bottom:0;left:0; font-weight:bold; margin-bottom: 17px;}
 .beach_wrap .li_sec .li_sec_tit_wrap p{font-size: 18px; text-align:center; color: #333; font-weight: bold; letter-spacing: -0.12em;}
 .beach_wrap .li_sec .li_sec_tit_wrap p span{font-size: 15px;}
-.beach_wrap .b_btn_1{ background: url(../images/beach/bg_tab_wrap.png) 0 bottom repeat-x; padding-bottom: 1px;}
-.beach_wrap button{text-indent: -9999px; width: 17.6470%; min-height: 60px; border: none; background: url(../images/hotel/bg_tab_btn_1.png) 0 bottom no-repeat; background-size: 100%;}
-.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
-.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 17.6470%;}
-.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 17.6470%;}
-.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 35.294%;}
-.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 35.294%;}
+.beach_wrap .b_btn_1{ border-bottom: 1px solid #00529c;}
+.beach_wrap button{ width: 33.3%; padding: 10px 0; border: 1px solid #00529c; color: #525252; border-bottom: none;
+					background-color: #fff; font-weight: bold; font-size: 14px;}
+.b_btn_1 button.on{border-bottom: none; background-color:#00529c; color: #fff;}
+.b_btn_2 button{position: absolute; top:0; left: 33.3%; border-left: none;}
+.b_btn_2 button.on{position: absolute; top:0; left: 33.3%; background-color:#00529c; color: #fff; }
+.b_btn_3 button{position: absolute; top:0; left: 66.6%; border-left: none;}
+.b_btn_3 button.on{position: absolute; top:0; left: 66.6%; background-color:#00529c; color: #fff;}
 
 
 .beach_wrap h4 + div{display: none;}
@@ -30,12 +31,12 @@ position: relative;}
 	.beach_wrap li .sec_left p:first-child{width: 140px;}
 }
 @media(max-width:800px){
-	.beach_wrap button{text-indent: -9999px; width: 25%; min-height: 60px;}
-	.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
-	.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 25%;}
-	.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 25%;}
-	.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 50%;}
-	.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 50%;}
+	.beach_wrap button{width: 33.3%; font-size: 15px; }
+	.b_btn_1 button.on{border-bottom: none; background-color:#00529c; color: #fff;}
+	.b_btn_2 button{position: absolute; top:0; left: 33.3%; border-left: none;}
+	.b_btn_2 button.on{position: absolute; top:0; left: 33.3%; background-color:#00529c; color: #fff; }
+	.b_btn_3 button{position: absolute; top:0; left: 66.6%; border-left: none;}
+	.b_btn_3 button.on{position: absolute; top:0; left: 66.6%; background-color:#00529c; color: #fff;}
 }
 @media (max-width:610px) {
 	.beach_wrap .li_sec .li_sec_tit_wrap p{font-size: 16px;}
@@ -45,12 +46,12 @@ position: relative;}
 
 @media (max-width:568px) {
 	.beach_wrap li{width: 100%;margin-left: 0; background: none;}
-	.beach_wrap button{text-indent: -9999px; width: 33.3%; min-height: 55px;}
+	.beach_wrap button{ width: 33.3%; font-size: 13px;}
 	.beach_wrap .li_sec .li_sec_tit_wrap p{font-size: 25px;}
 	.beach_wrap .li_sec .li_sec_tit_wrap p span{font-size: 22px;}
-	.b_btn_1 button.on{background-image: url(../images/hotel/bg_tab_btn_1_ov.png);}
-	.b_btn_2 button{background-image: url(../images/hotel/bg_tab_btn_2.png); position: absolute;top: 0;left: 33.3%;}
-	.b_btn_2 button.on{background-image: url(../images/hotel/bg_tab_btn_2_ov.png); position: absolute;top: 0;left: 33.3%;}
-	.b_btn_3 button{background-image: url(../images/hotel/bg_tab_btn_3.png);position: absolute; top: 0;left: 66.6%;}
-	.b_btn_3 button.on{background-image: url(../images/hotel/bg_tab_btn_3_ov.png); position: absolute; top: 0;left: 66.6%;}
+	.b_btn_1 button.on{border-bottom: none; background-color:#00529c; color: #fff;}
+	.b_btn_2 button{position: absolute; top:0; left: 33.3%; border-left: none;}
+	.b_btn_2 button.on{position: absolute; top:0; left: 33.3%; background-color:#00529c; color: #fff; }
+	.b_btn_3 button{position: absolute; top:0; left: 66.6%; border-left: none;}
+	.b_btn_3 button.on{position: absolute; top:0; left: 66.6%; background-color:#00529c; color: #fff;}
 }
