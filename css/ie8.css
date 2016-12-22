@@ -1,3 +1,4 @@
-body{min-width: 880px;}
-table{table-layout:fixed;}
-table > td{display:block;}
+body{min-width: 1024px;}
+/* table{table-layout:fixed;}
+table > th{display:block;}
+table > td{display:block;} */

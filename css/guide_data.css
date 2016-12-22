@@ -1,5 +1,23 @@
 @charset "utf-8";
 table{table-layout: fixed;}
 /* tr>td:first-child+td{display:block;} */
-.con_title + p{margin: 20px 0; border-left: 3px solid #e8177a; padding-left: 5px;}
+#sub_container > p{margin: 20px 0; border-left: 3px solid #e8177a; padding-left: 5px;}
 #notice_search{background-color:#fffafa;}
+
+.board_wrap > table > thead> tr > th:first-child + th, .board_wrap > table > tbody > tr > th:first-child + td{width:230px;}
+
+@media (max-width:800px){
+.board_wrap > table > thead> tr > th:first-child + th + th, .board_wrap > table > tbody > tr > td:first-child + td + td{display:none;}
+
+}
+
+@media (max-width:568px){
+.board_wrap > table > thead > tr > th:first-child, .board_wrap > table > tbody > tr > td:first-child{width:10%;}
+.board_wrap > table > thead > tr > th:first-child + th, .board_wrap > table > tbody > tr > td:first-child + td{width:50%;}
+.board_wrap > table > thead > tr > th:first-child + th + th + th + th, .board_wrap > table > tbody > tr > td:first-child + td + td + td + td{display:table-cell;}
+
+}
+@media (max-width:375px){
+.board_wrap > table > thead > tr > th:first-child, .board_wrap > table > tbody > tr > td:first-child{display:none;}
+
+}
