@@ -50,7 +50,6 @@
                                                             <a href="#" class="db_check">중복확인</a>
                                                             <p>12자 이내, 영문 숫자조합</p>
                                                         </td>
-
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
@@ -64,7 +63,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
-                                                            <label for="user_pw_confirm">
+                                                            <label for="user_pw_confirm" class="leter_sp">
                                                                 <img src="images/join/star.png" alt="필수입력">비밀번호확인</label>
                                                         </th>
                                                         <td>
@@ -104,12 +103,12 @@
                                                         </th>
                                                         <td>
                                                             <select name="user_phone_1" id="user_phone_1" title="핸드폰 앞번호선택" class="frm_sel_1">
-                                                            	<option selected="selected" value="010">010</option>
-                                                            	<option value="011">011</option>
-                                                            	<option value="016">016</option>
-                                                            	<option value="017">017</option>
-                                                            	<option value="018">018</option>
-                                                            	<option value="019">019</option>
+                                                                <option selected="selected" value="010">010</option>
+                                                                <option value="011">011</option>
+                                                                <option value="016">016</option>
+                                                                <option value="017">017</option>
+                                                                <option value="018">018</option>
+                                                                <option value="019">019</option>
                                                             </select> -
                                                             <input type="text" name="user_phone_2" id="user_phone_2" title="중간번호 3~4자리" class="frm_input_1"> -
                                                             <input type="text" name="user_phone_3" id="user_phone_3" title="끝번호 3~4자리" class="frm_input_1">
@@ -117,40 +116,39 @@
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
-                                                            <label for="user_email">
-                                                                <img src="images/join/star.png" alt="필수입력">이메일</label>
+                                                            <span><img src="images/join/star.png" alt="필수입력">이메일</span>
                                                         </th>
                                                         <td>
-                                                            <input type="email" name="user_email_1" id="user_email_1" title="이메일 앞자리 선택" class="frm_input_2 frm_email"> &#64;
-                                                            <select name="user_email_2" title="이메일 뒷자리 선택" class="frm_sel_2 frm_email">
-                                                            	<option selected="selected" value="">직접입력선택</option>
-                                                            	<option value="chol.com">chol.com</option>
-                                                            	<option value="dreamwiz.com">dreamwiz.com</option>
-                                                            	<option value="empal.com">empal.com</option>
-                                                            	<option value="gmail.com">gmail.com</option>
-                                                            	<option value="hanafos.com">hanafos.com</option>
-                                                            	<option value="hanmail.net">hanmail.net</option>
-                                                            	<option value="hanmir.com">hanmir.com</option>
-                                                            	<option value="hotmail.com">hotmail.com</option>
-                                                            	<option value="korea.com">korea.com</option>
-                                                            	<option value="lycos.co.kr">lycos.co.kr</option>
-                                                            	<option value="me.com">me.com</option>
-                                                            	<option value="nate.com">nate.com</option>
-                                                            	<option value="naver.com">naver.com</option>
-                                                            	<option value="paran.com">paran.com</option>
-                                                            	<option value="yahoo.com">yahoo.com</option>
+                                                            <input type="email" name="user_email" id="user_email_1" title="이메일 앞자리 선택" class="frm_input_2 frm_email" /> &#64;
+                                                            <select name="user_email" title="이메일 뒷자리 선택" class="frm_sel_2 frm_email">
+                                                                <option selected="selected" value="">직접입력선택</option>
+                                                                <option value="chol.com">chol.com</option>
+                                                                <option value="dreamwiz.com">dreamwiz.com</option>
+                                                                <option value="empal.com">empal.com</option>
+                                                                <option value="gmail.com">gmail.com</option>
+                                                                <option value="hanafos.com">hanafos.com</option>
+                                                                <option value="hanmail.net">hanmail.net</option>
+                                                                <option value="hanmir.com">hanmir.com</option>
+                                                                <option value="hotmail.com">hotmail.com</option>
+                                                                <option value="korea.com">korea.com</option>
+                                                                <option value="lycos.co.kr">lycos.co.kr</option>
+                                                                <option value="me.com">me.com</option>
+                                                                <option value="nate.com">nate.com</option>
+                                                                <option value="naver.com">naver.com</option>
+                                                                <option value="paran.com">paran.com</option>
+                                                                <option value="yahoo.com">yahoo.com</option>
                                                             </select>
-                                                            <input type="email" name="user_email_3" title="이메일 뒷자리 입력" class="frm_input_2 frm_email">
+                                                            <input type="email" name="user_email" title="이메일 뒷자리 입력" class="frm_input_2 frm_email">
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">
-                                                            <label for="mailing_1">정보 수신동의</label>
+                                                            <label for="mailing_1" class="leter_sp">정보 수신동의</label>
                                                         </th>
                                                         <td>
                                                             <p>이메일과 SMS를 통한 이벤트 광고정보 수신의 동의합니다</p>
                                                             <p class="clearfix">
-                                                                <input type="radio" name="mailing" id="mailing_1" value="y" checked >
+                                                                <input type="radio" name="mailing" id="mailing_1" value="y" checked>
                                                                 <label for="mailing_1" class="switch_1"><span>예</span></label>
                                                                 <input type="radio" name="mailing" id="mailing_2" value="n">
                                                                 <label for="mailing_2" class="switch_2"><span class="wsich_2_pa">아니요</span></label>
