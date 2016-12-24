@@ -1,612 +1,659 @@
 <? include"inc/top.html"; ?>
-	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/hotel.css" media="all">
-	<script src="js/common.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	function init() {
-		var btn_tab = document.querySelectorAll(".hotel_wrap .h_btn_1>button,.hotel_wrap .h_btn_2>button,.hotel_wrap .h_btn_3>button");
+    <link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/restaurant.css" media="all">  <!-- restaurant.css 같이사용 -->
+    <link rel="stylesheet" type="text/css" href="css/hotel.css" media="all">
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/btn_h_r.js" type="text/javascript"></script>
+    </head>
 
-			for(var i = 0;i < btn_tab.length; i++){
-				(function(){
-					var num = i;
-					addEvnt(btn_tab[i],"click",function(){
-						var hotel = document.querySelector(".hotel_wrap");
-						var hotel_div = hotel.querySelectorAll(".h_tab_1,.h_tab_2,.h_tab_3");
-						for(var i = 0; i < hotel_div.length; i++){
-							if(i == num){
-								hotel_div[i].style.display = "block";
-								btn_tab[i].setAttribute("class","on");
-							}else{
-								hotel_div[i].style.display = "none";
-								btn_tab[i].setAttribute("class","");
-							}
-						}
-					});
-				}());
-			}
+    <body>
+        <!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->
+        <div class="wrap clearFix">
+            <!-- 헤더영역 -->
+            <? include"inc/header.html"; ?>
+                <!--// 헤더영역 -->
+                <!-- 컨테이너영역 -->
+                <div id="container">
+                    <div class="con_title">
+                        <p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">관광명소</a> <strong class="ico_font_angle_r">숙박</strong></p>
+                        <h3>숙박</h3>
+                    </div>
+                    <div id="sub_container">
+                        <div class="res_wrap">
+                            <h4 class="r_btn_1"><button class="on">호텔</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_1.png" alt="동해보양온천">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>동해보양온천</p>
+                                                    <p>동해시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_2.png" alt="호텔 설악파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>호텔설악파크</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_3.png" alt="경포비치호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>경포비치호텔</p>
+                                                    <p>강릉시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_4.png" alt="강원랜드">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>강원랜드</p>
+                                                    <p>정선군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_5.png" alt="춘천세종관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>춘천세종관광호텔</p>
+                                                    <p>춘천시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_6.png" alt="드래곤밸리관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>드래곤밸리관광호텔</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_7.png" alt="휘닉스파크관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>휘닉스파크관광호텔</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_8.png" alt="켄싱턴스타호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>켕신턴스타호텔</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_9.png" alt="호텔펠리스">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>호텔펠리스</p>
+                                                    <p>삼척시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_10.png" alt="양구 KCP호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>양구 KCP호텔</p>
+                                                    <p>양구군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_11.png" alt="베어스관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>베어스관광호텔</p>
+                                                    <p>삼천동</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_12.png" alt="더케이설악산가족호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>더케이설악산가족</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
+                                    <a href="#" class="select">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                </span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                            <h4 class="r_btn_2"><button>콘도&#47;리조트</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_1.png" alt="알펜시아리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>알펜시아리조트</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_2.png" alt="설악파인리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>설악파인리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_3.png" alt="엘리시안 강촌">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>엘리시안 강촌</p>
+                                                    <p>춘천시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_4.png" alt="웰리힐리파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>웰리힐리파크</p>
+                                                    <p>횡성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_5.png" alt="금강산콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>금강산콘도</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_6.png" alt="휘닉스파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>휘닉스파크</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_7.png" alt="델피노리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>델피노리조트</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_8.png" alt="대명비발디콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>대명비발디콘도</p>
+                                                    <p>홍천군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_9.png" alt="아이파크콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>아리파크콘도</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_10.png" alt="현대스카이리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>현대스카이리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_11.png" alt="오크밸리 리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>오크밸리리조트</p>
+                                                    <p>원주시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_12.png" alt="현대수리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>현대수리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
+                                    <a href="#" class="select">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                </span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                            <h4 class="r_btn_3"><button>펜션</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_1.png" alt="동해보양온천">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>동해보양온천</p>
+                                                    <p>동해시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_2.png" alt="호텔 설악파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>호텔설악파크</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_3.png" alt="경포비치호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>경포비치호텔</p>
+                                                    <p>강릉시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_4.png" alt="강원랜드">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>강원랜드</p>
+                                                    <p>정선군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_5.png" alt="춘천세종관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>춘천세종관광호텔</p>
+                                                    <p>춘천시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_6.png" alt="드래곤밸리관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>드래곤밸리관광호텔</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_7.png" alt="휘닉스파크관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>휘닉스파크관광호텔</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_8.png" alt="켄싱턴스타호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>켕신턴스타호텔</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_9.png" alt="호텔펠리스">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>호텔펠리스</p>
+                                                    <p>삼척시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_10.png" alt="양구 KCP호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>양구 KCP호텔</p>
+                                                    <p>양구군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_11.png" alt="베어스관광호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>베어스관광호텔</p>
+                                                    <p>삼천동</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_h_12.png" alt="더케이설악산가족호텔">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>더케이설악산가족</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
+                                    <a href="#" class="select">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                </span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                            <h4 class="r_btn_4"><button>민박 &#183; 한옥</button></h4>
+                            <div>
+                                <ul class="clearFix">
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_1.png" alt="알펜시아리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>알펜시아리조트</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_2.png" alt="설악파인리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>설악파인리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_3.png" alt="엘리시안 강촌">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>엘리시안 강촌</p>
+                                                    <p>춘천시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_4.png" alt="웰리힐리파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>웰리힐리파크</p>
+                                                    <p>횡성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_5.png" alt="금강산콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>금강산콘도</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_6.png" alt="휘닉스파크">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>휘닉스파크</p>
+                                                    <p>평창군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_7.png" alt="델피노리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>델피노리조트</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_8.png" alt="대명비발디콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>대명비발디콘도</p>
+                                                    <p>홍천군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_9.png" alt="아이파크콘도">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>아리파크콘도</p>
+                                                    <p>고성군</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_10.png" alt="현대스카이리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>현대스카이리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_11.png" alt="오크밸리 리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>오크밸리리조트</p>
+                                                    <p>원주시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="li_sec">
+                                                <img src="images/hotel/hotel_c_12.png" alt="현대수리조트">
+                                                <div class="li_sec_tit_wrap">
+                                                    <p>현대수리조트</p>
+                                                    <p>속초시</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="paging">
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
+                                    </a>
+                                    <span>
+                                    <a href="#" class="select">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                </span>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 푸터영역 -->
+                        <? include"inc/footer.html"; ?>
+                            <!-- //푸터영역 -->
+                    </div>
+                </div>
+                <!-- class="select" : 현재 선택 된 영역 표시 -->
+                <!-- //컨테이너영역 -->
+        </div>
+    </body>
 
-	}
-	addEvnt(window,"load",init)
-	</script>
-</head>
-<body>
-	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
-	<div class="wrap clearFix">
-		<!-- 헤더영역 -->
-		<? include"inc/header.html"; ?>
-		<!--// 헤더영역 -->
-		<!-- 컨테이너영역 --> 
-		<div id="container">
-			<div class="con_title">
-				<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">여행길잡이</a> <strong class="ico_font_angle_r">오시는길</strong></p>
-				<h3>오시는길</h3>
-			</div>
-			<div id="sub_container" >
-					<div class="hotel_wrap">
-						<p class="h_btn_1"><button class="on">선호도순</button></p>
-						<div class="h_tab_1">
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/beach.png" alt="경포비치호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포비치호텔</p>
-													<p>강릉시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/boyang.png" alt="동해보양온천">
-											<figcaption>
-												<div class="sec_left">
-													<p>동해보양온천 컨벤션</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/felice.png" alt="호텔펠리스">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔펠리스</p>
-													<p>삼척시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/land.png" alt="강원랜드">
-											<figcaption>
-												<div class="sec_left">
-													<p>강원랜드</p>
-													<p>정선군</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>드래곤밸리관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>휘닉스파크관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/kcp.png" alt="KCP호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>양구 KCP호텔</p>
-													<p>양구군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/morning.png" alt="호텔굿모닝">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔굿모닝</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/sulak.png" alt="설악파크">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔 설악파크</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>뉴동해관광호텔</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/bears.png" alt="베어스관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>춘천 베어스관광호텔</p>
-													<p>삼천동</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
-											<figcaption>
-												<div class="sec_left">
-													<p>더케이설악산가족호텔</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
-									<a href="#" class="select">1</a>
-									<a href="#">2</a>
-									<a href="#">3</a>
-								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-						<p class="h_btn_2"><button>신규등록순</button></p>
-						<div class="h_tab_2">
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/sulak.png" alt="설악파크">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔 설악파크</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>휘닉스파크관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>드래곤밸리관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/bears.png" alt="베어스관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>춘천 베어스관광호텔</p>
-													<p>삼천동</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
-											<figcaption>
-												<div class="sec_left">
-													<p>더케이설악산가족호텔</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/felice.png" alt="호텔펠리스">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔펠리스</p>
-													<p>삼척시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/kcp.png" alt="KCP호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>양구 KCP호텔</p>
-													<p>양구군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/boyang.png" alt="동해보양온천">
-											<figcaption>
-												<div class="sec_left">
-													<p>동해보양온천 컨벤션</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/land.png" alt="강원랜드">
-											<figcaption>
-												<div class="sec_left">
-													<p>강원랜드</p>
-													<p>정선군</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/morning.png" alt="호텔굿모닝">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔굿모닝</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/beach.png" alt="경포비치호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포비치호텔</p>
-													<p>강릉시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>뉴동해관광호텔</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
-									<a href="#" class="select">1</a>
-									<a href="#">2</a>
-									<a href="#">3</a>
-								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-						<p class="h_btn_3"><button>이름순</button></p>
-						<div class="h_tab_3">
-							<ul class="clearFix">
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/land.png" alt="강원랜드">
-											<figcaption>
-												<div class="sec_left">
-													<p>강원랜드</p>
-													<p>정선군</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/beach.png" alt="경포비치호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>경포비치호텔</p>
-													<p>강릉시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/donghea.png" alt="뉴동해관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>뉴동해관광호텔</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/boyang.png" alt="동해보양온천">
-											<figcaption>
-												<div class="sec_left">
-													<p>동해보양온천 컨벤션</p>
-													<p>동해시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/the_k.png" alt="더케이설악산가족호텔 ">
-											<figcaption>
-												<div class="sec_left">
-													<p>더케이설악산가족호텔</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_2.png" alt="별2개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/dragon.png" alt="드래곤밸리관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>드래곤밸리관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/kcp.png" alt="KCP호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>양구 KCP호텔</p>
-													<p>양구군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/bears.png" alt="베어스관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>춘천 베어스관광호텔</p>
-													<p>삼천동</p>
-													<p><img src="images/hotel/star_3.png" alt="별3개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/morning.png" alt="호텔굿모닝">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔굿모닝</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/sulak.png" alt="설악파크">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔 설악파크</p>
-													<p>속초시</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/felice.png" alt="호텔펠리스">
-											<figcaption>
-												<div class="sec_left">
-													<p>호텔펠리스</p>
-													<p>삼척시</p>
-													<p><img src="images/hotel/star_5.png" alt="별5개"></p>
-												</div>
-												<p class="sec_right"><img src="images/hotel/best_hotel.png" alt="우수숙박업소"></p>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<li><a href="#">
-										<figure class="li_sec">
-											<img src="images/hotel/finics.png" alt="휘닉스파크관광호텔">
-											<figcaption>
-												<div class="sec_left">
-													<p>휘닉스파크관광호텔</p>
-													<p>평창군</p>
-													<p><img src="images/hotel/star_4.png" alt="별4개"></p>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-							</ul>
-							<p class="paging">
-								<a href="#">
-									<img src="images/common_sub/page_btn_first.png" alt="처음으로 가기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_prev.png" alt="이전 보기" />
-								</a>
-								<span>
-									<a href="#" class="select">1</a>
-									<a href="#">2</a>
-									<a href="#">3</a>
-								</span>
-								<a href="#">
-									<img src="images/common_sub/page_btn_next.png" alt="다음 보기" />
-								</a>
-								<a href="#">
-									<img src="images/common_sub/page_btn_last.png" alt="마지막으로 가기" />
-								</a>
-							</p>
-						</div>
-					</div>
-				<!-- 푸터영역 -->
-				<? include"inc/footer.html"; ?>
-				<!-- //푸터영역 -->
-			</div>
-		</div>
-			<!-- class="select" : 현재 선택 된 영역 표시 -->
-			<!-- //컨테이너영역 -->
-	</div>
-</body>
-</html>
-
+    </html>
