@@ -9,7 +9,7 @@ position: relative;}
 .res_wrap .li_sec {position: 	relative;}
 .res_wrap .li_sec .li_sec_tit_wrap{width: 100%; background: rgba(255,255,255,0.6);
 					padding: 7px 40px 3px; position: absolute;	bottom:0;left:0; font-weight:bold; margin-bottom: 17px;}
-.res_wrap .li_sec .li_sec_tit_wrap p{font-size: 17px; text-align:center; color: #333; font-weight: bold; letter-spacing: -0.12em;}
+.res_wrap .li_sec .li_sec_tit_wrap p{font-size: 18px; text-align:center; color: #333; font-weight: bold; letter-spacing: -0.12em;}
 .res_wrap .li_sec .li_sec_tit_wrap p +p{font-size: 12px;}
 .res_wrap .r_btn_1{ border-bottom: 1px solid #00529c;}
 .res_wrap button{ width: 25%; padding: 10px 0; border: 1px solid #00529c; color: #525252; border-bottom: none;

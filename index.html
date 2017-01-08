@@ -1,5 +1,6 @@
 <? include"inc/top.html"; ?>
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+	<script type="text/javascript" src="js/maincontain3.js"></script>
 </head>
 <body>
 	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
@@ -10,26 +11,27 @@
 		<!-- 컨테이너영역 --> 
 		<div id="container" class="clearFix">
 			<div class="visual">
-				<div class="wrap_slide">
-					<!-- <img src="images/main/bg_main_v.png" alt="사진" class="slogan_img"> -->
-					<img src="images/main/bg_main_v_1.png" alt="사진" class="slogan_img">
-<!-- 					<img src="images/main/bg_main_v.png" alt="사진" class="slogan_img">
-					<img src="images/main/bg_main_v.png" alt="사진" class="slogan_img"> -->
+				<div class="wrap_slide clearFix">
+					<img src="images/main/bg_main_v_1_1.png" alt="사진" id="slider">
+<!-- 					<ul>
+	<li><img src="images/main/bg_main_v_1_1.png" alt="사진" class="slogan_img"></li>
+	<li><img src="images/main/bg_main_v_2.png" alt="사진" class="slogan_img"></li>
+	<li><img src="images/main/bg_main_v_3.png" alt="사진" class="slogan_img"></li>
+</ul> -->
 				</div>
-<!-- 				<div class="m_v_s_c">
-					<div class="m_v_slide">
-						<p>사계절 즐거운 <br>강원도가 좋아요!</p>
-					</div>
+				<div class="m_v_slide">
+					<p>사계절 즐거운 <br>강원도가 좋아요!</p>				
 					<div class="pagecontrol">
 						<ul class="pgc_pageList">
-							<li class="on"><a href="#">slogan_img</a></li>
-							<li><a href="#">slogan_img</a></li>
-							<li><a href="#">slogan_img</a></li>
+							<li><button class="on"></button></li>
+							<li><button></button></li>
+							<li><button></button></li>
 						</ul>
-						<a href="#" class="pagecontrol_play">슬라이드재생</a>
-						<a href="#" class="pagecontrol_pause on">슬라이드멈춤</a>
+						<button class="vs_pagecontrol_prev"><img src="images/main/btn_sPage_prev.png" alt="이전"></button>
+						<button class="vs_pagecontrol_pause"><img src="images/main/btn_sPage_pause.png" alt="슬라이드 재생/정지"></button>
+						<button class="vs_pagecontrol_next"><img src="images/main/btn_sPage_next.png" alt="다음"></button>
 					</div>
-				</div> -->
+				</div>
 			</div>
 			<div id="contents">
 				<div class="detail">
@@ -59,23 +61,28 @@
 							<h3 class="blind">축제 슬라이드영역</h3>
 							<ul class="clearFix">
 								<li class="festival_1">
-									<a href="#"><strong>도루묵 축제</strong><br><br>
-										기간 : 2016-11-18~2016-11-27<br>장소 : 속초시<br>전화 : 033-630-7722
+									<a href="#">
+										<div><strong>도루묵 축제</strong><br><br>
+											기간 : 2016-11-18~2016-11-27<br>장소 : 속초시<br>전화 : 033-630-7722
+										</div>
 									</a>
 								</li>
 								<li class="festival_2">
-									<a href="#"><strong>춘천 호수별빛나라축제</strong><br><br>
-										기간 : 2016-04-30~2016-12-31<br>장소 : 춘천시<br>전화 : 033-259-1243
+									<a href="#">
+										<div><strong>춘천 호수별빛나라축제</strong><br><br>
+											기간 : 2016-04-30~2016-12-31<br>장소 : 춘천시<br>전화 : 033-259-1243
+										</div>
 									</a>
 								</li>
 							</ul>
 							<div class="pagecontrol">
 								<ul class="pgc_pageList">
-									<li class="on"><a href="#">도루묵 축제</a></li>
-									<li><a href="#">춘천 호수별빛나라축제</a></li>
+									<li><button class="on"></button></li>
+									<li><button></button></li>
 								</ul>
-								<a href="#" class="pagecontrol_play">슬라이드재생</a>
-								<a href="#" class="pagecontrol_pause on">슬라이드멈춤</a>
+								<button class="pagecontrol_prev"><img src="images/main/btn_sPage_prev.png" alt="이전"></button>
+								<!-- <button class="pagecontrol_pause"><img src="images/main/btn_sPage_pause.png" alt="슬라이드 재생/정지"></button> -->
+								<button class="pagecontrol_next"><img src="images/main/btn_sPage_next.png" alt="다음"></button>
 							</div>
 						</div>
 						<div class="main_newsLetter">
@@ -169,15 +176,15 @@
 						</ul>
 						<div class="pagecontrol">
 							<ul class="pgc_pageList">
-								<li class="on"><a href="#">강원도 추천명소 핫플레이스10</a></li>
-								<li><a href="#">동화같은 하루 경기도</a></li>
-								<li><a href="#">보면 볼수록 똑똑해지는 박물관 여행</a></li>
-								<li><a href="#">동해 논골담길</a></li>
-								<li><a href="#">화천 산천어축제</a></li>
-								<li><a href="#">춘천 애니메니션 박물관</a></li>
+								<li><button class="on"></button></li>
+								<li><button></button></li>
+								<li><button></button></li>
+								<li><button></button></li>
+								<li><button></button></li>
+								<li><button></button></li>
 							</ul>
-							<a href="#" class="pagecontrol_play">슬라이드재생</a>
-							<a href="#" class="pagecontrol_pause on">슬라이드멈춤</a>
+							<button class="etc_pagecontrol_prev"><img src="images/main/btn_sPage_prev.png" alt="이전"></button>
+							<button class="etc_pagecontrol_next"><img src="images/main/btn_sPage_next.png" alt="다음"></button>
 						</div>
 					</section>
 				</div> <!-- //디테일 -->

@@ -53,7 +53,12 @@
 
 
 /* **구독신청** */
-
+.nletter_apl_box{max-width: 600px; padding: 4% 0 6%; margin: 0 auto 180px; border: 1px solid #d0cecd; background-color: #f5f5f5;}
+.nletter_apl_box > div{width: 65%; margin: 0 auto;}
+.nletter_apl_box > div > p:first-child{font-size: 20px; font-weight: bold; margin-bottom: 5px;}
+.nletter_apl_box > div > p:first-child + p{display: inline-block; font-size: 0.929em; line-height: 17px; margin-bottom: 20px;}
+.nletter_apl_box > div > p:first-child + p span{color: #dc3d6c;}
+.nletter_apl_box form{margin: 0 auto;}
 /* .nletter_apl_box form fieldset{} */
 .nletter_apl_box form fieldset div{position: relative; width: 97%;}
 .nletter_apl_box form fieldset div p{width: 85%;}
@@ -83,8 +88,8 @@
   .nletter_apl_box > div{width: 67%;}
   .nletter_apl_box form fieldset div p{width: 84%;}
   .nletter_apl_box form input[type=text], .nletter_apl_box form input[type=email] {width: 77%; padding: 6px 10px; font-size: 0.9em; border: 1px solid #d0cecd;}
-
-
+  
+	
 }
 
 @media (max-width:800px){

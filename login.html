@@ -1,0 +1,53 @@
+<? include"inc/top.html"; ?>
+	<link rel="stylesheet" type="text/css" href="css/common_sub.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" media="all" />
+	<script type="text/javascript">
+	
+	</script>
+</head>
+<body>
+	<!-- 전체 1600px로 묶어 주기 위해서 인덱스 전체 wrap해줌  -->  
+	<div class="wrap clearFix">
+		<!-- 헤더영역 -->
+		<? include"inc/header.html"; ?>
+		<!--// 헤더영역 -->
+		<!-- 컨테이너영역 --> 
+		<div id="container">
+			<div class="con_title con_titleEtc">
+				<div>
+					<p class="location"><a href="#" class="ico_font_home">HOME</a><a href="#" class="ico_font_angle_r">로그인</a> <strong class="ico_font_angle_r">로그인</strong></p>
+					<h3>로그인</h3>
+				</div>
+			</div>
+			<div id="sub_container" >
+				<div class="login_wrap">
+					<div class="login_box">
+						<div>
+							<p>Member Login</p>
+							<p>로그인을 하시면 모든 서비스 및 관광정보를 자유롭게 이용 가능하시며, 이벤트및 사은행사에  참여하실 수 있습니다.	</p>
+							<form action="#" method="post">
+								<fieldset>
+									<legend>회원로그인</legend>
+									<div>
+										<p><label for="nl_user_name">아이디</label><input type="text" id="user_id" placeholder="아이디를 입력하세요"></p>
+										<p><label for="nl_user_mail">비밀번호</label><input type="password" id="user_pw" placeholder="비밀번호를 입력하세요"></p>
+										<button>회원 로그인</button>
+										<!-- <p><input type="submit" value="신청하기"></p> -->
+									</div>
+								</fieldset>
+							</form>
+							<p>아직 사이버강원 회원이 아니십니까?&nbsp;&nbsp;<a href="join.html">회원가입</a></p>
+						</div>
+					</div>
+				</div>
+			
+				<!-- 푸터영역 -->
+				<? include"inc/footer.html"; ?>
+				<!-- //푸터영역 -->
+			</div>
+		</div>
+			<!-- class="select" : 현재 선택 된 영역 표시 -->
+			<!-- //컨테이너영역 -->
+	</div>
+</body>
+</html>
